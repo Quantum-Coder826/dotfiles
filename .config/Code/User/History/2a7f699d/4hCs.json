@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/build/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "compiler: /usr/bin/g++",
+        },
+        {
+            "type": "shell",
+            "group": "none",
+            "label": "upload",
+            "command": "scp -i .ssh/robot@ev3dev.pub ${fileDirname}/build/${fileBasenameNoExtension} robot@ev3dev.local:",
+            "detail": "upload the binary to the the robot"
+        },
+        {
+            "label": "Build & upload",
+            "group": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "C/C++: g++ build active file",
+                "run program"
+            ],
+            "detail": "compound task that builds and then run's the binary"
+        }
+    ]
+}

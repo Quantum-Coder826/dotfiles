@@ -1,0 +1,22 @@
+[Unit]
+Description=Minecraft Server %i
+After=network.target
+
+[Service]
+WorkingDirectory=/home/Berend/minecraft/%i
+
+Type=forking
+User=Berend
+
+ExecStart=/usr/bin/screen -dmS mc_%i bash run.sh
+
+ExecStop=/usr/bin/screen -S mc_%i -p 0 -X stuff 'say SERVER SHUTTING DOWN. Saving...^M'
+ExecStop=/usr/bin/screen -S mc_%i -p 0 -X stuff 'save-all^M'
+ExecStop=/usr/bin/sleep 5
+ExecStop=/usr/bin/screen -S mc_%i -p 0 -X stuff 'stop^M'
+
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+// my config for rofi
+// start command: rofi -show combi
+
+configuration {
+    modi: "calc,window,drun,combi";
+    combi-modi: "calc,window,drun,combi";
+    icon-theme: "Mint-Y-Dark";
+    show-icons: true;
+    no-history: true;
+    }
+
+@theme "gruvbox-dark-hard.rasi"

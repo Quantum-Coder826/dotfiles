@@ -1,0 +1,10 @@
+(defwindow desktop
+            :monitor 0
+            :geometry (geometry :x "0px"
+                                :y "0px"
+                                :width "100px"
+                                :height "100px"
+                                :anchor "top right"
+                                :wm-ignore true
+                                :windowtype "desktop")
+    )

@@ -1,0 +1,25 @@
+2023-07-16 20:14:41.170 [warning] /home/berend/.ssh/config: ENOENT: no such file or directory, open '/home/berend/.ssh/config'
+2023-07-16 20:14:41.210 [info] Looking for git repository
+2023-07-16 20:14:41.210 [info] Found 0 repositories during activation
+2023-07-16 20:14:41.210 [info] Git repository found, initializing review manager and pr tree view.
+2023-07-16 20:14:41.211 [info] Registering git provider
+2023-07-16 20:14:41.211 [info] Review> Validate state in progress
+2023-07-16 20:14:41.211 [info] Review> Validating state...
+2023-07-16 20:14:41.219 [info] Found GitHub remote for folder /home/berend/Documents/dev/mcService
+2023-07-16 20:14:41.254 [info] Repo state for file:///home/berend/Documents/dev/mcService changed.
+2023-07-16 20:14:41.254 [info] Repo file:///home/berend/Documents/dev/mcService has already been setup.
+2023-07-16 20:14:41.608 [info] Review> No matching pull request metadata found locally for current branch master
+2023-07-16 20:14:41.608 [info] Review> no matching pull request metadata found for current branch master
+2023-07-16 20:14:41.909 [info] Review> No matching pull request metadata found on GitHub for current branch master
+2023-07-16 20:16:15.970 [info] Review> Validate state in progress
+2023-07-16 20:16:15.970 [info] Review> Validating state...
+2023-07-16 20:16:16.027 [info] Found GitHub remote for folder /home/berend/Documents/dev/mcService
+2023-07-16 20:16:16.063 [info] Review> No matching pull request metadata found locally for current branch master
+2023-07-16 20:16:16.063 [info] Review> no matching pull request metadata found for current branch master
+2023-07-16 20:16:17.377 [info] Review> No matching pull request metadata found on GitHub for current branch master
+2023-07-16 20:16:18.031 [info] Review> Validate state in progress
+2023-07-16 20:16:18.031 [info] Review> Validating state...
+2023-07-16 20:16:18.047 [info] Found GitHub remote for folder /home/berend/Documents/dev/mcService
+2023-07-16 20:16:18.139 [info] Review> No matching pull request metadata found locally for current branch master
+2023-07-16 20:16:18.139 [info] Review> no matching pull request metadata found for current branch master
+2023-07-16 20:16:18.400 [info] Review> No matching pull request metadata found on GitHub for current branch master

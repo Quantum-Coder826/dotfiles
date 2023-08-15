@@ -1,0 +1,5 @@
+{
+  "executable": "",
+  "input": "demo.s",
+  "params": "--verbose --target nes -o demo.nes"
+}

@@ -1,0 +1,1808 @@
+18:43:32.718: Command Line Arguments: --startvirtualcam
+18:43:32.736: CPU Name: AMD Ryzen 7 3700X 8-Core Processor
+18:43:32.736: CPU Speed: 3600.000MHz
+18:43:32.736: Physical Cores: 8, Logical Cores: 16
+18:43:32.736: Physical Memory: 15939MB Total, 5462MB Free
+18:43:32.736: Kernel Version: Linux 5.15.0-73-generic
+18:43:32.736: Distribution: "Linux Mint" "21.1"
+18:43:32.736: Session Type: x11
+18:43:32.736: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+18:43:32.737: Qt Version: 5.15.3 (runtime), 5.15.2 (compiled)
+18:43:32.738: Portable mode: false
+18:43:32.776: OBS 27.2.3+dfsg1-1 (linux)
+18:43:32.776: ---------------------------------
+18:43:32.776: ---------------------------------
+18:43:32.776: audio settings reset:
+18:43:32.776: 	samples per sec: 48000
+18:43:32.776: 	speakers:        2
+18:43:32.782: ---------------------------------
+18:43:32.782: Initializing OpenGL...
+18:43:32.898: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 1660 SUPER/PCIe/SSE2
+18:43:32.898: OpenGL loaded successfully, version 3.3.0 NVIDIA 510.108.03, shading language 3.30 NVIDIA via Cg compiler
+18:43:32.906: ---------------------------------
+18:43:32.906: video settings reset:
+18:43:32.906: 	base resolution:   1920x1080
+18:43:32.906: 	output resolution: 1920x1080
+18:43:32.906: 	downscale filter:  Bicubic
+18:43:32.906: 	fps:               60/1
+18:43:32.906: 	format:            NV12
+18:43:32.906: 	YUV mode:          709/Partial
+18:43:32.907: NV12 texture support not available
+18:43:32.954: Audio monitoring device:
+18:43:32.954: 	name: Default
+18:43:32.954: 	id: default
+18:43:32.954: ---------------------------------
+18:43:32.955: Failed to load 'en-US' text for module: 'decklink-captions.so'
+18:43:32.957: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+18:43:33.003: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+18:43:33.003: No blackmagic support
+18:43:33.098: NVENC supported
+18:43:33.098: FFMPEG VAAPI supported
+18:43:33.125: [vlc-video]: VLC 3.0.16 Vetinari found, VLC video source enabled
+18:43:33.125: ---------------------------------
+18:43:33.125:   Loaded Modules:
+18:43:33.125:     vlc-video.so
+18:43:33.125:     text-freetype2.so
+18:43:33.125:     rtmp-services.so
+18:43:33.125:     obs-x264.so
+18:43:33.125:     obs-transitions.so
+18:43:33.125:     obs-outputs.so
+18:43:33.125:     obs-filters.so
+18:43:33.125:     obs-ffmpeg.so
+18:43:33.125:     linux-v4l2.so
+18:43:33.125:     linux-pulseaudio.so
+18:43:33.125:     linux-jack.so
+18:43:33.125:     linux-decklink.so
+18:43:33.125:     linux-capture.so
+18:43:33.125:     linux-alsa.so
+18:43:33.125:     image-source.so
+18:43:33.125:     frontend-tools.so
+18:43:33.126:     decklink-ouput-ui.so
+18:43:33.126:     decklink-captions.so
+18:43:33.126: ---------------------------------
+18:43:33.126: ==== Startup complete ===============================================
+18:43:33.177: All scene data cleared
+18:43:33.177: ------------------------------------------------
+18:43:33.181: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.71) 15.0.0'
+18:43:33.181: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+18:43:33.181: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor'
+18:43:33.181: [Loaded global audio device]: 'Desktop Audio'
+18:43:33.181: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.71) 15.0.0'
+18:43:33.182: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+18:43:33.182: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+18:43:33.182: [Loaded global audio device]: 'Mic/Aux'
+18:43:33.182: xshm-input: Geometry 1920x1080 @ 0,0
+18:43:33.262: Switched to scene 'screen'
+18:43:33.262: ------------------------------------------------
+18:43:33.262: Loaded scenes:
+18:43:33.262: - scene 'screen':
+18:43:33.265:     - source: 'monitor0' (xshm_input)
+18:43:33.266: - scene 'application':
+18:43:33.266:     - source: 'not_connected' (image_source)
+18:43:33.266:     - source: 'Nothing' (text_ft2_source_v2)
+18:43:33.266:     - source: 'window_capture' (xcomposite_input)
+18:43:33.266: ------------------------------------------------
+18:43:33.751: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+18:43:33.751: 
+18:43:39.212: Virtual camera started
+18:43:39.219: ==== Virtual Camera Start ==========================================
+18:43:43.300: User switched to scene 'application'
+18:43:47.097: xcompcap: [window-capture: 'window_capture'] update settings:
+18:43:47.097: 	title: ASTRONEER  
+18:43:47.097: 	class: steam_app_361420
+18:43:47.097: 	Bit depth: 24
+18:43:47.097: 	Found proper GLXFBConfig (in 9): yes
+18:43:47.097: 
+18:43:49.091: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:43:49.114: xcompcap: [window-capture: 'window_capture'] update settings:
+18:43:49.114: 	title: ASTRONEER  
+18:43:49.114: 	class: steam_app_361420
+18:43:49.114: 	Bit depth: 24
+18:43:49.114: 	Found proper GLXFBConfig (in 9): yes
+18:43:49.114: 
+18:43:49.118: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:43:49.163: xcompcap: [window-capture: 'window_capture'] update settings:
+18:43:49.163: 	title: ASTRONEER  
+18:43:49.163: 	class: steam_app_361420
+18:43:49.163: 	Bit depth: 24
+18:43:49.163: 	Found proper GLXFBConfig (in 9): yes
+18:43:49.163: 
+18:44:57.207: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:44:57.220: xcompcap: [window-capture: 'window_capture'] update settings:
+18:44:57.220: 	title: ASTRONEER  
+18:44:57.220: 	class: steam_app_361420
+18:44:57.220: 	Bit depth: 24
+18:44:57.220: 	Found proper GLXFBConfig (in 9): yes
+18:44:57.220: 
+18:44:57.224: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:44:57.264: xcompcap: [window-capture: 'window_capture'] update settings:
+18:44:57.264: 	title: ASTRONEER  
+18:44:57.264: 	class: steam_app_361420
+18:44:57.264: 	Bit depth: 24
+18:44:57.264: 	Found proper GLXFBConfig (in 9): yes
+18:44:57.264: 
+18:44:57.941: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:44:57.997: xcompcap: [window-capture: 'window_capture'] update settings:
+18:44:57.997: 	title: ASTRONEER  
+18:44:57.997: 	class: steam_app_361420
+18:44:57.997: 	Bit depth: 24
+18:44:57.997: 	Found proper GLXFBConfig (in 9): yes
+18:44:57.997: 
+18:45:22.974: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:45:23.000: xcompcap: [window-capture: 'window_capture'] update settings:
+18:45:23.000: 	title: ASTRONEER  
+18:45:23.000: 	class: steam_app_361420
+18:45:23.000: 	Bit depth: 24
+18:45:23.000: 	Found proper GLXFBConfig (in 9): yes
+18:45:23.000: 
+18:45:23.524: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:45:23.536: xcompcap: [window-capture: 'window_capture'] update settings:
+18:45:23.536: 	title: ASTRONEER  
+18:45:23.536: 	class: steam_app_361420
+18:45:23.536: 	Bit depth: 24
+18:45:23.536: 	Found proper GLXFBConfig (in 9): yes
+18:45:23.536: 
+18:46:14.741: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:14.760: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:14.760: 	title: ASTRONEER  
+18:46:14.760: 	class: steam_app_361420
+18:46:14.760: 	Bit depth: 24
+18:46:14.760: 	Found proper GLXFBConfig (in 9): yes
+18:46:14.760: 
+18:46:15.724: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:15.768: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:15.768: 	title: ASTRONEER  
+18:46:15.768: 	class: steam_app_361420
+18:46:15.768: 	Bit depth: 24
+18:46:15.768: 	Found proper GLXFBConfig (in 9): yes
+18:46:15.768: 
+18:46:16.740: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:16.766: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:16.766: 	title: ASTRONEER  
+18:46:16.766: 	class: steam_app_361420
+18:46:16.766: 	Bit depth: 24
+18:46:16.766: 	Found proper GLXFBConfig (in 9): yes
+18:46:16.766: 
+18:46:16.774: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:16.815: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:16.815: 	title: ASTRONEER  
+18:46:16.815: 	class: steam_app_361420
+18:46:16.815: 	Bit depth: 24
+18:46:16.815: 	Found proper GLXFBConfig (in 9): yes
+18:46:16.815: 
+18:46:27.274: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:27.315: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:27.315: 	title: ASTRONEER  
+18:46:27.315: 	class: steam_app_361420
+18:46:27.315: 	Bit depth: 24
+18:46:27.315: 	Found proper GLXFBConfig (in 9): yes
+18:46:27.315: 
+18:46:28.624: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:28.670: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:28.670: 	title: ASTRONEER  
+18:46:28.670: 	class: steam_app_361420
+18:46:28.670: 	Bit depth: 24
+18:46:28.670: 	Found proper GLXFBConfig (in 9): yes
+18:46:28.670: 
+18:46:29.024: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:46:29.082: xcompcap: [window-capture: 'window_capture'] update settings:
+18:46:29.082: 	title: ASTRONEER  
+18:46:29.082: 	class: steam_app_361420
+18:46:29.082: 	Bit depth: 24
+18:46:29.082: 	Found proper GLXFBConfig (in 9): yes
+18:46:29.082: 
+18:47:39.857: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:47:39.872: xcompcap: [window-capture: 'window_capture'] update settings:
+18:47:39.872: 	title: ASTRONEER  
+18:47:39.872: 	class: steam_app_361420
+18:47:39.872: 	Bit depth: 24
+18:47:39.872: 	Found proper GLXFBConfig (in 9): yes
+18:47:39.872: 
+18:47:40.407: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:47:40.454: xcompcap: [window-capture: 'window_capture'] update settings:
+18:47:40.454: 	title: ASTRONEER  
+18:47:40.454: 	class: steam_app_361420
+18:47:40.454: 	Bit depth: 24
+18:47:40.454: 	Found proper GLXFBConfig (in 9): yes
+18:47:40.454: 
+18:55:00.474: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:55:00.516: xcompcap: [window-capture: 'window_capture'] update settings:
+18:55:00.516: 	title: ASTRONEER  
+18:55:00.516: 	class: steam_app_361420
+18:55:00.516: 	Bit depth: 24
+18:55:00.516: 	Found proper GLXFBConfig (in 9): yes
+18:55:00.516: 
+18:55:03.974: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:55:04.014: xcompcap: [window-capture: 'window_capture'] update settings:
+18:55:04.014: 	title: ASTRONEER  
+18:55:04.014: 	class: steam_app_361420
+18:55:04.014: 	Bit depth: 24
+18:55:04.014: 	Found proper GLXFBConfig (in 9): yes
+18:55:04.014: 
+18:57:11.540: User switched to scene 'screen'
+18:57:11.934: User switched to scene 'application'
+18:57:14.690: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:14.708: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:14.708: 	title: Dyson Sphere Program
+18:57:14.708: 	class: steam_app_1366540
+18:57:14.708: 	Bit depth: 24
+18:57:14.708: 	Found proper GLXFBConfig (in 9): yes
+18:57:14.708: 
+18:57:14.709: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:14.711: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:14.711: 	title: Dyson Sphere Program
+18:57:14.711: 	class: steam_app_1366540
+18:57:14.711: 	Bit depth: 24
+18:57:14.711: 	Found proper GLXFBConfig (in 9): yes
+18:57:14.711: 
+18:57:20.491: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:20.501: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:20.501: 	title: Dyson Sphere Program
+18:57:20.501: 	class: steam_app_1366540
+18:57:20.501: 	Bit depth: 24
+18:57:20.501: 	Found proper GLXFBConfig (in 9): yes
+18:57:20.501: 
+18:57:20.507: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:20.514: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:20.514: 	title: Dyson Sphere Program
+18:57:20.514: 	class: steam_app_1366540
+18:57:20.514: 	Bit depth: 24
+18:57:20.514: 	Found proper GLXFBConfig (in 9): yes
+18:57:20.514: 
+18:57:25.888: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:25.901: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:25.901: 	title: Dyson Sphere Program
+18:57:25.901: 	class: steam_app_1366540
+18:57:25.901: 	Bit depth: 24
+18:57:25.901: 	Found proper GLXFBConfig (in 9): yes
+18:57:25.901: 
+18:57:25.905: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:25.941: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:25.941: 	title: Dyson Sphere Program
+18:57:25.941: 	class: steam_app_1366540
+18:57:25.941: 	Bit depth: 24
+18:57:25.941: 	Found proper GLXFBConfig (in 9): yes
+18:57:25.941: 
+18:57:25.943: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:25.978: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:25.978: 	title: Dyson Sphere Program
+18:57:25.978: 	class: steam_app_1366540
+18:57:25.978: 	Bit depth: 24
+18:57:25.978: 	Found proper GLXFBConfig (in 9): yes
+18:57:25.978: 
+18:57:25.981: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:26.012: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:26.012: 	title: Dyson Sphere Program
+18:57:26.012: 	class: steam_app_1366540
+18:57:26.012: 	Bit depth: 24
+18:57:26.012: 	Found proper GLXFBConfig (in 9): yes
+18:57:26.012: 
+18:57:29.679: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:29.691: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:29.691: 	title: Dyson Sphere Program
+18:57:29.691: 	class: steam_app_1366540
+18:57:29.691: 	Bit depth: 24
+18:57:29.691: 	Found proper GLXFBConfig (in 9): yes
+18:57:29.691: 
+18:57:29.694: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:29.711: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:29.711: 	title: Dyson Sphere Program
+18:57:29.711: 	class: steam_app_1366540
+18:57:29.711: 	Bit depth: 24
+18:57:29.711: 	Found proper GLXFBConfig (in 9): yes
+18:57:29.711: 
+18:57:40.174: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:57:40.194: xcompcap: [window-capture: 'window_capture'] update settings:
+18:57:40.194: 	title: Dyson Sphere Program
+18:57:40.194: 	class: steam_app_1366540
+18:57:40.194: 	Bit depth: 24
+18:57:40.194: 	Found proper GLXFBConfig (in 9): yes
+18:57:40.194: 
+18:58:03.707: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:03.745: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:03.745: 	title: Dyson Sphere Program
+18:58:03.745: 	class: steam_app_1366540
+18:58:03.745: 	Bit depth: 24
+18:58:03.745: 	Found proper GLXFBConfig (in 9): yes
+18:58:03.745: 
+18:58:20.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:20.935: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:20.935: 	title: Dyson Sphere Program
+18:58:20.935: 	class: steam_app_1366540
+18:58:20.935: 	Bit depth: 24
+18:58:20.935: 	Found proper GLXFBConfig (in 9): yes
+18:58:20.935: 
+18:58:21.340: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:21.361: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:21.361: 	title: Dyson Sphere Program
+18:58:21.361: 	class: steam_app_1366540
+18:58:21.361: 	Bit depth: 24
+18:58:21.361: 	Found proper GLXFBConfig (in 9): yes
+18:58:21.361: 
+18:58:21.363: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:21.365: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:21.365: 	title: Dyson Sphere Program
+18:58:21.365: 	class: steam_app_1366540
+18:58:21.365: 	Bit depth: 24
+18:58:21.365: 	Found proper GLXFBConfig (in 9): yes
+18:58:21.365: 
+18:58:21.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:21.396: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:21.396: 	title: Dyson Sphere Program
+18:58:21.396: 	class: steam_app_1366540
+18:58:21.396: 	Bit depth: 24
+18:58:21.396: 	Found proper GLXFBConfig (in 9): yes
+18:58:21.396: 
+18:58:21.399: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:21.419: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:21.419: 	title: Dyson Sphere Program
+18:58:21.419: 	class: steam_app_1366540
+18:58:21.419: 	Bit depth: 24
+18:58:21.419: 	Found proper GLXFBConfig (in 9): yes
+18:58:21.419: 
+18:58:56.857: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+18:58:56.884: xcompcap: [window-capture: 'window_capture'] update settings:
+18:58:56.884: 	title: Dyson Sphere Program
+18:58:56.884: 	class: steam_app_1366540
+18:58:56.884: 	Bit depth: 24
+18:58:56.884: 	Found proper GLXFBConfig (in 9): yes
+18:58:56.884: 
+19:00:29.024: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:29.066: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:29.066: 	title: Dyson Sphere Program
+19:00:29.066: 	class: steam_app_1366540
+19:00:29.066: 	Bit depth: 24
+19:00:29.066: 	Found proper GLXFBConfig (in 9): yes
+19:00:29.066: 
+19:00:31.049: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:31.063: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:31.063: 	title: Dyson Sphere Program
+19:00:31.063: 	class: steam_app_1366540
+19:00:31.063: 	Bit depth: 24
+19:00:31.063: 	Found proper GLXFBConfig (in 9): yes
+19:00:31.063: 
+19:00:31.090: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:31.130: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:31.130: 	title: Dyson Sphere Program
+19:00:31.130: 	class: steam_app_1366540
+19:00:31.130: 	Bit depth: 24
+19:00:31.130: 	Found proper GLXFBConfig (in 9): yes
+19:00:31.130: 
+19:00:31.955: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:31.963: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:31.963: 	title: Dyson Sphere Program
+19:00:31.963: 	class: steam_app_1366540
+19:00:31.963: 	Bit depth: 24
+19:00:31.963: 	Found proper GLXFBConfig (in 9): yes
+19:00:31.963: 
+19:00:31.966: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:31.975: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:31.975: 	title: Dyson Sphere Program
+19:00:31.975: 	class: steam_app_1366540
+19:00:31.975: 	Bit depth: 24
+19:00:31.975: 	Found proper GLXFBConfig (in 9): yes
+19:00:31.975: 
+19:00:32.391: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:32.445: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:32.445: 	title: Dyson Sphere Program
+19:00:32.445: 	class: steam_app_1366540
+19:00:32.445: 	Bit depth: 24
+19:00:32.445: 	Found proper GLXFBConfig (in 9): yes
+19:00:32.445: 
+19:00:32.447: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:32.479: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:32.479: 	title: Dyson Sphere Program
+19:00:32.479: 	class: steam_app_1366540
+19:00:32.479: 	Bit depth: 24
+19:00:32.479: 	Found proper GLXFBConfig (in 9): yes
+19:00:32.479: 
+19:00:32.724: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:32.798: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:32.798: 	title: Dyson Sphere Program
+19:00:32.798: 	class: steam_app_1366540
+19:00:32.798: 	Bit depth: 24
+19:00:32.798: 	Found proper GLXFBConfig (in 9): yes
+19:00:32.798: 
+19:00:41.857: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:41.897: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:41.897: 	title: Dyson Sphere Program
+19:00:41.897: 	class: steam_app_1366540
+19:00:41.897: 	Bit depth: 24
+19:00:41.897: 	Found proper GLXFBConfig (in 9): yes
+19:00:41.897: 
+19:00:41.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:41.913: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:41.913: 	title: Dyson Sphere Program
+19:00:41.913: 	class: steam_app_1366540
+19:00:41.913: 	Bit depth: 24
+19:00:41.913: 	Found proper GLXFBConfig (in 9): yes
+19:00:41.913: 
+19:00:42.074: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:42.157: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:42.157: 	title: Dyson Sphere Program
+19:00:42.157: 	class: steam_app_1366540
+19:00:42.157: 	Bit depth: 24
+19:00:42.157: 	Found proper GLXFBConfig (in 9): yes
+19:00:42.157: 
+19:00:51.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:51.963: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:51.963: 	title: Dyson Sphere Program
+19:00:51.963: 	class: steam_app_1366540
+19:00:51.963: 	Bit depth: 24
+19:00:51.963: 	Found proper GLXFBConfig (in 9): yes
+19:00:51.963: 
+19:00:51.965: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:00:51.996: xcompcap: [window-capture: 'window_capture'] update settings:
+19:00:51.996: 	title: Dyson Sphere Program
+19:00:51.996: 	class: steam_app_1366540
+19:00:51.996: 	Bit depth: 24
+19:00:51.996: 	Found proper GLXFBConfig (in 9): yes
+19:00:51.996: 
+19:02:24.441: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:24.507: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:24.507: 	title: Dyson Sphere Program
+19:02:24.507: 	class: steam_app_1366540
+19:02:24.507: 	Bit depth: 24
+19:02:24.507: 	Found proper GLXFBConfig (in 9): yes
+19:02:24.507: 
+19:02:24.841: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:24.912: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:24.912: 	title: Dyson Sphere Program
+19:02:24.912: 	class: steam_app_1366540
+19:02:24.912: 	Bit depth: 24
+19:02:24.912: 	Found proper GLXFBConfig (in 9): yes
+19:02:24.912: 
+19:02:24.915: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:24.941: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:24.941: 	title: Dyson Sphere Program
+19:02:24.941: 	class: steam_app_1366540
+19:02:24.941: 	Bit depth: 24
+19:02:24.941: 	Found proper GLXFBConfig (in 9): yes
+19:02:24.941: 
+19:02:26.774: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:26.817: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:26.817: 	title: Dyson Sphere Program
+19:02:26.817: 	class: steam_app_1366540
+19:02:26.817: 	Bit depth: 24
+19:02:26.817: 	Found proper GLXFBConfig (in 9): yes
+19:02:26.817: 
+19:02:28.324: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:28.380: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:28.380: 	title: Dyson Sphere Program
+19:02:28.380: 	class: steam_app_1366540
+19:02:28.380: 	Bit depth: 24
+19:02:28.380: 	Found proper GLXFBConfig (in 9): yes
+19:02:28.380: 
+19:02:28.382: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:28.399: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:28.399: 	title: Dyson Sphere Program
+19:02:28.399: 	class: steam_app_1366540
+19:02:28.399: 	Bit depth: 24
+19:02:28.399: 	Found proper GLXFBConfig (in 9): yes
+19:02:28.399: 
+19:02:28.401: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:02:28.414: xcompcap: [window-capture: 'window_capture'] update settings:
+19:02:28.414: 	title: Dyson Sphere Program
+19:02:28.414: 	class: steam_app_1366540
+19:02:28.414: 	Bit depth: 24
+19:02:28.414: 	Found proper GLXFBConfig (in 9): yes
+19:02:28.414: 
+19:03:38.557: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:03:38.618: xcompcap: [window-capture: 'window_capture'] update settings:
+19:03:38.618: 	title: Dyson Sphere Program
+19:03:38.618: 	class: steam_app_1366540
+19:03:38.618: 	Bit depth: 24
+19:03:38.618: 	Found proper GLXFBConfig (in 9): yes
+19:03:38.618: 
+19:04:14.607: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:14.647: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:14.647: 	title: Dyson Sphere Program
+19:04:14.647: 	class: steam_app_1366540
+19:04:14.647: 	Bit depth: 24
+19:04:14.647: 	Found proper GLXFBConfig (in 9): yes
+19:04:14.647: 
+19:04:14.649: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:14.651: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:14.651: 	title: Dyson Sphere Program
+19:04:14.651: 	class: steam_app_1366540
+19:04:14.651: 	Bit depth: 24
+19:04:14.651: 	Found proper GLXFBConfig (in 9): yes
+19:04:14.651: 
+19:04:26.340: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:26.417: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:26.417: 	title: Dyson Sphere Program
+19:04:26.417: 	class: steam_app_1366540
+19:04:26.417: 	Bit depth: 24
+19:04:26.417: 	Found proper GLXFBConfig (in 9): yes
+19:04:26.417: 
+19:04:27.474: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:27.515: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:27.515: 	title: Dyson Sphere Program
+19:04:27.515: 	class: steam_app_1366540
+19:04:27.515: 	Bit depth: 24
+19:04:27.515: 	Found proper GLXFBConfig (in 9): yes
+19:04:27.515: 
+19:04:27.517: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:27.530: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:27.530: 	title: Dyson Sphere Program
+19:04:27.530: 	class: steam_app_1366540
+19:04:27.530: 	Bit depth: 24
+19:04:27.530: 	Found proper GLXFBConfig (in 9): yes
+19:04:27.530: 
+19:04:32.540: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:32.610: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:32.610: 	title: Dyson Sphere Program
+19:04:32.610: 	class: steam_app_1366540
+19:04:32.610: 	Bit depth: 24
+19:04:32.610: 	Found proper GLXFBConfig (in 9): yes
+19:04:32.610: 
+19:04:42.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:42.413: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:42.413: 	title: Dyson Sphere Program
+19:04:42.413: 	class: steam_app_1366540
+19:04:42.413: 	Bit depth: 24
+19:04:42.413: 	Found proper GLXFBConfig (in 9): yes
+19:04:42.413: 
+19:04:42.415: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:42.448: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:42.448: 	title: Dyson Sphere Program
+19:04:42.448: 	class: steam_app_1366540
+19:04:42.448: 	Bit depth: 24
+19:04:42.448: 	Found proper GLXFBConfig (in 9): yes
+19:04:42.448: 
+19:04:58.290: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:04:58.371: xcompcap: [window-capture: 'window_capture'] update settings:
+19:04:58.371: 	title: Dyson Sphere Program
+19:04:58.371: 	class: steam_app_1366540
+19:04:58.371: 	Bit depth: 24
+19:04:58.371: 	Found proper GLXFBConfig (in 9): yes
+19:04:58.371: 
+19:05:06.041: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:05:06.115: xcompcap: [window-capture: 'window_capture'] update settings:
+19:05:06.115: 	title: Dyson Sphere Program
+19:05:06.115: 	class: steam_app_1366540
+19:05:06.115: 	Bit depth: 24
+19:05:06.115: 	Found proper GLXFBConfig (in 9): yes
+19:05:06.115: 
+19:05:13.774: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:05:13.814: xcompcap: [window-capture: 'window_capture'] update settings:
+19:05:13.814: 	title: Dyson Sphere Program
+19:05:13.814: 	class: steam_app_1366540
+19:05:13.814: 	Bit depth: 24
+19:05:13.814: 	Found proper GLXFBConfig (in 9): yes
+19:05:13.814: 
+19:05:20.090: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:05:20.130: xcompcap: [window-capture: 'window_capture'] update settings:
+19:05:20.130: 	title: Dyson Sphere Program
+19:05:20.130: 	class: steam_app_1366540
+19:05:20.130: 	Bit depth: 24
+19:05:20.130: 	Found proper GLXFBConfig (in 9): yes
+19:05:20.130: 
+19:05:20.133: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:05:20.135: xcompcap: [window-capture: 'window_capture'] update settings:
+19:05:20.135: 	title: Dyson Sphere Program
+19:05:20.135: 	class: steam_app_1366540
+19:05:20.135: 	Bit depth: 24
+19:05:20.135: 	Found proper GLXFBConfig (in 9): yes
+19:05:20.135: 
+19:05:24.924: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:05:24.967: xcompcap: [window-capture: 'window_capture'] update settings:
+19:05:24.967: 	title: Dyson Sphere Program
+19:05:24.967: 	class: steam_app_1366540
+19:05:24.967: 	Bit depth: 24
+19:05:24.967: 	Found proper GLXFBConfig (in 9): yes
+19:05:24.967: 
+19:05:59.107: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:05:59.163: xcompcap: [window-capture: 'window_capture'] update settings:
+19:05:59.163: 	title: Dyson Sphere Program
+19:05:59.163: 	class: steam_app_1366540
+19:05:59.163: 	Bit depth: 24
+19:05:59.163: 	Found proper GLXFBConfig (in 9): yes
+19:05:59.163: 
+19:06:17.857: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:06:17.899: xcompcap: [window-capture: 'window_capture'] update settings:
+19:06:17.899: 	title: Dyson Sphere Program
+19:06:17.899: 	class: steam_app_1366540
+19:06:17.899: 	Bit depth: 24
+19:06:17.899: 	Found proper GLXFBConfig (in 9): yes
+19:06:17.899: 
+19:06:36.124: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:06:36.163: xcompcap: [window-capture: 'window_capture'] update settings:
+19:06:36.163: 	title: Dyson Sphere Program
+19:06:36.163: 	class: steam_app_1366540
+19:06:36.163: 	Bit depth: 24
+19:06:36.163: 	Found proper GLXFBConfig (in 9): yes
+19:06:36.163: 
+19:06:36.165: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:06:36.168: xcompcap: [window-capture: 'window_capture'] update settings:
+19:06:36.168: 	title: Dyson Sphere Program
+19:06:36.168: 	class: steam_app_1366540
+19:06:36.168: 	Bit depth: 24
+19:06:36.168: 	Found proper GLXFBConfig (in 9): yes
+19:06:36.168: 
+19:06:48.557: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:06:48.627: xcompcap: [window-capture: 'window_capture'] update settings:
+19:06:48.627: 	title: Dyson Sphere Program
+19:06:48.627: 	class: steam_app_1366540
+19:06:48.627: 	Bit depth: 24
+19:06:48.627: 	Found proper GLXFBConfig (in 9): yes
+19:06:48.627: 
+19:07:10.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:07:10.954: xcompcap: [window-capture: 'window_capture'] update settings:
+19:07:10.954: 	title: Dyson Sphere Program
+19:07:10.954: 	class: steam_app_1366540
+19:07:10.954: 	Bit depth: 24
+19:07:10.954: 	Found proper GLXFBConfig (in 9): yes
+19:07:10.954: 
+19:07:10.974: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:07:11.013: xcompcap: [window-capture: 'window_capture'] update settings:
+19:07:11.013: 	title: Dyson Sphere Program
+19:07:11.013: 	class: steam_app_1366540
+19:07:11.013: 	Bit depth: 24
+19:07:11.013: 	Found proper GLXFBConfig (in 9): yes
+19:07:11.013: 
+19:08:59.874: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:08:59.937: xcompcap: [window-capture: 'window_capture'] update settings:
+19:08:59.937: 	title: Dyson Sphere Program
+19:08:59.937: 	class: steam_app_1366540
+19:08:59.937: 	Bit depth: 24
+19:08:59.937: 	Found proper GLXFBConfig (in 9): yes
+19:08:59.937: 
+19:09:04.674: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:04.729: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:04.729: 	title: Dyson Sphere Program
+19:09:04.729: 	class: steam_app_1366540
+19:09:04.729: 	Bit depth: 24
+19:09:04.729: 	Found proper GLXFBConfig (in 9): yes
+19:09:04.729: 
+19:09:04.774: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:04.776: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:04.776: 	title: Dyson Sphere Program
+19:09:04.776: 	class: steam_app_1366540
+19:09:04.776: 	Bit depth: 24
+19:09:04.776: 	Found proper GLXFBConfig (in 9): yes
+19:09:04.776: 
+19:09:08.474: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:08.515: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:08.515: 	title: Dyson Sphere Program
+19:09:08.515: 	class: steam_app_1366540
+19:09:08.515: 	Bit depth: 24
+19:09:08.515: 	Found proper GLXFBConfig (in 9): yes
+19:09:08.515: 
+19:09:16.224: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:16.264: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:16.264: 	title: Dyson Sphere Program
+19:09:16.264: 	class: steam_app_1366540
+19:09:16.264: 	Bit depth: 24
+19:09:16.264: 	Found proper GLXFBConfig (in 9): yes
+19:09:16.264: 
+19:09:19.058: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:19.122: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:19.122: 	title: Dyson Sphere Program
+19:09:19.122: 	class: steam_app_1366540
+19:09:19.122: 	Bit depth: 24
+19:09:19.122: 	Found proper GLXFBConfig (in 9): yes
+19:09:19.122: 
+19:09:48.991: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:49.044: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:49.044: 	title: Dyson Sphere Program
+19:09:49.044: 	class: steam_app_1366540
+19:09:49.044: 	Bit depth: 24
+19:09:49.044: 	Found proper GLXFBConfig (in 9): yes
+19:09:49.044: 
+19:09:49.046: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:49.085: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:49.085: 	title: Dyson Sphere Program
+19:09:49.085: 	class: steam_app_1366540
+19:09:49.085: 	Bit depth: 24
+19:09:49.085: 	Found proper GLXFBConfig (in 9): yes
+19:09:49.085: 
+19:09:49.340: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:09:49.408: xcompcap: [window-capture: 'window_capture'] update settings:
+19:09:49.408: 	title: Dyson Sphere Program
+19:09:49.408: 	class: steam_app_1366540
+19:09:49.408: 	Bit depth: 24
+19:09:49.408: 	Found proper GLXFBConfig (in 9): yes
+19:09:49.408: 
+19:10:39.824: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:10:39.901: xcompcap: [window-capture: 'window_capture'] update settings:
+19:10:39.901: 	title: Dyson Sphere Program
+19:10:39.901: 	class: steam_app_1366540
+19:10:39.901: 	Bit depth: 24
+19:10:39.901: 	Found proper GLXFBConfig (in 9): yes
+19:10:39.901: 
+19:10:48.657: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:10:48.722: xcompcap: [window-capture: 'window_capture'] update settings:
+19:10:48.722: 	title: Dyson Sphere Program
+19:10:48.722: 	class: steam_app_1366540
+19:10:48.722: 	Bit depth: 24
+19:10:48.722: 	Found proper GLXFBConfig (in 9): yes
+19:10:48.722: 
+19:11:15.991: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:16.042: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:16.042: 	title: Dyson Sphere Program
+19:11:16.042: 	class: steam_app_1366540
+19:11:16.042: 	Bit depth: 24
+19:11:16.042: 	Found proper GLXFBConfig (in 9): yes
+19:11:16.042: 
+19:11:26.107: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:26.157: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:26.157: 	title: Dyson Sphere Program
+19:11:26.157: 	class: steam_app_1366540
+19:11:26.157: 	Bit depth: 24
+19:11:26.157: 	Found proper GLXFBConfig (in 9): yes
+19:11:26.157: 
+19:11:30.924: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:30.965: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:30.965: 	title: Dyson Sphere Program
+19:11:30.965: 	class: steam_app_1366540
+19:11:30.965: 	Bit depth: 24
+19:11:30.965: 	Found proper GLXFBConfig (in 9): yes
+19:11:30.965: 
+19:11:30.967: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:30.998: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:30.998: 	title: Dyson Sphere Program
+19:11:30.998: 	class: steam_app_1366540
+19:11:30.998: 	Bit depth: 24
+19:11:30.998: 	Found proper GLXFBConfig (in 9): yes
+19:11:30.998: 
+19:11:38.491: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:38.532: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:38.532: 	title: Dyson Sphere Program
+19:11:38.532: 	class: steam_app_1366540
+19:11:38.532: 	Bit depth: 24
+19:11:38.532: 	Found proper GLXFBConfig (in 9): yes
+19:11:38.532: 
+19:11:45.574: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:45.615: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:45.615: 	title: Dyson Sphere Program
+19:11:45.615: 	class: steam_app_1366540
+19:11:45.615: 	Bit depth: 24
+19:11:45.615: 	Found proper GLXFBConfig (in 9): yes
+19:11:45.615: 
+19:11:51.407: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:11:51.452: xcompcap: [window-capture: 'window_capture'] update settings:
+19:11:51.452: 	title: Dyson Sphere Program
+19:11:51.452: 	class: steam_app_1366540
+19:11:51.452: 	Bit depth: 24
+19:11:51.452: 	Found proper GLXFBConfig (in 9): yes
+19:11:51.452: 
+19:12:35.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:12:35.941: xcompcap: [window-capture: 'window_capture'] update settings:
+19:12:35.941: 	title: Dyson Sphere Program
+19:12:35.941: 	class: steam_app_1366540
+19:12:35.941: 	Bit depth: 24
+19:12:35.941: 	Found proper GLXFBConfig (in 9): yes
+19:12:35.941: 
+19:12:35.944: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:12:35.947: xcompcap: [window-capture: 'window_capture'] update settings:
+19:12:35.947: 	title: Dyson Sphere Program
+19:12:35.947: 	class: steam_app_1366540
+19:12:35.947: 	Bit depth: 24
+19:12:35.947: 	Found proper GLXFBConfig (in 9): yes
+19:12:35.947: 
+19:12:44.707: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:12:44.722: xcompcap: [window-capture: 'window_capture'] update settings:
+19:12:44.722: 	title: Dyson Sphere Program
+19:12:44.722: 	class: steam_app_1366540
+19:12:44.722: 	Bit depth: 24
+19:12:44.722: 	Found proper GLXFBConfig (in 9): yes
+19:12:44.722: 
+19:12:58.274: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:12:58.329: xcompcap: [window-capture: 'window_capture'] update settings:
+19:12:58.329: 	title: Dyson Sphere Program
+19:12:58.329: 	class: steam_app_1366540
+19:12:58.329: 	Bit depth: 24
+19:12:58.329: 	Found proper GLXFBConfig (in 9): yes
+19:12:58.329: 
+19:12:58.332: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:12:58.368: xcompcap: [window-capture: 'window_capture'] update settings:
+19:12:58.368: 	title: Dyson Sphere Program
+19:12:58.368: 	class: steam_app_1366540
+19:12:58.368: 	Bit depth: 24
+19:12:58.368: 	Found proper GLXFBConfig (in 9): yes
+19:12:58.368: 
+19:13:07.357: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:13:07.425: xcompcap: [window-capture: 'window_capture'] update settings:
+19:13:07.425: 	title: Dyson Sphere Program
+19:13:07.425: 	class: steam_app_1366540
+19:13:07.425: 	Bit depth: 24
+19:13:07.425: 	Found proper GLXFBConfig (in 9): yes
+19:13:07.425: 
+19:14:26.140: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:14:26.176: xcompcap: [window-capture: 'window_capture'] update settings:
+19:14:26.176: 	title: Dyson Sphere Program
+19:14:26.176: 	class: steam_app_1366540
+19:14:26.176: 	Bit depth: 24
+19:14:26.176: 	Found proper GLXFBConfig (in 9): yes
+19:14:26.176: 
+19:14:26.180: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:14:26.215: xcompcap: [window-capture: 'window_capture'] update settings:
+19:14:26.215: 	title: Dyson Sphere Program
+19:14:26.215: 	class: steam_app_1366540
+19:14:26.215: 	Bit depth: 24
+19:14:26.215: 	Found proper GLXFBConfig (in 9): yes
+19:14:26.215: 
+19:15:27.641: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:15:27.684: xcompcap: [window-capture: 'window_capture'] update settings:
+19:15:27.684: 	title: Dyson Sphere Program
+19:15:27.684: 	class: steam_app_1366540
+19:15:27.684: 	Bit depth: 24
+19:15:27.684: 	Found proper GLXFBConfig (in 9): yes
+19:15:27.684: 
+19:15:28.390: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:15:28.449: xcompcap: [window-capture: 'window_capture'] update settings:
+19:15:28.449: 	title: Dyson Sphere Program
+19:15:28.449: 	class: steam_app_1366540
+19:15:28.449: 	Bit depth: 24
+19:15:28.449: 	Found proper GLXFBConfig (in 9): yes
+19:15:28.449: 
+19:15:28.451: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:15:28.492: xcompcap: [window-capture: 'window_capture'] update settings:
+19:15:28.492: 	title: Dyson Sphere Program
+19:15:28.492: 	class: steam_app_1366540
+19:15:28.492: 	Bit depth: 24
+19:15:28.492: 	Found proper GLXFBConfig (in 9): yes
+19:15:28.492: 
+19:15:31.524: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:15:31.586: xcompcap: [window-capture: 'window_capture'] update settings:
+19:15:31.586: 	title: Dyson Sphere Program
+19:15:31.586: 	class: steam_app_1366540
+19:15:31.586: 	Bit depth: 24
+19:15:31.586: 	Found proper GLXFBConfig (in 9): yes
+19:15:31.586: 
+19:15:37.490: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:15:37.500: xcompcap: [window-capture: 'window_capture'] update settings:
+19:15:37.500: 	title: Dyson Sphere Program
+19:15:37.500: 	class: steam_app_1366540
+19:15:37.500: 	Bit depth: 24
+19:15:37.500: 	Found proper GLXFBConfig (in 9): yes
+19:15:37.500: 
+19:15:37.507: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:15:37.523: xcompcap: [window-capture: 'window_capture'] update settings:
+19:15:37.523: 	title: Dyson Sphere Program
+19:15:37.523: 	class: steam_app_1366540
+19:15:37.523: 	Bit depth: 24
+19:15:37.523: 	Found proper GLXFBConfig (in 9): yes
+19:15:37.523: 
+19:17:43.507: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:17:43.532: xcompcap: [window-capture: 'window_capture'] update settings:
+19:17:43.532: 	title: Dyson Sphere Program
+19:17:43.532: 	class: steam_app_1366540
+19:17:43.532: 	Bit depth: 24
+19:17:43.532: 	Found proper GLXFBConfig (in 9): yes
+19:17:43.532: 
+19:18:16.507: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:18:16.532: xcompcap: [window-capture: 'window_capture'] update settings:
+19:18:16.532: 	title: Dyson Sphere Program
+19:18:16.532: 	class: steam_app_1366540
+19:18:16.532: 	Bit depth: 24
+19:18:16.532: 	Found proper GLXFBConfig (in 9): yes
+19:18:16.532: 
+19:18:16.535: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:18:16.537: xcompcap: [window-capture: 'window_capture'] update settings:
+19:18:16.537: 	title: Dyson Sphere Program
+19:18:16.537: 	class: steam_app_1366540
+19:18:16.537: 	Bit depth: 24
+19:18:16.537: 	Found proper GLXFBConfig (in 9): yes
+19:18:16.537: 
+19:21:23.757: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:21:23.818: xcompcap: [window-capture: 'window_capture'] update settings:
+19:21:23.818: 	title: Dyson Sphere Program
+19:21:23.818: 	class: steam_app_1366540
+19:21:23.818: 	Bit depth: 24
+19:21:23.818: 	Found proper GLXFBConfig (in 9): yes
+19:21:23.818: 
+19:21:27.890: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:21:27.968: xcompcap: [window-capture: 'window_capture'] update settings:
+19:21:27.968: 	title: Dyson Sphere Program
+19:21:27.968: 	class: steam_app_1366540
+19:21:27.968: 	Bit depth: 24
+19:21:27.968: 	Found proper GLXFBConfig (in 9): yes
+19:21:27.968: 
+19:21:27.971: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:21:28.035: xcompcap: [window-capture: 'window_capture'] update settings:
+19:21:28.035: 	title: Dyson Sphere Program
+19:21:28.035: 	class: steam_app_1366540
+19:21:28.035: 	Bit depth: 24
+19:21:28.035: 	Found proper GLXFBConfig (in 9): yes
+19:21:28.035: 
+19:21:31.824: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:21:31.896: xcompcap: [window-capture: 'window_capture'] update settings:
+19:21:31.896: 	title: Dyson Sphere Program
+19:21:31.896: 	class: steam_app_1366540
+19:21:31.896: 	Bit depth: 24
+19:21:31.896: 	Found proper GLXFBConfig (in 9): yes
+19:21:31.896: 
+19:21:35.874: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:21:35.919: xcompcap: [window-capture: 'window_capture'] update settings:
+19:21:35.919: 	title: Dyson Sphere Program
+19:21:35.919: 	class: steam_app_1366540
+19:21:35.919: 	Bit depth: 24
+19:21:35.919: 	Found proper GLXFBConfig (in 9): yes
+19:21:35.919: 
+19:21:35.921: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:21:35.936: xcompcap: [window-capture: 'window_capture'] update settings:
+19:21:35.936: 	title: Dyson Sphere Program
+19:21:35.936: 	class: steam_app_1366540
+19:21:35.936: 	Bit depth: 24
+19:21:35.936: 	Found proper GLXFBConfig (in 9): yes
+19:21:35.936: 
+19:23:39.107: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:23:39.162: xcompcap: [window-capture: 'window_capture'] update settings:
+19:23:39.162: 	title: Dyson Sphere Program
+19:23:39.162: 	class: steam_app_1366540
+19:23:39.162: 	Bit depth: 24
+19:23:39.162: 	Found proper GLXFBConfig (in 9): yes
+19:23:39.162: 
+19:23:47.607: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:23:47.650: xcompcap: [window-capture: 'window_capture'] update settings:
+19:23:47.650: 	title: Dyson Sphere Program
+19:23:47.650: 	class: steam_app_1366540
+19:23:47.650: 	Bit depth: 24
+19:23:47.650: 	Found proper GLXFBConfig (in 9): yes
+19:23:47.650: 
+19:23:47.652: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:23:47.684: xcompcap: [window-capture: 'window_capture'] update settings:
+19:23:47.684: 	title: Dyson Sphere Program
+19:23:47.684: 	class: steam_app_1366540
+19:23:47.684: 	Bit depth: 24
+19:23:47.684: 	Found proper GLXFBConfig (in 9): yes
+19:23:47.684: 
+19:23:47.686: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:23:47.736: xcompcap: [window-capture: 'window_capture'] update settings:
+19:23:47.736: 	title: Dyson Sphere Program
+19:23:47.736: 	class: steam_app_1366540
+19:23:47.736: 	Bit depth: 24
+19:23:47.736: 	Found proper GLXFBConfig (in 9): yes
+19:23:47.736: 
+19:32:35.208: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:35.275: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:35.275: 	title: Dyson Sphere Program
+19:32:35.275: 	class: steam_app_1366540
+19:32:35.275: 	Bit depth: 24
+19:32:35.275: 	Found proper GLXFBConfig (in 9): yes
+19:32:35.275: 
+19:32:42.957: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:42.997: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:42.997: 	title: Dyson Sphere Program
+19:32:42.997: 	class: steam_app_1366540
+19:32:42.997: 	Bit depth: 24
+19:32:42.997: 	Found proper GLXFBConfig (in 9): yes
+19:32:42.997: 
+19:32:43.024: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:43.033: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:43.033: 	title: Dyson Sphere Program
+19:32:43.033: 	class: steam_app_1366540
+19:32:43.033: 	Bit depth: 24
+19:32:43.033: 	Found proper GLXFBConfig (in 9): yes
+19:32:43.033: 
+19:32:46.674: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:46.700: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:46.700: 	title: Dyson Sphere Program
+19:32:46.700: 	class: steam_app_1366540
+19:32:46.700: 	Bit depth: 24
+19:32:46.700: 	Found proper GLXFBConfig (in 9): yes
+19:32:46.700: 
+19:32:51.540: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:51.608: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:51.608: 	title: Dyson Sphere Program
+19:32:51.608: 	class: steam_app_1366540
+19:32:51.608: 	Bit depth: 24
+19:32:51.608: 	Found proper GLXFBConfig (in 9): yes
+19:32:51.608: 
+19:32:51.612: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:51.674: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:51.674: 	title: Dyson Sphere Program
+19:32:51.674: 	class: steam_app_1366540
+19:32:51.674: 	Bit depth: 24
+19:32:51.674: 	Found proper GLXFBConfig (in 9): yes
+19:32:51.674: 
+19:32:53.107: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:32:53.145: xcompcap: [window-capture: 'window_capture'] update settings:
+19:32:53.145: 	title: Dyson Sphere Program
+19:32:53.145: 	class: steam_app_1366540
+19:32:53.145: 	Bit depth: 24
+19:32:53.145: 	Found proper GLXFBConfig (in 9): yes
+19:32:53.145: 
+19:33:45.324: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:33:45.369: xcompcap: [window-capture: 'window_capture'] update settings:
+19:33:45.369: 	title: Dyson Sphere Program
+19:33:45.369: 	class: steam_app_1366540
+19:33:45.369: 	Bit depth: 24
+19:33:45.369: 	Found proper GLXFBConfig (in 9): yes
+19:33:45.369: 
+19:33:45.390: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:33:45.397: xcompcap: [window-capture: 'window_capture'] update settings:
+19:33:45.397: 	title: Dyson Sphere Program
+19:33:45.397: 	class: steam_app_1366540
+19:33:45.397: 	Bit depth: 24
+19:33:45.397: 	Found proper GLXFBConfig (in 9): yes
+19:33:45.397: 
+19:33:57.340: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:33:57.372: xcompcap: [window-capture: 'window_capture'] update settings:
+19:33:57.372: 	title: Dyson Sphere Program
+19:33:57.372: 	class: steam_app_1366540
+19:33:57.372: 	Bit depth: 24
+19:33:57.372: 	Found proper GLXFBConfig (in 9): yes
+19:33:57.372: 
+19:34:18.691: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:18.739: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:18.739: 	title: Dyson Sphere Program
+19:34:18.739: 	class: steam_app_1366540
+19:34:18.739: 	Bit depth: 24
+19:34:18.739: 	Found proper GLXFBConfig (in 9): yes
+19:34:18.739: 
+19:34:18.741: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:18.752: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:18.752: 	title: Dyson Sphere Program
+19:34:18.752: 	class: steam_app_1366540
+19:34:18.752: 	Bit depth: 24
+19:34:18.752: 	Found proper GLXFBConfig (in 9): yes
+19:34:18.752: 
+19:34:26.607: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:26.658: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:26.658: 	title: Dyson Sphere Program
+19:34:26.658: 	class: steam_app_1366540
+19:34:26.658: 	Bit depth: 24
+19:34:26.658: 	Found proper GLXFBConfig (in 9): yes
+19:34:26.658: 
+19:34:34.440: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:34.485: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:34.485: 	title: Dyson Sphere Program
+19:34:34.485: 	class: steam_app_1366540
+19:34:34.485: 	Bit depth: 24
+19:34:34.485: 	Found proper GLXFBConfig (in 9): yes
+19:34:34.485: 
+19:34:34.487: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:34.490: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:34.490: 	title: Dyson Sphere Program
+19:34:34.490: 	class: steam_app_1366540
+19:34:34.490: 	Bit depth: 24
+19:34:34.490: 	Found proper GLXFBConfig (in 9): yes
+19:34:34.490: 
+19:34:41.740: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:41.818: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:41.818: 	title: Dyson Sphere Program
+19:34:41.818: 	class: steam_app_1366540
+19:34:41.818: 	Bit depth: 24
+19:34:41.818: 	Found proper GLXFBConfig (in 9): yes
+19:34:41.818: 
+19:34:59.757: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:59.804: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:59.804: 	title: Dyson Sphere Program
+19:34:59.804: 	class: steam_app_1366540
+19:34:59.804: 	Bit depth: 24
+19:34:59.804: 	Found proper GLXFBConfig (in 9): yes
+19:34:59.804: 
+19:34:59.824: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:34:59.827: xcompcap: [window-capture: 'window_capture'] update settings:
+19:34:59.827: 	title: Dyson Sphere Program
+19:34:59.827: 	class: steam_app_1366540
+19:34:59.827: 	Bit depth: 24
+19:34:59.827: 	Found proper GLXFBConfig (in 9): yes
+19:34:59.827: 
+19:37:38.657: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:37:38.725: xcompcap: [window-capture: 'window_capture'] update settings:
+19:37:38.725: 	title: Dyson Sphere Program
+19:37:38.725: 	class: steam_app_1366540
+19:37:38.725: 	Bit depth: 24
+19:37:38.725: 	Found proper GLXFBConfig (in 9): yes
+19:37:38.725: 
+19:37:40.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:37:40.423: xcompcap: [window-capture: 'window_capture'] update settings:
+19:37:40.423: 	title: Dyson Sphere Program
+19:37:40.423: 	class: steam_app_1366540
+19:37:40.423: 	Bit depth: 24
+19:37:40.423: 	Found proper GLXFBConfig (in 9): yes
+19:37:40.423: 
+19:37:40.427: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:37:40.436: xcompcap: [window-capture: 'window_capture'] update settings:
+19:37:40.436: 	title: Dyson Sphere Program
+19:37:40.436: 	class: steam_app_1366540
+19:37:40.436: 	Bit depth: 24
+19:37:40.436: 	Found proper GLXFBConfig (in 9): yes
+19:37:40.436: 
+19:38:28.190: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:38:28.221: xcompcap: [window-capture: 'window_capture'] update settings:
+19:38:28.221: 	title: Dyson Sphere Program
+19:38:28.221: 	class: steam_app_1366540
+19:38:28.221: 	Bit depth: 24
+19:38:28.221: 	Found proper GLXFBConfig (in 9): yes
+19:38:28.221: 
+19:38:30.440: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:38:30.503: xcompcap: [window-capture: 'window_capture'] update settings:
+19:38:30.503: 	title: Dyson Sphere Program
+19:38:30.503: 	class: steam_app_1366540
+19:38:30.503: 	Bit depth: 24
+19:38:30.503: 	Found proper GLXFBConfig (in 9): yes
+19:38:30.503: 
+19:38:30.506: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:38:30.530: xcompcap: [window-capture: 'window_capture'] update settings:
+19:38:30.530: 	title: Dyson Sphere Program
+19:38:30.530: 	class: steam_app_1366540
+19:38:30.530: 	Bit depth: 24
+19:38:30.530: 	Found proper GLXFBConfig (in 9): yes
+19:38:30.530: 
+19:39:46.740: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:46.776: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:46.776: 	title: Dyson Sphere Program
+19:39:46.776: 	class: steam_app_1366540
+19:39:46.776: 	Bit depth: 24
+19:39:46.776: 	Found proper GLXFBConfig (in 9): yes
+19:39:46.776: 
+19:39:48.074: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:48.115: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:48.115: 	title: Dyson Sphere Program
+19:39:48.115: 	class: steam_app_1366540
+19:39:48.115: 	Bit depth: 24
+19:39:48.115: 	Found proper GLXFBConfig (in 9): yes
+19:39:48.115: 
+19:39:48.124: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:48.132: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:48.132: 	title: Dyson Sphere Program
+19:39:48.132: 	class: steam_app_1366540
+19:39:48.132: 	Bit depth: 24
+19:39:48.132: 	Found proper GLXFBConfig (in 9): yes
+19:39:48.132: 
+19:39:49.707: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:49.734: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:49.734: 	title: Dyson Sphere Program
+19:39:49.734: 	class: steam_app_1366540
+19:39:49.734: 	Bit depth: 24
+19:39:49.734: 	Found proper GLXFBConfig (in 9): yes
+19:39:49.734: 
+19:39:50.190: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:50.257: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:50.257: 	title: Dyson Sphere Program
+19:39:50.257: 	class: steam_app_1366540
+19:39:50.257: 	Bit depth: 24
+19:39:50.257: 	Found proper GLXFBConfig (in 9): yes
+19:39:50.257: 
+19:39:50.261: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:50.285: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:50.285: 	title: Dyson Sphere Program
+19:39:50.285: 	class: steam_app_1366540
+19:39:50.285: 	Bit depth: 24
+19:39:50.285: 	Found proper GLXFBConfig (in 9): yes
+19:39:50.285: 
+19:39:56.140: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:56.184: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:56.184: 	title: Dyson Sphere Program
+19:39:56.184: 	class: steam_app_1366540
+19:39:56.184: 	Bit depth: 24
+19:39:56.184: 	Found proper GLXFBConfig (in 9): yes
+19:39:56.184: 
+19:39:56.840: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:56.882: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:56.882: 	title: Dyson Sphere Program
+19:39:56.882: 	class: steam_app_1366540
+19:39:56.882: 	Bit depth: 24
+19:39:56.882: 	Found proper GLXFBConfig (in 9): yes
+19:39:56.882: 
+19:39:56.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:39:56.918: xcompcap: [window-capture: 'window_capture'] update settings:
+19:39:56.918: 	title: Dyson Sphere Program
+19:39:56.918: 	class: steam_app_1366540
+19:39:56.918: 	Bit depth: 24
+19:39:56.918: 	Found proper GLXFBConfig (in 9): yes
+19:39:56.918: 
+19:43:21.424: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:21.496: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:21.496: 	title: Dyson Sphere Program
+19:43:21.496: 	class: steam_app_1366540
+19:43:21.496: 	Bit depth: 24
+19:43:21.496: 	Found proper GLXFBConfig (in 9): yes
+19:43:21.496: 
+19:43:31.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:31.407: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:31.407: 	title: Dyson Sphere Program
+19:43:31.407: 	class: steam_app_1366540
+19:43:31.407: 	Bit depth: 24
+19:43:31.407: 	Found proper GLXFBConfig (in 9): yes
+19:43:31.407: 
+19:43:31.409: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:31.414: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:31.414: 	title: Dyson Sphere Program
+19:43:31.414: 	class: steam_app_1366540
+19:43:31.414: 	Bit depth: 24
+19:43:31.414: 	Found proper GLXFBConfig (in 9): yes
+19:43:31.414: 
+19:43:32.507: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:32.542: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:32.542: 	title: Dyson Sphere Program
+19:43:32.542: 	class: steam_app_1366540
+19:43:32.542: 	Bit depth: 24
+19:43:32.542: 	Found proper GLXFBConfig (in 9): yes
+19:43:32.542: 
+19:43:33.690: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:33.750: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:33.750: 	title: Dyson Sphere Program
+19:43:33.750: 	class: steam_app_1366540
+19:43:33.750: 	Bit depth: 24
+19:43:33.750: 	Found proper GLXFBConfig (in 9): yes
+19:43:33.750: 
+19:43:47.574: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:47.652: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:47.652: 	title: Dyson Sphere Program
+19:43:47.652: 	class: steam_app_1366540
+19:43:47.652: 	Bit depth: 24
+19:43:47.652: 	Found proper GLXFBConfig (in 9): yes
+19:43:47.652: 
+19:43:49.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:49.946: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:49.946: 	title: Dyson Sphere Program
+19:43:49.946: 	class: steam_app_1366540
+19:43:49.946: 	Bit depth: 24
+19:43:49.946: 	Found proper GLXFBConfig (in 9): yes
+19:43:49.946: 
+19:43:49.949: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:43:49.964: xcompcap: [window-capture: 'window_capture'] update settings:
+19:43:49.964: 	title: Dyson Sphere Program
+19:43:49.964: 	class: steam_app_1366540
+19:43:49.964: 	Bit depth: 24
+19:43:49.964: 	Found proper GLXFBConfig (in 9): yes
+19:43:49.964: 
+19:52:24.657: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:52:24.698: xcompcap: [window-capture: 'window_capture'] update settings:
+19:52:24.698: 	title: Dyson Sphere Program
+19:52:24.698: 	class: steam_app_1366540
+19:52:24.698: 	Bit depth: 24
+19:52:24.698: 	Found proper GLXFBConfig (in 9): yes
+19:52:24.698: 
+19:52:35.491: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:52:35.534: xcompcap: [window-capture: 'window_capture'] update settings:
+19:52:35.534: 	title: Dyson Sphere Program
+19:52:35.534: 	class: steam_app_1366540
+19:52:35.534: 	Bit depth: 24
+19:52:35.534: 	Found proper GLXFBConfig (in 9): yes
+19:52:35.534: 
+19:52:35.557: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:52:35.573: xcompcap: [window-capture: 'window_capture'] update settings:
+19:52:35.573: 	title: Dyson Sphere Program
+19:52:35.573: 	class: steam_app_1366540
+19:52:35.573: 	Bit depth: 24
+19:52:35.573: 	Found proper GLXFBConfig (in 9): yes
+19:52:35.573: 
+19:53:38.891: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:53:38.914: xcompcap: [window-capture: 'window_capture'] update settings:
+19:53:38.914: 	title: Dyson Sphere Program
+19:53:38.914: 	class: steam_app_1366540
+19:53:38.914: 	Bit depth: 24
+19:53:38.914: 	Found proper GLXFBConfig (in 9): yes
+19:53:38.914: 
+19:53:39.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:53:39.385: xcompcap: [window-capture: 'window_capture'] update settings:
+19:53:39.385: 	title: Dyson Sphere Program
+19:53:39.385: 	class: steam_app_1366540
+19:53:39.385: 	Bit depth: 24
+19:53:39.385: 	Found proper GLXFBConfig (in 9): yes
+19:53:39.385: 
+19:53:39.390: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+19:53:39.427: xcompcap: [window-capture: 'window_capture'] update settings:
+19:53:39.427: 	title: Dyson Sphere Program
+19:53:39.427: 	class: steam_app_1366540
+19:53:39.427: 	Bit depth: 24
+19:53:39.427: 	Found proper GLXFBConfig (in 9): yes
+19:53:39.427: 
+20:03:02.224: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:02.272: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:02.272: 	title: Dyson Sphere Program
+20:03:02.272: 	class: steam_app_1366540
+20:03:02.272: 	Bit depth: 24
+20:03:02.272: 	Found proper GLXFBConfig (in 9): yes
+20:03:02.272: 
+20:03:11.207: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:11.258: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:11.258: 	title: Dyson Sphere Program
+20:03:11.258: 	class: steam_app_1366540
+20:03:11.258: 	Bit depth: 24
+20:03:11.258: 	Found proper GLXFBConfig (in 9): yes
+20:03:11.258: 
+20:03:11.260: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:11.285: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:11.285: 	title: Dyson Sphere Program
+20:03:11.285: 	class: steam_app_1366540
+20:03:11.285: 	Bit depth: 24
+20:03:11.285: 	Found proper GLXFBConfig (in 9): yes
+20:03:11.285: 
+20:03:11.457: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:11.510: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:11.510: 	title: Dyson Sphere Program
+20:03:11.510: 	class: steam_app_1366540
+20:03:11.510: 	Bit depth: 24
+20:03:11.510: 	Found proper GLXFBConfig (in 9): yes
+20:03:11.510: 
+20:03:48.407: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:48.503: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:48.503: 	title: Dyson Sphere Program
+20:03:48.503: 	class: steam_app_1366540
+20:03:48.503: 	Bit depth: 24
+20:03:48.503: 	Found proper GLXFBConfig (in 9): yes
+20:03:48.503: 
+20:03:48.506: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:48.537: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:48.537: 	title: Dyson Sphere Program
+20:03:48.537: 	class: steam_app_1366540
+20:03:48.537: 	Bit depth: 24
+20:03:48.537: 	Found proper GLXFBConfig (in 9): yes
+20:03:48.537: 
+20:03:49.140: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:49.211: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:49.211: 	title: Dyson Sphere Program
+20:03:49.211: 	class: steam_app_1366540
+20:03:49.211: 	Bit depth: 24
+20:03:49.211: 	Found proper GLXFBConfig (in 9): yes
+20:03:49.211: 
+20:03:49.340: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:49.378: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:49.378: 	title: Dyson Sphere Program
+20:03:49.378: 	class: steam_app_1366540
+20:03:49.378: 	Bit depth: 24
+20:03:49.378: 	Found proper GLXFBConfig (in 9): yes
+20:03:49.378: 
+20:03:49.380: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:03:49.390: xcompcap: [window-capture: 'window_capture'] update settings:
+20:03:49.390: 	title: Dyson Sphere Program
+20:03:49.390: 	class: steam_app_1366540
+20:03:49.390: 	Bit depth: 24
+20:03:49.390: 	Found proper GLXFBConfig (in 9): yes
+20:03:49.390: 
+20:04:01.390: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:01.476: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:01.476: 	title: Dyson Sphere Program
+20:04:01.476: 	class: steam_app_1366540
+20:04:01.476: 	Bit depth: 24
+20:04:01.476: 	Found proper GLXFBConfig (in 9): yes
+20:04:01.476: 
+20:04:05.174: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:05.216: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:05.216: 	title: Dyson Sphere Program
+20:04:05.216: 	class: steam_app_1366540
+20:04:05.216: 	Bit depth: 24
+20:04:05.216: 	Found proper GLXFBConfig (in 9): yes
+20:04:05.216: 
+20:04:05.218: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:05.223: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:05.223: 	title: Dyson Sphere Program
+20:04:05.223: 	class: steam_app_1366540
+20:04:05.223: 	Bit depth: 24
+20:04:05.223: 	Found proper GLXFBConfig (in 9): yes
+20:04:05.223: 
+20:04:17.490: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:17.569: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:17.569: 	title: Dyson Sphere Program
+20:04:17.569: 	class: steam_app_1366540
+20:04:17.569: 	Bit depth: 24
+20:04:17.569: 	Found proper GLXFBConfig (in 9): yes
+20:04:17.569: 
+20:04:30.324: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:30.371: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:30.371: 	title: Dyson Sphere Program
+20:04:30.371: 	class: steam_app_1366540
+20:04:30.371: 	Bit depth: 24
+20:04:30.371: 	Found proper GLXFBConfig (in 9): yes
+20:04:30.371: 
+20:04:30.390: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:30.392: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:30.392: 	title: Dyson Sphere Program
+20:04:30.392: 	class: steam_app_1366540
+20:04:30.392: 	Bit depth: 24
+20:04:30.392: 	Found proper GLXFBConfig (in 9): yes
+20:04:30.392: 
+20:04:45.507: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:04:45.550: xcompcap: [window-capture: 'window_capture'] update settings:
+20:04:45.550: 	title: Dyson Sphere Program
+20:04:45.550: 	class: steam_app_1366540
+20:04:45.550: 	Bit depth: 24
+20:04:45.550: 	Found proper GLXFBConfig (in 9): yes
+20:04:45.550: 
+20:05:05.357: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:05:05.394: xcompcap: [window-capture: 'window_capture'] update settings:
+20:05:05.394: 	title: Dyson Sphere Program
+20:05:05.394: 	class: steam_app_1366540
+20:05:05.394: 	Bit depth: 24
+20:05:05.394: 	Found proper GLXFBConfig (in 9): yes
+20:05:05.394: 
+20:05:05.398: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:05:05.400: xcompcap: [window-capture: 'window_capture'] update settings:
+20:05:05.400: 	title: Dyson Sphere Program
+20:05:05.400: 	class: steam_app_1366540
+20:05:05.400: 	Bit depth: 24
+20:05:05.400: 	Found proper GLXFBConfig (in 9): yes
+20:05:05.400: 
+20:09:03.990: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:09:04.025: xcompcap: [window-capture: 'window_capture'] update settings:
+20:09:04.025: 	title: Dyson Sphere Program
+20:09:04.025: 	class: steam_app_1366540
+20:09:04.025: 	Bit depth: 24
+20:09:04.025: 	Found proper GLXFBConfig (in 9): yes
+20:09:04.025: 
+20:09:05.540: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:09:05.577: xcompcap: [window-capture: 'window_capture'] update settings:
+20:09:05.577: 	title: Dyson Sphere Program
+20:09:05.577: 	class: steam_app_1366540
+20:09:05.577: 	Bit depth: 24
+20:09:05.577: 	Found proper GLXFBConfig (in 9): yes
+20:09:05.577: 
+20:09:05.590: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:09:05.593: xcompcap: [window-capture: 'window_capture'] update settings:
+20:09:05.593: 	title: Dyson Sphere Program
+20:09:05.593: 	class: steam_app_1366540
+20:09:05.593: 	Bit depth: 24
+20:09:05.593: 	Found proper GLXFBConfig (in 9): yes
+20:09:05.593: 
+20:27:22.757: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:27:22.768: xcompcap: [window-capture: 'window_capture'] update settings:
+20:27:22.768: 	title: Dyson Sphere Program
+20:27:22.768: 	class: steam_app_1366540
+20:27:22.768: 	Bit depth: 24
+20:27:22.768: 	Found proper GLXFBConfig (in 9): yes
+20:27:22.768: 
+20:27:27.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:27:27.388: xcompcap: [window-capture: 'window_capture'] update settings:
+20:27:27.388: 	title: Dyson Sphere Program
+20:27:27.388: 	class: steam_app_1366540
+20:27:27.388: 	Bit depth: 24
+20:27:27.388: 	Found proper GLXFBConfig (in 9): yes
+20:27:27.388: 
+20:28:36.090: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:36.100: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:36.100: 	title: Dyson Sphere Program
+20:28:36.100: 	class: steam_app_1366540
+20:28:36.100: 	Bit depth: 24
+20:28:36.100: 	Found proper GLXFBConfig (in 9): yes
+20:28:36.100: 
+20:28:36.107: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:36.118: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:36.118: 	title: Dyson Sphere Program
+20:28:36.118: 	class: steam_app_1366540
+20:28:36.118: 	Bit depth: 24
+20:28:36.118: 	Found proper GLXFBConfig (in 9): yes
+20:28:36.118: 
+20:28:36.607: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:36.613: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:36.613: 	title: Dyson Sphere Program
+20:28:36.613: 	class: steam_app_1366540
+20:28:36.613: 	Bit depth: 24
+20:28:36.613: 	Found proper GLXFBConfig (in 9): yes
+20:28:36.613: 
+20:28:36.840: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:36.853: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:36.853: 	title: Dyson Sphere Program
+20:28:36.853: 	class: steam_app_1366540
+20:28:36.853: 	Bit depth: 24
+20:28:36.853: 	Found proper GLXFBConfig (in 9): yes
+20:28:36.853: 
+20:28:42.557: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:42.583: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:42.583: 	title: Dyson Sphere Program
+20:28:42.583: 	class: steam_app_1366540
+20:28:42.583: 	Bit depth: 24
+20:28:42.583: 	Found proper GLXFBConfig (in 9): yes
+20:28:42.583: 
+20:28:42.585: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:42.588: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:42.588: 	title: Dyson Sphere Program
+20:28:42.588: 	class: steam_app_1366540
+20:28:42.588: 	Bit depth: 24
+20:28:42.588: 	Found proper GLXFBConfig (in 9): yes
+20:28:42.588: 
+20:28:43.274: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:43.285: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:43.285: 	title: Dyson Sphere Program
+20:28:43.285: 	class: steam_app_1366540
+20:28:43.285: 	Bit depth: 24
+20:28:43.285: 	Found proper GLXFBConfig (in 9): yes
+20:28:43.285: 
+20:28:44.440: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:28:44.505: xcompcap: [window-capture: 'window_capture'] update settings:
+20:28:44.505: 	title: Dyson Sphere Program
+20:28:44.505: 	class: steam_app_1366540
+20:28:44.505: 	Bit depth: 24
+20:28:44.505: 	Found proper GLXFBConfig (in 9): yes
+20:28:44.505: 
+20:30:18.424: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:30:18.465: xcompcap: [window-capture: 'window_capture'] update settings:
+20:30:18.465: 	title: Dyson Sphere Program
+20:30:18.465: 	class: steam_app_1366540
+20:30:18.465: 	Bit depth: 24
+20:30:18.465: 	Found proper GLXFBConfig (in 9): yes
+20:30:18.465: 
+20:30:18.890: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:30:18.902: xcompcap: [window-capture: 'window_capture'] update settings:
+20:30:18.902: 	title: Dyson Sphere Program
+20:30:18.902: 	class: steam_app_1366540
+20:30:18.902: 	Bit depth: 24
+20:30:18.902: 	Found proper GLXFBConfig (in 9): yes
+20:30:18.902: 
+20:30:18.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:30:18.917: xcompcap: [window-capture: 'window_capture'] update settings:
+20:30:18.917: 	title: Dyson Sphere Program
+20:30:18.917: 	class: steam_app_1366540
+20:30:18.917: 	Bit depth: 24
+20:30:18.917: 	Found proper GLXFBConfig (in 9): yes
+20:30:18.917: 
+20:40:12.774: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:12.813: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:12.813: 	title: Dyson Sphere Program
+20:40:12.813: 	class: steam_app_1366540
+20:40:12.813: 	Bit depth: 24
+20:40:12.813: 	Found proper GLXFBConfig (in 9): yes
+20:40:12.813: 
+20:40:31.707: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:31.730: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:31.730: 	title: Dyson Sphere Program
+20:40:31.730: 	class: steam_app_1366540
+20:40:31.730: 	Bit depth: 24
+20:40:31.730: 	Found proper GLXFBConfig (in 9): yes
+20:40:31.730: 
+20:40:31.732: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:31.765: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:31.765: 	title: Dyson Sphere Program
+20:40:31.765: 	class: steam_app_1366540
+20:40:31.765: 	Bit depth: 24
+20:40:31.765: 	Found proper GLXFBConfig (in 9): yes
+20:40:31.765: 
+20:40:55.557: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:55.595: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:55.595: 	title: Dyson Sphere Program
+20:40:55.595: 	class: steam_app_1366540
+20:40:55.595: 	Bit depth: 24
+20:40:55.595: 	Found proper GLXFBConfig (in 9): yes
+20:40:55.595: 
+20:40:58.140: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:58.196: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:58.196: 	title: Dyson Sphere Program
+20:40:58.196: 	class: steam_app_1366540
+20:40:58.196: 	Bit depth: 24
+20:40:58.196: 	Found proper GLXFBConfig (in 9): yes
+20:40:58.196: 
+20:40:58.197: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:58.200: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:58.200: 	title: Dyson Sphere Program
+20:40:58.200: 	class: steam_app_1366540
+20:40:58.200: 	Bit depth: 24
+20:40:58.200: 	Found proper GLXFBConfig (in 9): yes
+20:40:58.200: 
+20:40:58.207: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:40:58.214: xcompcap: [window-capture: 'window_capture'] update settings:
+20:40:58.214: 	title: Dyson Sphere Program
+20:40:58.214: 	class: steam_app_1366540
+20:40:58.214: 	Bit depth: 24
+20:40:58.214: 	Found proper GLXFBConfig (in 9): yes
+20:40:58.214: 
+20:43:49.774: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:43:49.836: xcompcap: [window-capture: 'window_capture'] update settings:
+20:43:49.836: 	title: Dyson Sphere Program
+20:43:49.836: 	class: steam_app_1366540
+20:43:49.836: 	Bit depth: 24
+20:43:49.836: 	Found proper GLXFBConfig (in 9): yes
+20:43:49.836: 
+20:44:04.074: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:44:04.095: xcompcap: [window-capture: 'window_capture'] update settings:
+20:44:04.095: 	title: Dyson Sphere Program
+20:44:04.095: 	class: steam_app_1366540
+20:44:04.095: 	Bit depth: 24
+20:44:04.095: 	Found proper GLXFBConfig (in 9): yes
+20:44:04.095: 
+20:44:04.098: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:44:04.111: xcompcap: [window-capture: 'window_capture'] update settings:
+20:44:04.111: 	title: Dyson Sphere Program
+20:44:04.111: 	class: steam_app_1366540
+20:44:04.111: 	Bit depth: 24
+20:44:04.111: 	Found proper GLXFBConfig (in 9): yes
+20:44:04.111: 
+20:44:04.157: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:44:04.179: xcompcap: [window-capture: 'window_capture'] update settings:
+20:44:04.179: 	title: Dyson Sphere Program
+20:44:04.179: 	class: steam_app_1366540
+20:44:04.179: 	Bit depth: 24
+20:44:04.179: 	Found proper GLXFBConfig (in 9): yes
+20:44:04.179: 
+20:44:06.640: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:44:06.712: xcompcap: [window-capture: 'window_capture'] update settings:
+20:44:06.712: 	title: Dyson Sphere Program
+20:44:06.712: 	class: steam_app_1366540
+20:44:06.712: 	Bit depth: 24
+20:44:06.712: 	Found proper GLXFBConfig (in 9): yes
+20:44:06.712: 
+20:44:18.624: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:44:18.668: xcompcap: [window-capture: 'window_capture'] update settings:
+20:44:18.668: 	title: Dyson Sphere Program
+20:44:18.668: 	class: steam_app_1366540
+20:44:18.668: 	Bit depth: 24
+20:44:18.668: 	Found proper GLXFBConfig (in 9): yes
+20:44:18.668: 
+20:46:47.374: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:46:47.384: xcompcap: [window-capture: 'window_capture'] update settings:
+20:46:47.384: 	title: Dyson Sphere Program
+20:46:47.384: 	class: steam_app_1366540
+20:46:47.384: 	Bit depth: 24
+20:46:47.384: 	Found proper GLXFBConfig (in 9): yes
+20:46:47.384: 
+20:46:47.407: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:46:47.428: xcompcap: [window-capture: 'window_capture'] update settings:
+20:46:47.428: 	title: Dyson Sphere Program
+20:46:47.428: 	class: steam_app_1366540
+20:46:47.428: 	Bit depth: 24
+20:46:47.428: 	Found proper GLXFBConfig (in 9): yes
+20:46:47.428: 
+20:46:47.430: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:46:47.433: xcompcap: [window-capture: 'window_capture'] update settings:
+20:46:47.433: 	title: Dyson Sphere Program
+20:46:47.433: 	class: steam_app_1366540
+20:46:47.433: 	Bit depth: 24
+20:46:47.433: 	Found proper GLXFBConfig (in 9): yes
+20:46:47.433: 
+20:46:48.740: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:46:48.742: xcompcap: [window-capture: 'window_capture'] update settings:
+20:46:48.742: 	title: Dyson Sphere Program
+20:46:48.742: 	class: steam_app_1366540
+20:46:48.742: 	Bit depth: 24
+20:46:48.742: 	Found proper GLXFBConfig (in 9): yes
+20:46:48.742: 
+20:46:52.107: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:46:52.160: xcompcap: [window-capture: 'window_capture'] update settings:
+20:46:52.160: 	title: Dyson Sphere Program
+20:46:52.160: 	class: steam_app_1366540
+20:46:52.160: 	Bit depth: 24
+20:46:52.160: 	Found proper GLXFBConfig (in 9): yes
+20:46:52.160: 
+20:46:52.164: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:46:52.194: xcompcap: [window-capture: 'window_capture'] update settings:
+20:46:52.194: 	title: Dyson Sphere Program
+20:46:52.194: 	class: steam_app_1366540
+20:46:52.194: 	Bit depth: 24
+20:46:52.194: 	Found proper GLXFBConfig (in 9): yes
+20:46:52.194: 
+20:49:05.140: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:49:05.215: xcompcap: [window-capture: 'window_capture'] update settings:
+20:49:05.215: 	title: Dyson Sphere Program
+20:49:05.215: 	class: steam_app_1366540
+20:49:05.215: 	Bit depth: 24
+20:49:05.215: 	Found proper GLXFBConfig (in 9): yes
+20:49:05.215: 
+20:49:06.474: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:49:06.550: xcompcap: [window-capture: 'window_capture'] update settings:
+20:49:06.550: 	title: Dyson Sphere Program
+20:49:06.550: 	class: steam_app_1366540
+20:49:06.550: 	Bit depth: 24
+20:49:06.550: 	Found proper GLXFBConfig (in 9): yes
+20:49:06.550: 
+20:55:46.757: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:55:46.763: xcompcap: [window-capture: 'window_capture'] update settings:
+20:55:46.763: 	title: Dyson Sphere Program
+20:55:46.763: 	class: steam_app_1366540
+20:55:46.763: 	Bit depth: 24
+20:55:46.763: 	Found proper GLXFBConfig (in 9): yes
+20:55:46.763: 
+20:55:46.924: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+20:55:46.942: xcompcap: [window-capture: 'window_capture'] update settings:
+20:55:46.942: 	title: Dyson Sphere Program
+20:55:46.942: 	class: steam_app_1366540
+20:55:46.942: 	Bit depth: 24
+20:55:46.942: 	Found proper GLXFBConfig (in 9): yes
+20:55:46.942: 
+21:07:01.057: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:07:01.138: xcompcap: [window-capture: 'window_capture'] update settings:
+21:07:01.138: 	title: Dyson Sphere Program
+21:07:01.138: 	class: steam_app_1366540
+21:07:01.138: 	Bit depth: 24
+21:07:01.138: 	Found proper GLXFBConfig (in 9): yes
+21:07:01.138: 
+21:07:08.707: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:07:08.756: xcompcap: [window-capture: 'window_capture'] update settings:
+21:07:08.756: 	title: Dyson Sphere Program
+21:07:08.756: 	class: steam_app_1366540
+21:07:08.756: 	Bit depth: 24
+21:07:08.756: 	Found proper GLXFBConfig (in 9): yes
+21:07:08.756: 
+21:07:08.760: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:07:08.766: xcompcap: [window-capture: 'window_capture'] update settings:
+21:07:08.766: 	title: Dyson Sphere Program
+21:07:08.766: 	class: steam_app_1366540
+21:07:08.766: 	Bit depth: 24
+21:07:08.766: 	Found proper GLXFBConfig (in 9): yes
+21:07:08.766: 
+21:07:35.257: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:07:35.302: xcompcap: [window-capture: 'window_capture'] update settings:
+21:07:35.302: 	title: Dyson Sphere Program
+21:07:35.302: 	class: steam_app_1366540
+21:07:35.302: 	Bit depth: 24
+21:07:35.302: 	Found proper GLXFBConfig (in 9): yes
+21:07:35.302: 
+21:07:44.907: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:07:44.953: xcompcap: [window-capture: 'window_capture'] update settings:
+21:07:44.953: 	title: Dyson Sphere Program
+21:07:44.953: 	class: steam_app_1366540
+21:07:44.953: 	Bit depth: 24
+21:07:44.953: 	Found proper GLXFBConfig (in 9): yes
+21:07:44.953: 
+21:07:44.955: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:07:44.974: xcompcap: [window-capture: 'window_capture'] update settings:
+21:07:44.974: 	title: Dyson Sphere Program
+21:07:44.974: 	class: steam_app_1366540
+21:07:44.974: 	Bit depth: 24
+21:07:44.974: 	Found proper GLXFBConfig (in 9): yes
+21:07:44.974: 
+21:16:13.023: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:16:13.064: xcompcap: [window-capture: 'window_capture'] update settings:
+21:16:13.064: 	title: Dyson Sphere Program
+21:16:13.064: 	class: steam_app_1366540
+21:16:13.064: 	Bit depth: 24
+21:16:13.064: 	Found proper GLXFBConfig (in 9): yes
+21:16:13.064: 
+21:16:19.314: ==== Shutting down ==================================================
+21:16:19.381: pulse-input: Stopped recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor'
+21:16:19.381: pulse-input: Got 366654 packets with 439984800 frames
+21:16:19.382: pulse-input: Stopped recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+21:16:19.382: pulse-input: Got 366655 packets with 439986000 frames
+21:16:19.382: xcompcap: cleanup glXReleaseTexImageEXT failed: GLXBadPixmap
+21:16:19.424: All scene data cleared
+21:16:19.424: ------------------------------------------------
+21:16:19.465: Output 'virtualcam_output': stopping
+21:16:19.465: Output 'virtualcam_output': Total frames output: 549612
+21:16:19.465: Output 'virtualcam_output': Total drawn frames: 549266 (549614 attempted)
+21:16:19.465: Output 'virtualcam_output': Number of lagged frames due to rendering lag/stalls: 348 (0.1%)
+21:16:19.466: Virtual camera stopped
+21:16:19.534: [Scripting] Total detached callbacks: 0
+21:16:19.534: Freeing OBS context data
+21:16:19.558: == Profiler Results =============================
+21:16:19.558: run_program_init: 718.907 ms
+21:16:19.558:  ┣OBSApp::AppInit: 3.94 ms
+21:16:19.558:  ┃ ┗OBSApp::InitLocale: 2.173 ms
+21:16:19.558:  ┗OBSApp::OBSInit: 673.448 ms
+21:16:19.558:    ┣obs_startup: 19.707 ms
+21:16:19.558:    ┗OBSBasic::OBSInit: 604.69 ms
+21:16:19.558:      ┣OBSBasic::InitBasicConfig: 0.057 ms
+21:16:19.558:      ┣OBSBasic::ResetAudio: 0.121 ms
+21:16:19.558:      ┣OBSBasic::ResetVideo: 176.942 ms
+21:16:19.558:      ┣OBSBasic::InitOBSCallbacks: 0.003 ms
+21:16:19.558:      ┣OBSBasic::InitHotkeys: 0.027 ms
+21:16:19.558:      ┣obs_load_all_modules: 171.26 ms
+21:16:19.558:      ┃ ┣obs_init_module(decklink-captions.so): 0.027 ms
+21:16:19.558:      ┃ ┣obs_init_module(decklink-ouput-ui.so): 0.634 ms
+21:16:19.558:      ┃ ┣obs_init_module(frontend-tools.so): 36.652 ms
+21:16:19.558:      ┃ ┣obs_init_module(image-source.so): 0.004 ms
+21:16:19.558:      ┃ ┣obs_init_module(linux-alsa.so): 0.002 ms
+21:16:19.558:      ┃ ┣obs_init_module(linux-capture.so): 0.234 ms
+21:16:19.558:      ┃ ┣obs_init_module(linux-decklink.so): 0.113 ms
+21:16:19.558:      ┃ ┣obs_init_module(linux-jack.so): 0.002 ms
+21:16:19.558:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.002 ms
+21:16:19.558:      ┃ ┣obs_init_module(linux-v4l2.so): 2.93 ms
+21:16:19.558:      ┃ ┣obs_init_module(obs-ffmpeg.so): 13.265 ms
+21:16:19.558:      ┃ ┃ ┗nvenc_check: 1.666 ms
+21:16:19.558:      ┃ ┣obs_init_module(obs-filters.so): 0.035 ms
+21:16:19.558:      ┃ ┣obs_init_module(obs-outputs.so): 0.005 ms
+21:16:19.558:      ┃ ┣obs_init_module(obs-transitions.so): 0.007 ms
+21:16:19.558:      ┃ ┣obs_init_module(obs-x264.so): 0.002 ms
+21:16:19.558:      ┃ ┣obs_init_module(rtmp-services.so): 2.196 ms
+21:16:19.558:      ┃ ┣obs_init_module(text-freetype2.so): 0.019 ms
+21:16:19.558:      ┃ ┗obs_init_module(vlc-video.so): 1.553 ms
+21:16:19.558:      ┣OBSBasic::ResetOutputs: 0.596 ms
+21:16:19.558:      ┣OBSBasic::CreateHotkeys: 0.035 ms
+21:16:19.558:      ┣OBSBasic::InitService: 1.76 ms
+21:16:19.558:      ┣OBSBasic::InitPrimitives: 0.186 ms
+21:16:19.558:      ┗OBSBasic::Load: 136.629 ms
+21:16:19.558: obs_hotkey_thread(25 ms): min=0.035 ms, median=0.075 ms, max=56.403 ms, 99th percentile=0.225 ms, 99.9854% below 25 ms
+21:16:19.558: audio_thread(Audio): min=0 ms, median=0.036 ms, max=8.68 ms, 99th percentile=0.089 ms
+21:16:19.558: obs_graphics_thread(16.6667 ms): min=0.23 ms, median=1.292 ms, max=122.976 ms, 99th percentile=3.002 ms, 99.9081% below 16.667 ms
+21:16:19.558:  ┣tick_sources: min=0 ms, median=0.153 ms, max=97.667 ms, 99th percentile=0.359 ms
+21:16:19.558:  ┣output_frame: min=0.065 ms, median=0.64 ms, max=68.746 ms, 99th percentile=1.108 ms
+21:16:19.558:  ┃ ┣gs_context(video->graphics): min=0.065 ms, median=0.301 ms, max=68.208 ms, 99th percentile=0.574 ms
+21:16:19.558:  ┃ ┃ ┣render_video: min=0.022 ms, median=0.231 ms, max=30.805 ms, 99th percentile=0.388 ms
+21:16:19.558:  ┃ ┃ ┃ ┣render_main_texture: min=0.017 ms, median=0.14 ms, max=7.746 ms, 99th percentile=0.229 ms
+21:16:19.558:  ┃ ┃ ┃ ┣render_convert_texture: min=0.028 ms, median=0.047 ms, max=1.783 ms, 99th percentile=0.085 ms
+21:16:19.558:  ┃ ┃ ┃ ┗stage_output_texture: min=0.02 ms, median=0.031 ms, max=30.572 ms, 99th percentile=0.11 ms
+21:16:19.558:  ┃ ┃ ┣gs_flush: min=0.004 ms, median=0.006 ms, max=5.617 ms, 99th percentile=0.013 ms
+21:16:19.558:  ┃ ┃ ┗download_frame: min=0 ms, median=0.002 ms, max=1.947 ms, 99th percentile=0.004 ms
+21:16:19.558:  ┃ ┗output_video_data: min=0.212 ms, median=0.332 ms, max=7.681 ms, 99th percentile=0.521 ms
+21:16:19.558:  ┗render_displays: min=0.03 ms, median=0.317 ms, max=92.22 ms, 99th percentile=1.246 ms
+21:16:19.558: video_thread(video): min=0 ms, median=2.374 ms, max=28.256 ms, 99th percentile=3.484 ms
+21:16:19.558: =================================================
+21:16:19.558: == Profiler Time Between Calls ==================
+21:16:19.558: obs_hotkey_thread(25 ms): min=25.052 ms, median=25.14 ms, max=81.47 ms, 99.1984% within ±2% of 25 ms (0% lower, 0.801632% higher)
+21:16:19.558: obs_graphics_thread(16.6667 ms): min=1.246 ms, median=16.667 ms, max=122.983 ms, 99.089% within ±2% of 16.667 ms (0.464308% lower, 0.44666% higher)
+21:16:19.558: =================================================
+21:16:19.602: Number of memory leaks: 0

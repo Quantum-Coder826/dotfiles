@@ -1,0 +1,28 @@
+2023-08-14 15:40:32.232 [info] [Info  - 3:40:32 PM] (7181) Pylance language server 2023.8.20 (pyright fcee52c7) starting
+2023-08-14 15:40:32.232 [info] [Info  - 3:40:32 PM] (7181) Server root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:40:32.236 [info] [Info  - 3:40:32 PM] (7181) Starting service instance "qtile"
+2023-08-14 15:40:32.270 [info] [Info  - 3:40:32 PM] (7181) Setting pythonPath for service "qtile": "/bin/python3"
+2023-08-14 15:40:32.273 [info] [Warn  - 3:40:32 PM] (7181) stubPath /home/berend/.config/qtile/typings is not a valid directory.
+2023-08-14 15:40:32.307 [info] [Info  - 3:40:32 PM] (7181) Assuming Python version 3.10
+2023-08-14 15:40:32.374 [info] [Info  - 3:40:32 PM] (7181) Found 7 source files
+2023-08-14 15:40:32.668 [info] [Info  - 3:40:32 PM] (7181) Background analysis(1) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:40:32.671 [info] [Info  - 3:40:32 PM] (7181) Background analysis(1) started
+2023-08-14 15:40:32.748 [info] [Info  - 3:40:32 PM] (7181) Indexer background runner(2) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist (index)
+2023-08-14 15:40:32.748 [info] [Info  - 3:40:32 PM] (7181) Indexing(2) started
+2023-08-14 15:40:33.173 [info] [Info  - 3:40:33 PM] (7181) scanned(2) 276 files over 1 exec env
+2023-08-14 15:40:35.195 [info] [Info  - 3:40:35 PM] (7181) indexed(2) 174 files over 1 exec env
+2023-08-14 15:40:35.218 [info] [Info  - 3:40:35 PM] (7181) Indexing finished(2).
+2023-08-14 15:41:48.397 [info] [Info  - 3:41:48 PM] (7446) Pylance language server 2023.8.20 (pyright fcee52c7) starting
+2023-08-14 15:41:48.398 [info] [Info  - 3:41:48 PM] (7446) Server root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:41:48.402 [info] [Info  - 3:41:48 PM] (7446) Starting service instance "qtile"
+2023-08-14 15:41:48.455 [info] [Info  - 3:41:48 PM] (7446) Setting pythonPath for service "qtile": "/bin/python3"
+2023-08-14 15:41:48.460 [info] [Warn  - 3:41:48 PM] (7446) stubPath /home/berend/.config/qtile/typings is not a valid directory.
+2023-08-14 15:41:48.480 [info] [Info  - 3:41:48 PM] (7446) Assuming Python version 3.10
+2023-08-14 15:41:48.563 [info] [Info  - 3:41:48 PM] (7446) Found 7 source files
+2023-08-14 15:41:48.801 [info] [Info  - 3:41:48 PM] (7446) Background analysis(1) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:41:48.803 [info] [Info  - 3:41:48 PM] (7446) Background analysis(1) started
+2023-08-14 15:41:48.956 [info] [Info  - 3:41:48 PM] (7446) Indexer background runner(2) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist (index)
+2023-08-14 15:41:48.956 [info] [Info  - 3:41:48 PM] (7446) Indexing(2) started
+2023-08-14 15:41:49.372 [info] [Info  - 3:41:49 PM] (7446) scanned(2) 276 files over 1 exec env
+2023-08-14 15:41:51.246 [info] [Info  - 3:41:51 PM] (7446) indexed(2) 174 files over 1 exec env
+2023-08-14 15:41:51.267 [info] [Info  - 3:41:51 PM] (7446) Indexing finished(2).

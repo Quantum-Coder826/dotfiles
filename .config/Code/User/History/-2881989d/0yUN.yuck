@@ -1,0 +1,10 @@
+(defwindow desktop
+            :monitor 0
+            :geometry (geometry :x "-275px"
+                                :y "50px"
+                                :width "200px"
+                                :height "100px"
+                                :anchor "top right")
+            :stacking "bg"
+            :windowtype "desktop"
+ "test")

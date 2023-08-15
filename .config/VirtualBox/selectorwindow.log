@@ -1,0 +1,74 @@
+00:00:04.899915 VirtualBox GUI VM Selector Window 6.1.38_Ubuntu r153438 linux.amd64 (Sep  7 2022 11:18:57) release log
+00:00:04.899916 Log opened 2023-04-24T12:20:53.546673000Z
+00:00:04.899917 Build Type: release
+00:00:04.899920 OS Product: Linux
+00:00:04.899921 OS Release: 5.15.0-70-generic
+00:00:04.899921 OS Version: #77-Ubuntu SMP Tue Mar 21 14:02:37 UTC 2023
+00:00:04.899941 DMI Product Name: B550 AORUS ELITE V2
+00:00:04.899946 DMI Product Version: Default string
+00:00:04.899952 Firmware type: UEFI
+00:00:04.900057 Secure Boot: Disabled
+00:00:04.900090 Host RAM: 15939MB (15.5GB) total, 12815MB (12.5GB) available
+00:00:04.900094 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:04.900094 Process ID: 17896
+00:00:04.900094 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:04.900119 Qt version: 5.15.3
+00:00:04.911517 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:05.158598 GUI: UIInvisibleWindow::sltFallback: Move event haven't came. Screen: 0, work area: 0x0 x 1920x1080
+00:00:05.158615 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1920x1080
+00:00:05.158627 GUI: UIInvisibleWindow::sltFallback: Move event haven't came. Screen: 1, work area: 1920x0 x 1280x1024
+00:00:05.158630 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 1920x0 x 1280x1024
+00:00:05.184802 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:26.449674 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenWorkAreaResized: Screen 0 work area is formally resized to: 0x0 x 1920x984
+00:01:26.451523 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenWorkAreaResized: Screen 1 work area is formally resized to: 1920x0 x 1280x984
+00:01:26.466231 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1920x1040
+00:01:26.476126 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 1920x0 x 1280x984
+00:02:15.114200 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:15.179702 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:15.342738 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:15.396958 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:15.447117 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:15.629631 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:20.948963 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.211872 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.240441 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.495819 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.548569 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.595386 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.638333 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:21.912437 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.212086 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.230331 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.267470 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.345456 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.378669 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.428607 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.450510 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.481180 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.528948 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.562095 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.618674 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.647877 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.681755 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.698967 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.745646 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.780140 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.839743 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.879445 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.912245 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.945743 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:22.964809 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.012194 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.045441 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.065146 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.112109 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.148432 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.188950 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.329191 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.362707 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:23.398628 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:29.698596 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:29.747850 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:29.796242 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:32.862595 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:32.891814 GUI: UIMediumEnumerator: Medium-enumeration finished!

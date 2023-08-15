@@ -1,0 +1,6 @@
+configuration {
+    modi: "window,drun,combi";
+    combi-modi: "window,drun";
+    icon-theme: "Papirus";
+    }
+@theme "gruvbox-dark-hard"

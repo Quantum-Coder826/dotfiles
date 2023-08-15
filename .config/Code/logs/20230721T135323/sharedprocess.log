@@ -1,0 +1,27 @@
+2023-07-21 13:53:24.790 [info] Deleted from disk jackmacwindows.craftos-pc /home/berend/.vscode/extensions/jackmacwindows.craftos-pc-1.2.1
+2023-07-21 13:53:24.790 [info] Deleted from disk ms-python.vscode-pylance /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.7.20
+2023-07-21 13:53:24.790 [info] Deleted from disk rust-lang.rust-analyzer /home/berend/.vscode/extensions/rust-lang.rust-analyzer-0.3.1583-linux-x64
+2023-07-21 13:53:30.500 [info] Getting Manifest... github.vscode-pull-request-github
+2023-07-21 13:53:30.501 [info] Getting Manifest... ms-toolsai.jupyter
+2023-07-21 13:53:30.502 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2023-07-21 13:53:30.568 [info] Installing extension: github.vscode-pull-request-github
+2023-07-21 13:53:31.346 [info] Installing extension: ms-toolsai.jupyter-renderers
+2023-07-21 13:53:31.352 [info] Installing extension: ms-toolsai.jupyter
+2023-07-21 13:53:32.364 [info] Extension signature is verified: github.vscode-pull-request-github
+2023-07-21 13:53:32.432 [info] Extracted extension to /home/berend/.vscode/extensions/.44284611-bcec-4173-b39a-35382819415a: github.vscode-pull-request-github
+2023-07-21 13:53:32.435 [info] Renamed to /home/berend/.vscode/extensions/github.vscode-pull-request-github-0.68.1
+2023-07-21 13:53:32.436 [info] Extracting extension completed. github.vscode-pull-request-github
+2023-07-21 13:53:32.443 [info] Extension installed successfully: github.vscode-pull-request-github
+2023-07-21 13:53:32.445 [info] Marked extension as uninstalled github.vscode-pull-request-github-0.66.2
+2023-07-21 13:53:35.088 [info] Extension signature is verified: ms-toolsai.jupyter
+2023-07-21 13:53:35.089 [info] Extension signature is verified: ms-toolsai.jupyter-renderers
+2023-07-21 13:53:35.349 [info] Extracted extension to /home/berend/.vscode/extensions/.1ba2748b-13e9-42f8-b3a8-ecd6712d7cb2: ms-toolsai.jupyter-renderers
+2023-07-21 13:53:35.351 [info] Renamed to /home/berend/.vscode/extensions/ms-toolsai.jupyter-renderers-1.0.17
+2023-07-21 13:53:35.352 [info] Extracting extension completed. ms-toolsai.jupyter-renderers
+2023-07-21 13:53:35.356 [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+2023-07-21 13:53:35.358 [info] Marked extension as uninstalled ms-toolsai.jupyter-renderers-1.0.15
+2023-07-21 13:53:35.368 [info] Extracted extension to /home/berend/.vscode/extensions/.e1de29dd-6ac2-4501-b73c-04ba67e34bb3: ms-toolsai.jupyter
+2023-07-21 13:53:35.370 [info] Renamed to /home/berend/.vscode/extensions/ms-toolsai.jupyter-2023.6.1101941928-linux-x64
+2023-07-21 13:53:35.374 [info] Extracting extension completed. ms-toolsai.jupyter
+2023-07-21 13:53:35.378 [info] Extension installed successfully: ms-toolsai.jupyter
+2023-07-21 13:53:35.381 [info] Marked extension as uninstalled ms-toolsai.jupyter-2023.5.1101742258-linux-x64

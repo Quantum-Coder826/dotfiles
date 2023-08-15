@@ -1,0 +1,6 @@
+{
+	"never": {
+		"udev": true
+	},
+	"animations": false
+}

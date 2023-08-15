@@ -1,0 +1,11 @@
+[General]
+Version=201
+ViewPropsTimestamp=2023,4,26,14,39,49.549
+
+[MainWindow]
+DVI-D-0 HDMI-0 Height 1280x1024=550
+DVI-D-0 HDMI-0 Width 1280x1024=760
+DVI-D-0 HDMI-0 XPosition 1920x1080=387
+DVI-D-0 HDMI-0 YPosition 1920x1080=234
+MenuBar=Disabled
+ToolBarsMovable=Disabled

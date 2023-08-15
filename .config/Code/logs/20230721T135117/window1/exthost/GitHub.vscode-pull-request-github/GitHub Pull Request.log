@@ -1,0 +1,13 @@
+2023-07-21 13:51:19.258 [warning] /home/berend/.ssh/config: ENOENT: no such file or directory, open '/home/berend/.ssh/config'
+2023-07-21 13:51:19.299 [info] Looking for git repository
+2023-07-21 13:51:19.299 [info] Found 0 repositories during activation
+2023-07-21 13:51:19.299 [info] Git repository found, initializing review manager and pr tree view.
+2023-07-21 13:51:19.300 [info] Registering git provider
+2023-07-21 13:51:19.300 [info] Review> Validate state in progress
+2023-07-21 13:51:19.300 [info] Review> Validating state...
+2023-07-21 13:51:19.306 [info] Found GitHub remote for folder /home/berend/Documents/dev/mcService
+2023-07-21 13:51:19.517 [info] Repo state for file:///home/berend/Documents/dev/mcService changed.
+2023-07-21 13:51:19.517 [info] Repo file:///home/berend/Documents/dev/mcService has already been setup.
+2023-07-21 13:51:19.825 [info] Review> No matching pull request metadata found locally for current branch master
+2023-07-21 13:51:19.825 [info] Review> no matching pull request metadata found for current branch master
+2023-07-21 13:51:20.191 [info] Review> No matching pull request metadata found on GitHub for current branch master

@@ -1,0 +1,19 @@
+00:00:00.276712 VirtualBox GUI VM Selector Window 6.1.38_Ubuntu r153438 linux.amd64 (Sep  7 2022 11:18:57) release log
+00:00:00.276713 Log opened 2023-04-08T09:53:16.697859000Z
+00:00:00.276714 Build Type: release
+00:00:00.276716 OS Product: Linux
+00:00:00.276716 OS Release: 5.15.0-69-generic
+00:00:00.276717 OS Version: #76-Ubuntu SMP Fri Mar 17 17:19:29 UTC 2023
+00:00:00.276730 DMI Product Name: B550 AORUS ELITE V2
+00:00:00.276734 DMI Product Version: Default string
+00:00:00.276738 Firmware type: UEFI
+00:00:00.276800 Secure Boot: Disabled
+00:00:00.276829 Host RAM: 15939MB (15.5GB) total, 13072MB (12.7GB) available
+00:00:00.276832 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.276832 Process ID: 23831
+00:00:00.276833 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.276848 Qt version: 5.15.3
+00:00:00.285366 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.285384 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:00.562284 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1920x1040
+00:00:00.565326 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 1 work area is actually resized to: 1920x0 x 1280x984

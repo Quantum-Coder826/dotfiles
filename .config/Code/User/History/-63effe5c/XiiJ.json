@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "wasm-pack build"
+        },
+        {
+            "type": "process",
+            "command": "build",
+            "problemMatcher": [
+                "$rustc",
+                "$rust-panic"
+            ],
+            "group": "build",
+            "label": "rust: cargo build"
+        }
+    ]
+}

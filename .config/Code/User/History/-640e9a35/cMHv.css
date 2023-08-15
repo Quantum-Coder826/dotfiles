@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.game {
+    background-color: grey;
+    border: 4px inset;
+    width: 200px;
+    padding: 20px;
+}
+
+game-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: auto;
+    padding: 20px;
+}

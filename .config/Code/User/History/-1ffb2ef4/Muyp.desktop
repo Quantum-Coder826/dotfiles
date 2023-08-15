@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Helvum
+GenericName=Patchbay
+Comment=A patchbay for pipewire
+Type=Application
+Exec=env GTK_THEME=Adwaita:dark /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=helvum org.pipewire.Helvum
+Terminal=false
+Categories=AudioVideo;Audio;Video;Midi;Settings;GNOME;GTK;
+Icon=org.pipewire.Helvum
+X-Flatpak=org.pipewire.Helvum

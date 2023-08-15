@@ -1,0 +1,72 @@
+2023-08-14 15:27:18.502 [info] Deleted from disk github.vscode-pull-request-github /home/berend/.vscode/extensions/github.vscode-pull-request-github-0.66.2
+2023-08-14 15:27:18.502 [info] Deleted from disk ms-toolsai.jupyter /home/berend/.vscode/extensions/ms-toolsai.jupyter-2023.5.1101742258-linux-x64
+2023-08-14 15:27:18.502 [info] Deleted from disk ms-toolsai.jupyter-renderers /home/berend/.vscode/extensions/ms-toolsai.jupyter-renderers-1.0.15
+2023-08-14 15:27:23.222 [info] Getting Manifest... leonardssh.vscord
+2023-08-14 15:27:23.224 [info] Getting Manifest... ms-python.python
+2023-08-14 15:27:23.225 [info] Getting Manifest... ms-python.vscode-pylance
+2023-08-14 15:27:23.225 [info] Getting Manifest... ms-vscode.hexeditor
+2023-08-14 15:27:23.227 [info] Getting Manifest... rust-lang.rust-analyzer
+2023-08-14 15:27:23.228 [info] Getting Manifest... sumneko.lua
+2023-08-14 15:27:23.229 [info] Getting Manifest... usernamehw.errorlens
+2023-08-14 15:27:23.348 [info] Installing extension: ms-python.python
+2023-08-14 15:27:23.349 [info] Installing extension: leonardssh.vscord
+2023-08-14 15:27:23.350 [info] Installing extension: ms-vscode.hexeditor
+2023-08-14 15:27:23.379 [info] Installing extension: ms-python.vscode-pylance
+2023-08-14 15:27:23.380 [info] Installing extension: usernamehw.errorlens
+2023-08-14 15:27:23.382 [info] Installing extension: rust-lang.rust-analyzer
+2023-08-14 15:27:23.383 [info] Installing extension: sumneko.lua
+2023-08-14 15:27:24.226 [info] Getting Manifest... ms-python.python
+2023-08-14 15:27:24.323 [info] Waiting for already requested installing extension ms-python.python ms-python.vscode-pylance
+2023-08-14 15:27:25.818 [info] Extension signature is verified: usernamehw.errorlens
+2023-08-14 15:27:25.842 [info] Extension signature is verified: ms-vscode.hexeditor
+2023-08-14 15:27:25.886 [info] Extracted extension to /home/berend/.vscode/extensions/.e697a19d-febb-4223-95a0-61d84add9300: usernamehw.errorlens
+2023-08-14 15:27:25.889 [info] Renamed to /home/berend/.vscode/extensions/usernamehw.errorlens-3.13.0
+2023-08-14 15:27:25.890 [info] Extracting extension completed. usernamehw.errorlens
+2023-08-14 15:27:25.902 [info] Extension installed successfully: usernamehw.errorlens
+2023-08-14 15:27:25.905 [info] Marked extension as uninstalled usernamehw.errorlens-3.12.0
+2023-08-14 15:27:25.916 [info] Extracted extension to /home/berend/.vscode/extensions/.6a11c79e-e6a2-4eea-b016-288fbf959f81: ms-vscode.hexeditor
+2023-08-14 15:27:25.918 [info] Renamed to /home/berend/.vscode/extensions/ms-vscode.hexeditor-1.9.12
+2023-08-14 15:27:25.920 [info] Extracting extension completed. ms-vscode.hexeditor
+2023-08-14 15:27:25.926 [info] Extension installed successfully: ms-vscode.hexeditor
+2023-08-14 15:27:25.928 [info] Marked extension as uninstalled ms-vscode.hexeditor-1.9.11
+2023-08-14 15:27:26.016 [info] Extension signature is verified: sumneko.lua
+2023-08-14 15:27:26.144 [info] Extension signature is verified: ms-python.python
+2023-08-14 15:27:26.161 [info] Extension signature is verified: leonardssh.vscord
+2023-08-14 15:27:26.191 [info] Extracted extension to /home/berend/.vscode/extensions/.ea66241c-5347-4b4c-8b75-183cd7b76823: leonardssh.vscord
+2023-08-14 15:27:26.194 [info] Renamed to /home/berend/.vscode/extensions/leonardssh.vscord-5.1.15
+2023-08-14 15:27:26.196 [info] Extracting extension completed. leonardssh.vscord
+2023-08-14 15:27:26.200 [info] Extension installed successfully: leonardssh.vscord
+2023-08-14 15:27:26.202 [info] Marked extension as uninstalled leonardssh.vscord-5.1.14
+2023-08-14 15:27:26.414 [info] Extension signature is verified: ms-python.vscode-pylance
+2023-08-14 15:27:26.822 [info] Extension signature is verified: rust-lang.rust-analyzer
+2023-08-14 15:27:27.416 [info] Extracted extension to /home/berend/.vscode/extensions/.68ae0156-1ce3-4d82-9201-8f530a4a1d75: rust-lang.rust-analyzer
+2023-08-14 15:27:27.422 [info] Renamed to /home/berend/.vscode/extensions/rust-lang.rust-analyzer-0.3.1623-linux-x64
+2023-08-14 15:27:27.424 [info] Extracting extension completed. rust-lang.rust-analyzer
+2023-08-14 15:27:27.430 [info] Extension installed successfully: rust-lang.rust-analyzer
+2023-08-14 15:27:27.433 [info] Marked extension as uninstalled rust-lang.rust-analyzer-0.3.1591-linux-x64
+2023-08-14 15:27:27.901 [info] Extracted extension to /home/berend/.vscode/extensions/.61bdd618-366d-422e-a293-2797146fb6f2: sumneko.lua
+2023-08-14 15:27:27.905 [info] Renamed to /home/berend/.vscode/extensions/sumneko.lua-3.6.26-linux-x64
+2023-08-14 15:27:27.910 [info] Extracting extension completed. sumneko.lua
+2023-08-14 15:27:27.916 [info] Extension installed successfully: sumneko.lua
+2023-08-14 15:27:27.920 [info] Marked extension as uninstalled sumneko.lua-3.6.23-linux-x64
+2023-08-14 15:27:28.307 [info] Extracted extension to /home/berend/.vscode/extensions/.767efdd5-f128-4149-a2d1-d69d253d2246: ms-python.python
+2023-08-14 15:27:28.311 [info] Renamed to /home/berend/.vscode/extensions/ms-python.python-2023.14.0
+2023-08-14 15:27:28.316 [info] Extracting extension completed. ms-python.python
+2023-08-14 15:27:28.323 [info] Extension installed successfully: ms-python.python
+2023-08-14 15:27:28.324 [info] Finished waiting for already requested installing extension ms-python.python ms-python.vscode-pylance
+2023-08-14 15:27:28.328 [info] Marked extension as uninstalled ms-python.python-2023.12.0
+2023-08-14 15:27:29.336 [info] Extracted extension to /home/berend/.vscode/extensions/.ad1a974c-b48c-410f-b2dd-b11364498724: ms-python.vscode-pylance
+2023-08-14 15:27:29.342 [info] Renamed to /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20
+2023-08-14 15:27:29.346 [info] Extracting extension completed. ms-python.vscode-pylance
+2023-08-14 15:27:29.351 [info] Extension installed successfully: ms-python.vscode-pylance
+2023-08-14 15:27:29.353 [info] Marked extension as uninstalled ms-python.vscode-pylance-2023.7.30
+2023-08-14 15:28:26.984 [info] Uninstalling extension from the profile: bungcip.better-toml@0.3.2 vscode-userdata:/home/berend/.vscode/extensions/extensions.json
+2023-08-14 15:28:27.025 [info] Marked extension as uninstalled bungcip.better-toml-0.3.2
+2023-08-14 15:28:27.167 [info] Successfully uninstalled extension from the profile bungcip.better-toml@0.3.2 vscode-userdata:/home/berend/.vscode/extensions/extensions.json
+2023-08-14 15:28:27.940 [info] Getting Manifest... tamasfe.even-better-toml
+2023-08-14 15:28:27.946 [info] Installing extension: tamasfe.even-better-toml
+2023-08-14 15:28:29.493 [info] Extension signature is verified: tamasfe.even-better-toml
+2023-08-14 15:28:29.598 [info] Extracted extension to /home/berend/.vscode/extensions/.be23c988-a50f-422e-b9ca-daf2c5a705b5: tamasfe.even-better-toml
+2023-08-14 15:28:29.602 [info] Renamed to /home/berend/.vscode/extensions/tamasfe.even-better-toml-0.19.2
+2023-08-14 15:28:29.604 [info] Extracting extension completed. tamasfe.even-better-toml
+2023-08-14 15:28:29.609 [info] Extension installed successfully: tamasfe.even-better-toml

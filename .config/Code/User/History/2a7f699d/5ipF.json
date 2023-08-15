@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"command": "build",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+			"label": "rust: cargo build"
+		},
+		{
+			"label": "upload",
+			"type": "shell",
+			"command": "scp ${home target/armv5te-unknown-linux-musleabi/debug/MindstormRobot robot@ev3dev.local:/home/robot/MindstormRobot"
+		}
+	]
+}

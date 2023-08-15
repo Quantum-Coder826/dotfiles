@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 3px;
+}
+
+:root {
+    --background_color: #c0c0c0;
+
+}
+
+.game {
+    background-color: var(--background_color);
+    border: 3px outset;
+    width: 200px;
+}
+
+.mine-field {
+    border: 3px inset;
+    display: grid;
+    gap: 0px 0px;
+}
+
+game-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: auto;
+    border: 3px inset;
+}

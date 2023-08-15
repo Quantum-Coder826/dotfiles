@@ -1,0 +1,17 @@
+# Dotfiles
+My dotfiles for Qtile and more
+
+![empty dekstop](/images/desktop.png)
+
+
+## applications
+- Qtile
+- Qtile-extras
+- rofi
+- rofi-calc
+- betterlockscreen
+- btop
+
+## wallpaper
+Got the wallpaper form exorcist365 [collection](https://gitlab.com/exorcist365/wallpapers/-/tree/master/)
+Wallpaper name is `spaceman.jpg` and is is part of the gruvbox folder.

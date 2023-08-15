@@ -1,0 +1,42 @@
+2023-08-14 15:27:38.182 [info] [Info  - 3:27:38 PM] (4806) Pylance language server 2023.8.20 (pyright fcee52c7) starting
+2023-08-14 15:27:38.182 [info] [Info  - 3:27:38 PM] (4806) Server root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:27:38.186 [info] [Info  - 3:27:38 PM] (4806) Starting service instance "qtile"
+2023-08-14 15:27:38.248 [info] [Info  - 3:27:38 PM] (4806) Setting pythonPath for service "qtile": "/bin/python3"
+2023-08-14 15:27:38.252 [info] [Warn  - 3:27:38 PM] (4806) stubPath /home/berend/.config/qtile/typings is not a valid directory.
+2023-08-14 15:27:38.286 [info] [Info  - 3:27:38 PM] (4806) Assuming Python version 3.10
+2023-08-14 15:27:38.387 [info] [Info  - 3:27:38 PM] (4806) Found 7 source files
+2023-08-14 15:27:38.564 [info] [Info  - 3:27:38 PM] (4806) Background analysis(1) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:27:38.564 [info] [Info  - 3:27:38 PM] (4806) Background analysis(1) started
+2023-08-14 15:27:38.767 [info] [Info  - 3:27:38 PM] (4806) Indexer background runner(2) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist (index)
+2023-08-14 15:27:38.767 [info] [Info  - 3:27:38 PM] (4806) Indexing(2) started
+2023-08-14 15:27:39.284 [info] [Info  - 3:27:39 PM] (4806) scanned(2) 276 files over 1 exec env
+2023-08-14 15:27:41.645 [info] [Info  - 3:27:41 PM] (4806) [IDX(2)] Long operation: index execution environment /home/berend/.config/qtile (2296ms)
+2023-08-14 15:27:41.653 [info] [Info  - 3:27:41 PM] (4806) [IDX(2)] Long operation: index packages /home/berend/.config/qtile (2309ms)
+2023-08-14 15:27:41.654 [info] [Info  - 3:27:41 PM] (4806) indexed(2) 174 files over 1 exec env
+2023-08-14 15:27:41.675 [info] [Info  - 3:27:41 PM] (4806) Indexing finished(2).
+2023-08-14 15:28:28.543 [info] [Info  - 3:28:28 PM] (5077) Pylance language server 2023.8.20 (pyright fcee52c7) starting
+2023-08-14 15:28:28.543 [info] [Info  - 3:28:28 PM] (5077) Server root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:28:28.548 [info] [Info  - 3:28:28 PM] (5077) Starting service instance "qtile"
+2023-08-14 15:28:28.579 [info] [Info  - 3:28:28 PM] (5077) Setting pythonPath for service "qtile": "/bin/python3"
+2023-08-14 15:28:28.582 [info] [Warn  - 3:28:28 PM] (5077) stubPath /home/berend/.config/qtile/typings is not a valid directory.
+2023-08-14 15:28:28.607 [info] [Info  - 3:28:28 PM] (5077) Assuming Python version 3.10
+2023-08-14 15:28:28.662 [info] [Info  - 3:28:28 PM] (5077) Found 7 source files
+2023-08-14 15:28:28.920 [info] [Info  - 3:28:28 PM] (5077) Background analysis(1) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:28:28.923 [info] [Info  - 3:28:28 PM] (5077) Background analysis(1) started
+2023-08-14 15:28:29.070 [info] [Info  - 3:28:29 PM] (5077) Indexer background runner(2) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist (index)
+2023-08-14 15:28:29.070 [info] [Info  - 3:28:29 PM] (5077) Indexing(2) started
+2023-08-14 15:28:29.540 [info] [Info  - 3:28:29 PM] (5077) scanned(2) 276 files over 1 exec env
+2023-08-14 15:28:30.949 [info] [Info  - 3:28:30 PM] (5122) Pylance language server 2023.8.20 (pyright fcee52c7) starting
+2023-08-14 15:28:30.949 [info] [Info  - 3:28:30 PM] (5122) Server root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:28:30.954 [info] [Info  - 3:28:30 PM] (5122) Starting service instance "qtile"
+2023-08-14 15:28:30.988 [info] [Info  - 3:28:30 PM] (5122) Setting pythonPath for service "qtile": "/bin/python3"
+2023-08-14 15:28:30.991 [info] [Warn  - 3:28:30 PM] (5122) stubPath /home/berend/.config/qtile/typings is not a valid directory.
+2023-08-14 15:28:31.022 [info] [Info  - 3:28:31 PM] (5122) Assuming Python version 3.10
+2023-08-14 15:28:31.088 [info] [Info  - 3:28:31 PM] (5122) Found 7 source files
+2023-08-14 15:28:31.336 [info] [Info  - 3:28:31 PM] (5122) Background analysis(1) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist
+2023-08-14 15:28:31.339 [info] [Info  - 3:28:31 PM] (5122) Background analysis(1) started
+2023-08-14 15:28:31.487 [info] [Info  - 3:28:31 PM] (5122) Indexer background runner(2) root directory: /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.8.20/dist (index)
+2023-08-14 15:28:31.487 [info] [Info  - 3:28:31 PM] (5122) Indexing(2) started
+2023-08-14 15:28:31.910 [info] [Info  - 3:28:31 PM] (5122) scanned(2) 276 files over 1 exec env
+2023-08-14 15:28:33.790 [info] [Info  - 3:28:33 PM] (5122) indexed(2) 174 files over 1 exec env
+2023-08-14 15:28:33.812 [info] [Info  - 3:28:33 PM] (5122) Indexing finished(2).

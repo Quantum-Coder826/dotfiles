@@ -1,0 +1,63 @@
+# LC3
+This repo will contain my spin on a LC-3 assembler and emulator. For more info see the [wiki](https://en.wikipedia.org/wiki/Little_Computer_3#cite_note-CompSysBook-1)
+
+# specification
+The microprocessor will have a 16-bit address space and 16-bit words
+
+## execution
+1. get a 8-bit word from the address the programcounter is on
+2. The high nibble is the instruction and low nibble will contain a register number if applicable 
+3. Decode the instruction
+4. Execute
+
+## registers
+### special
+- PC: The programcounter is 16-bit wide and contains the current address of execution.
+- OF: The overflow flag will be reset when a addition or subtraction operation is preformed, when the operation overflows 16-bits this flag will be set to **True**. The Default value is **False**.
+- ZFRx: The zero flag will be true when the value in a register is zero the formatting is ZFR`x` where `x` is which register the flag corresponds to.
+- SP: The stack pointer references the 16-bit address that contains the address to the top off the stack
+
+### general purpose
+There are 8 registers R0 trough R7 all registers are 16-bits wide.
+All registers are general purpose all arithmetic and logical operations can be used on any registers, But R7 is used to store the return address when a subroutine is called.
+
+## address space
+### Zero page
+The first 256 bytes of memory form `0x0000` to `0x00FF`
+
+- `0x0000` to `0x000F` These addresses contain copy's of registers 0 trough 7.
+- `0x0010` to `0x0011 contains the program counter
+- `0x0012` to `0x0013 contains flags see table for the layout of the flags in the byte:
+
+|Bit:|0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|
+|---:|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Flag:|ZFR0|ZFR1|ZFR2|ZFR3|ZFR4|ZFR5|ZFR6|ZFR7|-|-|-|-|-|-|-|OF|
+
+- `0x0014` to `0x001D` reserved for nothing so can be used as 5 words of just general general purpose memory.
+- `0x001E` to `0x001F` contains the Stack Pointer.
+- `0x0020` to `0x00FF` contains the stack total of 112 16-bit words (so 112 return addresses)
+
+### extended memory
+Form `0x0100` to `0xFFFF` eg the rest off the address space
+- `0x000A` to `0x7FFF` is general purpose memory, IO mapping will be added in the future, all words are 16-bits
+- `0x8000` to `0xFFFF` is ROM where the program code will be stored the region of memory is **read only**. The layout off words is weird in the region off memory due to the opcodes being only a single nibble some words will be 8-bit long and some will be the full 16-bit long. 
+
+## instructions
+|Hex|Bin|Dec|Mnemonic code|Instruction|description|
+|---|---|---|---|---|---|
+|`0`|`0000`|`0`|HLT|HALT|Stop the program
+|`1`|`0001`|`1`|ADD|ADD Rx, Rx|Add the values of the two registers and store in the result in the first register (destructive)
+|`2`|`0010`|`2`|SUB|SUB Rx, Rx|Subtract the values of the two register and store the result in the first register (destructive)
+|`3`|`0011`|`3`|AND|AND Rx, Rx|Take the two registers preform a bitwise AND and store in the first register (destructive)
+|`4`|`0100`|`4`|NOT|NOT Rx, Rx|Take the two registers preform a bitwise NOT and store in the first register (destructive)
+|`5`|`0101`|`5`|LDR|LDR Rx, 0x|Load the value from the specified address into the specified register, can address entire 16-bit address space
+|`6`|`0110`|`6`|STR|STR Rx, 0x|Store the value in the register to the specified address, writable values are up to address `0x7FFF`
+|`7`|`0111`|`7`|JMP|JMP Rx|Jump to the address stored in the specified register, stores the current program counter by pushing it to the stack.
+|`8`|`1000`|`8`|BEZ|JEZ Rx, Rx|Jump to the address in the second opcode if the value in the first register is zero, 
+|`9`|`1001`|`9`|BNZ|JNZ Rx, Rx|Jump to the address in the second opcode if the value in the first register is not zero
+|`A`|`1010`|`10`|RET|RET|Pop the stack and set the PC to the returned value
+|`B`|`1011`|`11`|LRI|LRI Rx, 0x|Load the specified value in the specified register 
+|`C`|`1100`|`12`|LSR|LSR Rx|bit-shift the specified register right
+|`D`|`1101`|`13`|LSL|LSL Rx|bit-shift the specified register left
+|`E`|`1110`|`14`|POP|POP Rx|copy the value on top of the stack to the specified register and decrement the stack pointer
+|`F`|`1111`|`15`|PUT|PUT Rx|copy the value in the specified register to the the top off the stack. (by incrementing the stack pointer and copying the value to the new address) 

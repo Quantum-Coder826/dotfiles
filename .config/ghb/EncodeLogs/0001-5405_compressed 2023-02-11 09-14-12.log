@@ -1,0 +1,263 @@
+Handbrake Version: 1.5.1 (2022030700)
+[09:14:12] gtkgui: Preset: /Web/Discord Tiny 5 Minutes 240p30
+[09:14:12] Starting work at: Sat Feb 11 09:14:12 2023
+
+[09:14:12] 1 job(s) to process
+[09:14:12] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 32,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "av_aac",
+                "Gain": 0.0,
+                "Mixdown": "mono",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "av_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "av_aac"
+    },
+    "Destination": {
+        "AlignAVStart": true,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 1,
+                    "Seconds": 30,
+                    "Ticks": 8108190
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/berend/Videos/0001-5405_compressed.m4v",
+        "InlineParameterSets": false,
+        "Mp4Options": {
+            "IpodAtom": false,
+            "Mp4Optimize": true
+        },
+        "Mux": "m4v"
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 3,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 4,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 13,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 240,
+                    "width": 320
+                }
+            }
+        ]
+    },
+    "Metadata": {
+        "Name": "0001-5405",
+        "ReleaseDate": "2023/02/08 16:52:58"
+    },
+    "PAR": {
+        "Den": 3,
+        "Num": 4
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "Path": "/home/berend/Videos/0001-5405.mp4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 0,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "Level": "3.1",
+        "Options": "vbv-bufsize=1650:vbv-maxrate=165:aq-mode=2:aq-strength=0.8:direct=auto:analyse=all:deblock=5,4:psy-rd=2.0:0.3:ref=5:bframes=5",
+        "Preset": "veryslow",
+        "Profile": "high",
+        "QSV": {
+            "AdapterIndex": 0,
+            "AsyncDepth": 0,
+            "Decode": false
+        },
+        "Quality": 25.0,
+        "Tune": "",
+        "Turbo": false,
+        "TwoPass": false
+    }
+}
+[09:14:12] CPU: AMD Ryzen 7 3700X 8-Core Processor             
+[09:14:12]  - logical processor count: 16
+[09:14:12] hb_scan: path=/home/berend/Videos/0001-5405.mp4, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+disc.c:333: failed opening UDF image /home/berend/Videos/0001-5405.mp4
+disc.c:437: error opening file BDMV/index.bdmv
+disc.c:437: error opening file BDMV/BACKUP/index.bdmv
+bluray.c:2652: nav_get_title_list(/home/berend/Videos/0001-5405.mp4/) failed
+[09:14:12] bd: not a bd - trying as a stream/file instead
+libdvdread: DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+libdvdnav: vm: vm: failed to read VIDEO_TS.IFO
+[09:14:12] dvd: not a dvd - trying as a stream/file instead
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/berend/Videos/0001-5405.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    date            : 2023/02/08 16:52:58
+    encoder         : Lavf58.76.100
+  Duration: 00:01:30.09, start: 0.000000, bitrate: 9459 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 9195 kb/s, 60 fps, 60 tbr, 15360 tbn, 120 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 255 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+[09:14:12] scan: decoding previews for title 1
+[09:14:12] scan: audio 0x1: aac, rate=48000Hz, bitrate=255452 Unknown (AAC LC) (2.0 ch) (255 kbps)
+[09:14:12] scan: 10 previews, 1920x1080, 60,000 fps, autocrop = 0/0/0/0, aspect 16:9, PAR 1:1, color profile: 1-1-1, chroma location: left
+[09:14:12] libhb: scan thread found 1 valid title(s)
+[09:14:12] Starting Task: Encoding Pass
+[09:14:12] job configuration:
+[09:14:12]  * source
+[09:14:12]    + /home/berend/Videos/0001-5405.mp4
+[09:14:12]    + title 1, chapter(s) 1 to 1
+[09:14:12]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[09:14:12]    + data rate: 9459 kbps
+[09:14:12]  * destination
+[09:14:12]    + /home/berend/Videos/0001-5405_compressed.m4v
+[09:14:12]    + container: MPEG-4 (libavformat)
+[09:14:12]      + optimized for HTTP streaming (fast start)
+[09:14:12]      + align initial A/V stream timestamps
+[09:14:12]  * video track
+[09:14:12]    + decoder: h264 8-bit (yuv420p)
+[09:14:12]      + bitrate 9195 kbps
+[09:14:12]    + filters
+[09:14:12]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[09:14:12]      + Decomb (mode=39)
+[09:14:12]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[09:14:12]        + frame rate: 60,000 fps -> peak rate limited to 30,000 fps
+[09:14:12]      + Crop and Scale (width=320:height=240:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[09:14:12]        + source: 1920 * 1080, crop (0/0/0/0): 1920 * 1080, scale: 320 * 240
+[09:14:12]    + Output geometry
+[09:14:12]      + storage dimensions: 320 x 240
+[09:14:12]      + pixel aspect ratio: 4 : 3
+[09:14:12]      + display dimensions: 426 x 240
+[09:14:12]    + encoder: H.264 (libx264)
+[09:14:12]      + preset:  veryslow
+[09:14:12]      + options: vbv-bufsize=1650:vbv-maxrate=165:aq-mode=2:aq-strength=0.8:direct=auto:analyse=all:deblock=5,4:psy-rd=2.0:0.3:ref=5:bframes=5
+[09:14:12]      + profile: high
+[09:14:12]      + level:   3.1
+[09:14:12]      + quality: 25,00 (RF)
+[09:14:12]      + color profile: 1-1-1
+[09:14:12]      + chroma location: left
+[09:14:12]  * audio track 1
+[09:14:12]    + decoder: Unknown (AAC LC) (2.0 ch) (255 kbps) (track 1, id 0x1)
+[09:14:12]      + bitrate: 255 kbps, samplerate: 48000 Hz
+[09:14:12]    + mixdown: Mono
+[09:14:12]    + encoder: AAC (libavcodec)
+[09:14:12]      + bitrate: 32 kbps, samplerate: 48000 Hz
+[09:14:12] sync: expecting 5405 video frames
+[09:14:12] x264 options: Bad argument aq-strength=0.8
+[09:14:12] x264 options: Unknown suboption 0.3
+[09:14:12] encx264: min-keyint: 30, keyint: 300
+[09:14:12] encx264: encoding at constant RF 25,000000
+[09:14:12] encx264: unparsed options: vbv-bufsize=1650:vbv-maxrate=165:aq-mode=2:aq-strength=0:direct=auto:analyse=all:deblock=5,4:psy-rd=2,0:0.3=:ref=5:bframes=5:level=3.1:b-adapt=2:me=umh:merange=24:subme=10:trellis=2:rc-lookahead=60
+x264 [info]: using SAR=4/3
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile High, level 3.1, 4:2:0, 8-bit
+[09:14:12] sync: first pts video is 0
+[09:14:12] sync: Chapter 1 at frame 1 time 0
+[09:14:12] sync: first pts audio 0x1 is 0
+[09:14:36] reader: done. 1 scr changes
+[09:14:37] work: average encoding speed for job is 217,851929 fps
+[09:14:37] comb detect: heavy 363 | light 1109 | uncombed 3933 | total 5405
+[09:14:37] decomb: deinterlaced 363 | blended 1109 | unfiltered 3933 | total 5405
+[09:14:37] vfr: 2703 frames output, 2702 dropped and 0 duped for CFR/PFR
+[09:14:37] vfr: lost time: 0 (0 frames)
+[09:14:37] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[09:14:37] aac-decoder done: 4223 frames, 0 decoder errors
+[09:14:37] h264-decoder done: 5405 frames, 0 decoder errors
+[09:14:37] sync: got 5405 frames, 5405 expected
+[09:14:37] sync: framerate min 60,000 fps, max 60,000 fps, avg 60,000 fps
+x264 [info]: frame I:11    Avg QP:28,48  size:  6820
+x264 [info]: frame P:762   Avg QP:32,21  size:  1411
+x264 [info]: frame B:1930  Avg QP:38,78  size:   341
+x264 [info]: consecutive B-frames:  5,5%  5,4% 13,7% 29,3% 23,7% 22,4%
+x264 [info]: mb I  I16..4: 32,3% 46,7% 21,0%
+x264 [info]: mb P  I16..4:  1,5%  4,7%  1,2%  P16..4: 28,7%  5,6%  7,6%  0,2%  0,1%    skip:50,4%
+x264 [info]: mb B  I16..4:  0,0%  0,2%  0,1%  B16..8: 27,3%  2,4%  0,9%  direct: 1,8%  skip:67,2%  L0:41,2% L1:55,7% BI: 3,0%
+x264 [info]: 8x8 transform intra:60,2% inter:58,4%
+x264 [info]: direct mvs  spatial:99,6% temporal:0,4%
+x264 [info]: coded y,uvDC,uvAC intra: 58,8% 64,0% 43,6% inter: 6,4% 7,4% 2,3%
+x264 [info]: i16 v,h,dc,p: 42% 26% 15% 17%
+x264 [info]: i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  5%  5% 14% 10% 17% 11% 17%  9% 13%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu:  5%  9% 10% 10% 14% 11% 14% 11% 17%
+x264 [info]: i8c dc,h,v,p: 54% 22% 13% 11%
+x264 [info]: Weighted P-Frames: Y:4,1% UV:3,3%
+x264 [info]: ref P L0: 63,4% 12,1% 12,9%  5,4%  5,4%  0,8%  0,0%
+x264 [info]: ref B L0: 87,5%  8,7%  3,3%  0,6%
+x264 [info]: ref B L1: 94,7%  5,3%
+x264 [info]: kb/s:160,57
+[09:14:37] mux: track 0, 2703 frames, 1807922 bytes, 160,47 kbps, fifo 4096
+[09:14:37] mux: track 1, 4224 frames, 364961 bytes, 32,39 kbps, fifo 8192
+[09:14:37] Finished work at: Sat Feb 11 09:14:37 2023
+
+[09:14:37] libhb: work result = 0

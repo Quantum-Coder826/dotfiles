@@ -1,0 +1,88 @@
+13:09:41.681: Command Line Arguments: --startvirtualcam
+13:09:41.681: CPU Name: AMD Ryzen 7 3700X 8-Core Processor
+13:09:41.681: CPU Speed: 2200.000MHz
+13:09:41.682: Physical Cores: 8, Logical Cores: 16
+13:09:41.682: Physical Memory: 15927MB Total, 9048MB Free
+13:09:41.682: Kernel Version: Linux 5.15.0-76-generic
+13:09:41.682: Distribution: "Linux Mint" "21.1"
+13:09:41.682: Session Type: x11
+13:09:41.682: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+13:09:41.683: Qt Version: 5.15.3 (runtime), 5.15.2 (compiled)
+13:09:41.683: Portable mode: false
+13:09:41.715: OBS 27.2.3+dfsg1-1 (linux)
+13:09:41.715: ---------------------------------
+13:09:41.715: ---------------------------------
+13:09:41.715: audio settings reset:
+13:09:41.715: 	samples per sec: 48000
+13:09:41.715: 	speakers:        2
+13:09:41.722: ---------------------------------
+13:09:41.722: Initializing OpenGL...
+13:09:41.775: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 1660 SUPER/PCIe/SSE2
+13:09:41.775: OpenGL loaded successfully, version 3.3.0 NVIDIA 525.125.06, shading language 3.30 NVIDIA via Cg compiler
+13:09:41.783: ---------------------------------
+13:09:41.783: video settings reset:
+13:09:41.783: 	base resolution:   1920x1080
+13:09:41.783: 	output resolution: 1920x1080
+13:09:41.783: 	downscale filter:  Bicubic
+13:09:41.783: 	fps:               60/1
+13:09:41.783: 	format:            NV12
+13:09:41.783: 	YUV mode:          709/Partial
+13:09:41.783: NV12 texture support not available
+13:09:41.795: Audio monitoring device:
+13:09:41.795: 	name: Default
+13:09:41.795: 	id: default
+13:09:41.795: ---------------------------------
+13:09:41.797: Failed to load 'en-US' text for module: 'decklink-captions.so'
+13:09:41.799: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+13:09:41.840: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+13:09:41.840: No blackmagic support
+13:09:41.923: NVENC supported
+13:09:41.923: FFMPEG VAAPI supported
+13:09:41.938: [vlc-video]: VLC 3.0.16 Vetinari found, VLC video source enabled
+13:09:41.938: ---------------------------------
+13:09:41.938:   Loaded Modules:
+13:09:41.938:     vlc-video.so
+13:09:41.938:     text-freetype2.so
+13:09:41.938:     rtmp-services.so
+13:09:41.938:     obs-x264.so
+13:09:41.938:     obs-transitions.so
+13:09:41.938:     obs-outputs.so
+13:09:41.938:     obs-filters.so
+13:09:41.938:     obs-ffmpeg.so
+13:09:41.938:     linux-v4l2.so
+13:09:41.938:     linux-pulseaudio.so
+13:09:41.938:     linux-jack.so
+13:09:41.938:     linux-decklink.so
+13:09:41.938:     linux-capture.so
+13:09:41.938:     linux-alsa.so
+13:09:41.938:     image-source.so
+13:09:41.938:     frontend-tools.so
+13:09:41.938:     decklink-ouput-ui.so
+13:09:41.938:     decklink-captions.so
+13:09:41.938: ---------------------------------
+13:09:41.938: ==== Startup complete ===============================================
+13:09:41.968: All scene data cleared
+13:09:41.968: ------------------------------------------------
+13:09:41.974: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.71) 15.0.0'
+13:09:41.975: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+13:09:41.975: pulse-input: Started recording from 'alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo.monitor'
+13:09:41.975: [Loaded global audio device]: 'Desktop Audio'
+13:09:41.975: pulse-input: Server name: 'PulseAudio (on PipeWire 0.3.71) 15.0.0'
+13:09:41.976: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+13:09:41.976: pulse-input: Started recording from 'alsa_input.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo'
+13:09:41.976: [Loaded global audio device]: 'Mic/Aux'
+13:09:41.992: xshm-input: Geometry 1920x1080 @ 0,0
+13:09:42.005: Switched to scene 'screen'
+13:09:42.005: ------------------------------------------------
+13:09:42.005: Loaded scenes:
+13:09:42.005: - scene 'screen':
+13:09:42.006:     - source: 'monitor0' (xshm_input)
+13:09:42.006: - scene 'application':
+13:09:42.006:     - source: 'not_connected' (image_source)
+13:09:42.006:     - source: 'Nothing' (text_ft2_source_v2)
+13:09:42.006:     - source: 'window_capture' (xcomposite_input)
+13:09:42.006: ------------------------------------------------
+13:09:42.538: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+13:09:42.538: 
+13:09:46.014: Virtual camera started
+13:09:46.025: ==== Virtual Camera Start ==========================================

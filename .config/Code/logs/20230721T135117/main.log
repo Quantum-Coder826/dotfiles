@@ -1,0 +1,6 @@
+2023-07-21 13:51:17.807 [info] update#setState idle
+2023-07-21 13:51:24.431 [warning] No ptyHost heartbeat after 6 seconds
+2023-07-21 13:51:47.810 [info] update#setState checking for updates
+2023-07-21 13:51:47.816 [info] update#setState available for download
+2023-07-21 13:51:50.830 [info] update#setState idle
+2023-07-21 13:52:14.577 [info] Extension host with pid 8956 exited with code: 0, signal: unknown.

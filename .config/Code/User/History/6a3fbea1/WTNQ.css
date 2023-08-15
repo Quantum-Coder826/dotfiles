@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+}
+
+:root {
+    
+}
+
+#game_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: ;
+}

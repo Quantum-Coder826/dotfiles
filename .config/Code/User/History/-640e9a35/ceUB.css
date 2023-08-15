@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --background_color = 
+}
+
+.game {
+    background-color: whitesmoke;
+    border: 4px outset;
+    width: 200px;
+    padding: 20px;
+}
+
+game-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: auto;
+    padding: 20px;
+    border: 4px inset;
+}

@@ -1,0 +1,44 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        // all entrys neede to compyle and then start the emulator
+        {
+            "label": "assemble tests",
+            "type": "shell",
+            "command": "cargo run --bin asm asm/tests/${fileBasename} dasm/tests/${fileBasenameNoExtension}.bin"
+        },
+        {
+            "label": "disassemble optimzed code",
+            "type": "shell",
+            "command": "cargo run --bin dasm dasm/tests/${fileBasenameNoExtension}.bin asm/tests/dasm/${fileBasenameNoExtension}.asm"
+        }, 
+        {
+            "label": "assemble for emu",
+            "type": "shell",
+            "command": "cargo run --bin asm asm/tests/dasm/${fileBasename} emu/tests/${fileBasenameNoExtension}.bin"
+        },
+        {
+            // task will open extra terminal
+            "label": "run emu dedicated",
+            "type": "process",
+            "command": "/usr/bin/gnome-terminal",
+            "args": [
+                "-- bash -c "<my command or script>; exec bash""
+            ],
+            
+        },
+        {
+            // build and lanch emu
+            "label": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "assemble tests",
+                "disassemble optimzed code",
+                "assemble for emu",
+                "run emu dedicated"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+2023-07-16 19:42:48.335 [info] Getting Manifest... leonardssh.vscord
+2023-07-16 19:42:48.336 [info] Getting Manifest... ms-python.vscode-pylance
+2023-07-16 19:42:48.337 [info] Getting Manifest... pkief.material-icon-theme
+2023-07-16 19:42:48.338 [info] Getting Manifest... serayuzgur.crates
+2023-07-16 19:42:48.339 [info] Getting Manifest... usernamehw.errorlens
+2023-07-16 19:42:48.871 [info] Installing extension: ms-python.vscode-pylance
+2023-07-16 19:42:48.872 [info] Installing extension: serayuzgur.crates
+2023-07-16 19:42:48.873 [info] Installing extension: usernamehw.errorlens
+2023-07-16 19:42:48.900 [info] Installing extension: leonardssh.vscord
+2023-07-16 19:42:48.903 [info] Installing extension: pkief.material-icon-theme
+2023-07-16 19:42:49.756 [info] Getting Manifest... ms-python.python
+2023-07-16 19:42:52.067 [info] Extension signature is verified: usernamehw.errorlens
+2023-07-16 19:42:52.091 [info] Extracted extension to /home/berend/.vscode/extensions/.f6e1e63a-7dd5-4555-8b7c-e504b3500141: usernamehw.errorlens
+2023-07-16 19:42:52.096 [info] Extension signature is verified: serayuzgur.crates
+2023-07-16 19:42:52.096 [info] Renamed to /home/berend/.vscode/extensions/usernamehw.errorlens-3.12.0
+2023-07-16 19:42:52.098 [info] Extracting extension completed. usernamehw.errorlens
+2023-07-16 19:42:52.105 [info] Extension installed successfully: usernamehw.errorlens
+2023-07-16 19:42:52.108 [info] Marked extension as uninstalled usernamehw.errorlens-3.11.1
+2023-07-16 19:42:52.114 [info] Extracted extension to /home/berend/.vscode/extensions/.db11d71d-b65a-4739-bb4c-ab459b50c90f: serayuzgur.crates
+2023-07-16 19:42:52.115 [info] Renamed to /home/berend/.vscode/extensions/serayuzgur.crates-0.6.0
+2023-07-16 19:42:52.116 [info] Extracting extension completed. serayuzgur.crates
+2023-07-16 19:42:52.121 [info] Extension installed successfully: serayuzgur.crates
+2023-07-16 19:42:52.122 [info] Marked extension as uninstalled serayuzgur.crates-0.5.11
+2023-07-16 19:42:52.180 [info] Extension signature is verified: leonardssh.vscord
+2023-07-16 19:42:52.180 [info] Extension signature is verified: pkief.material-icon-theme
+2023-07-16 19:42:52.217 [info] Extracted extension to /home/berend/.vscode/extensions/.a20a78ab-f6f5-4336-9929-48392d318968: leonardssh.vscord
+2023-07-16 19:42:52.226 [info] Renamed to /home/berend/.vscode/extensions/leonardssh.vscord-5.1.14
+2023-07-16 19:42:52.227 [info] Extracting extension completed. leonardssh.vscord
+2023-07-16 19:42:52.235 [info] Extension installed successfully: leonardssh.vscord
+2023-07-16 19:42:52.238 [info] Marked extension as uninstalled leonardssh.vscord-5.1.12
+2023-07-16 19:42:52.576 [info] Extracted extension to /home/berend/.vscode/extensions/.8632abe0-1cde-4c1c-af5a-8dca2f39a6d2: pkief.material-icon-theme
+2023-07-16 19:42:52.578 [info] Renamed to /home/berend/.vscode/extensions/pkief.material-icon-theme-4.29.0
+2023-07-16 19:42:52.579 [info] Extracting extension completed. pkief.material-icon-theme
+2023-07-16 19:42:52.584 [info] Extension installed successfully: pkief.material-icon-theme
+2023-07-16 19:42:52.586 [info] Marked extension as uninstalled pkief.material-icon-theme-4.28.0
+2023-07-16 19:42:53.269 [info] Extension signature is verified: ms-python.vscode-pylance
+2023-07-16 19:42:55.421 [info] Extracted extension to /home/berend/.vscode/extensions/.8284d4db-83bd-48f5-b5d2-01930eb74085: ms-python.vscode-pylance
+2023-07-16 19:42:55.425 [info] Renamed to /home/berend/.vscode/extensions/ms-python.vscode-pylance-2023.7.20
+2023-07-16 19:42:55.426 [info] Extracting extension completed. ms-python.vscode-pylance
+2023-07-16 19:42:55.431 [info] Extension installed successfully: ms-python.vscode-pylance
+2023-07-16 19:42:55.433 [info] Marked extension as uninstalled ms-python.vscode-pylance-2023.7.10

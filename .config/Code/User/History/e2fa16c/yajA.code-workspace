@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"ADDI",
+			"ANDI",
+			"JMPI",
+			"PTSI",
+			"SRLI",
+			"SUBI",
+			"PUTI"
+		]
+	}
+}

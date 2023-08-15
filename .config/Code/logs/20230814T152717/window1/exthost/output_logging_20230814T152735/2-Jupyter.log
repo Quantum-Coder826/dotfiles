@@ -1,0 +1,16 @@
+Visual Studio Code (1.80.1, undefined, desktop)
+Jupyter Extension Version: 2023.6.1101941928.
+Python Extension Version: 2023.14.0.
+Platform: linux (x64).
+Workspace folder ~/.config/qtile, Home = /home/berend
+15:27:35.908 [info] Telemetry level is off
+15:27:35.908 [info] Experiments are disabled, only manually opted experiments are active.
+15:27:36.066 [info] Start refreshing Interpreter Kernel Picker (1692019656066)
+15:27:36.090 [info] Using Pylance
+15:27:36.724 [warn] Failed to get activated env vars for /bin/python3 in 563ms
+15:27:36.756 [info] Process Execution: /bin/python3 -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+15:27:36.799 [info] Process Execution: /bin/python3 -m pip list
+15:27:37.890 [info] End refreshing Interpreter Kernel Picker (1692019656066)
+15:28:49.749 [info] Disposing HostJupyterExecution
+15:28:49.749 [info] Shutting down notebooks for 028e3379-ffdc-4dba-a435-986c9242f228
+15:28:49.749 [info] Disposing HostJupyterExecution

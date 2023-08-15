@@ -1,0 +1,20 @@
+(defwidget cpu [core] 
+    (box :class "stat_cpu" :max-
+         :space-evenly true
+        core))
+
+(defwindow example
+           :monitor 0
+           :geometry (geometry :x "-150px"
+                               :y "170px"
+                               :width "400px"
+                               :height "100px"
+                               :anchor "top right")
+           :stacking "bg"
+           :windowtype "dock"
+           :wm-ignore false
+    (box :orientation "h"
+         :space-evenly true
+         :spacing 10
+        (cpu :core 0)
+        (cpu :core 1)))
