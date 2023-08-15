@@ -1,6 +1,0 @@
-[Bookmarks]
-[Recent]
-/home/berend/Videos/presentatie/
-/home/berend/Videos/
-/home/berend/Videos/out/
-/home/berend/Documents/blender/out/

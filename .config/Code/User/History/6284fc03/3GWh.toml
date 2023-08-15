@@ -1,5 +1,0 @@
-[build]
-linker = "/usr/bin/arm-linux-gnueabi-gcc"
-
-[target.armv5te-unknown-linux-musleabi]
-linker = "rust-lld"

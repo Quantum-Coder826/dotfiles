@@ -1,2 +1,0 @@
-2023-07-21 13:53:24.591 [error] Extension 'github.vscode-pull-request-github' wants API proposal 'treeItemCheckbox' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
-2023-07-21 13:53:27.402 [info] [perf] Render performance baseline is 53ms

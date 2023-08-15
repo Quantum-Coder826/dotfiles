@@ -1,6 +1,0 @@
-2023/06/12-15:58:36.623 2e72 Reusing MANIFEST /home/berend/.config/tetrio-desktop/Local Storage/leveldb/MANIFEST-000001
-2023/06/12-15:58:36.624 2e72 Recovering log #37
-2023/06/12-15:58:36.625 2e72 Reusing old log /home/berend/.config/tetrio-desktop/Local Storage/leveldb/000037.log 
-2023/06/12-15:59:37.794 2f76 Level-0 table #40: started
-2023/06/12-15:59:37.797 2f76 Level-0 table #40: 294416 bytes OK
-2023/06/12-15:59:37.798 2f76 Delete type=0 #37

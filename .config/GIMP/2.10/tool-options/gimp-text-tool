@@ -1,8 +1,0 @@
-# GIMP gimp-text-tool options
-
-(foreground (color-rgb 0.75294119119644165 0.75294119119644165 0.75294119119644165))
-(palette "Color History")
-(font "Sans-serif")
-(justify center)
-
-# end of gimp-text-tool options

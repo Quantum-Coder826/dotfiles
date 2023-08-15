@@ -1,6 +1,0 @@
-configuration {
-  mode: [ combi ];
-  combi-modes: [ window, run ];
-}
-
-@theme "gruvbox-dark-hard"

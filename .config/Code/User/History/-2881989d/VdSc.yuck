@@ -1,9 +1,0 @@
-(defwindow desktop
-            :monitor 0
-            :geometry (geometry :x "-275px"
-                                :y "105px"
-                                :width "100px"
-                                :height "100px"
-                                :anchor "top right")
-
-"test")

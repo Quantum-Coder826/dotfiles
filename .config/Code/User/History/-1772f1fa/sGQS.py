@@ -1,2 +1,0 @@
-from libqtile import hook
-

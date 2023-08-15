@@ -1,5 +1,0 @@
-[build]
-target = "ev3"
-
-[target.armv5te-unknown-linux-musleabi]
-linker = "rust-lld"

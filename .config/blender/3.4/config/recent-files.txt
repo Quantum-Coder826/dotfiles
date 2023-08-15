@@ -1,3 +1,0 @@
-/home/berend/Videos/presentatie.blend
-/home/berend/Documents/blender/Blender 2.blend
-/home/berend/Documents/blender/blender_3_3_lts_splash_by_piotr_krynski.blend

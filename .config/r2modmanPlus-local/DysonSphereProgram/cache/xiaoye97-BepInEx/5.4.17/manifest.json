@@ -1,7 +1,0 @@
-{
-    "name": "BepInEx",
-    "version_number": "5.4.17",
-    "website_url": "https://github.com/BepInEx/BepInEx",
-    "description": "BepInEx5.4.17 mod plugin framework, Mod框架",
-    "dependencies": []
-}

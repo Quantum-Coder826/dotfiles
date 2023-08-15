@@ -1,7 +1,0 @@
-local blockReader = peripheral.find("blockReader")
-
-redstone.setOutput("back", false) -- turn off the redstone output
-
-while true do
-    if 
-end
