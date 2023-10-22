@@ -92,7 +92,7 @@ groups = [
 ]
 
 # easy snippet to use mod key + <number> to switch groups
-# also does mod + shift + <umber> to move window to group and focus that group
+# also does mod + shift + <number> to move window to group and focus that group
 dgroups_key_binder = simple_key_binder(mod)
 
 layouts = [
