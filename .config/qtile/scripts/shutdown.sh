@@ -1,5 +1,5 @@
 #!/bin/bash
-# prompt that will ask to cancle, or power off the system
+# prompt that will ask to cancel, or power off the system
 
 ans=$(echo -e "cancel\nshutdown" | rofi -dmenu -format i:s)
 
