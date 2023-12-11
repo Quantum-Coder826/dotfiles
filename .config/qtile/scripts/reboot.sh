@@ -1,5 +1,5 @@
 #!/bin/bash
-# prompt that will ask to cancle, or power off reboot the system
+# prompt that will ask to cancel, or power off reboot the system
 
 ans=$(echo -e "cancel\nreboot\nreboot to UEFI" | rofi -dmenu -format i:s)
 
