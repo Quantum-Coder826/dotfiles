@@ -1,0 +1,231 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/berend/.Xauthority
+/etc/X11/Xsession.d/30x11-common_xresources: line 16: has_option: command not found
+/etc/X11/Xsession.d/75dbus_dbus-launch: line 9: has_option: command not found
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+/etc/X11/Xsession.d/90x11-common_ssh-agent: line 9: has_option: command not found
+dbus-update-activation-environment: setting SHELL=/bin/zsh
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-qtile:/etc/xdg
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting LANGUAGE=en_US
+dbus-update-activation-environment: setting LC_ADDRESS=nl_NL.UTF-8
+dbus-update-activation-environment: setting LC_NAME=nl_NL.UTF-8
+dbus-update-activation-environment: setting DESKTOP_SESSION=qtile
+dbus-update-activation-environment: setting LC_MONETARY=nl_NL.UTF-8
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting PWD=/home/berend
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=qtile
+dbus-update-activation-environment: setting LOGNAME=berend
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting XAUTHORITY=/home/berend/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/berend
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting HOME=/home/berend
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting LC_PAPER=nl_NL.UTF-8
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting DOTNET_BUNDLE_EXTRACT_BASE_DIR=/home/berend/.cache/dotnet_bundle_extract
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting LC_IDENTIFICATION=nl_NL.UTF-8
+dbus-update-activation-environment: setting LIBVIRT_DEFAULT_URI=qemu:///system
+dbus-update-activation-environment: setting USER=berend
+dbus-update-activation-environment: setting PAM_KWALLET5_LOGIN=/run/user/1000/kwallet5.socket
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting SHLVL=1
+dbus-update-activation-environment: setting LC_TELEPHONE=nl_NL.UTF-8
+dbus-update-activation-environment: setting LC_MEASUREMENT=nl_NL.UTF-8
+dbus-update-activation-environment: setting PAPERSIZE=a4
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting LC_TIME=nl_NL.UTF-8
+dbus-update-activation-environment: setting GTK3_MODULES=xapp-gtk3-module
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/qtile:/home/berend/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+dbus-update-activation-environment: setting PATH=/home/berend/.cargo/bin:/home/berend/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/berend/.dotnet/tools
+dbus-update-activation-environment: setting GDMSESSION=qtile
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting LC_NUMERIC=nl_NL.UTF-8
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+
+(polkit-gnome-authentication-agent-1:2013): GLib-CRITICAL **: 17:41:48.207: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-gnome-authentication-agent-1:2013): polkit-gnome-1-WARNING **: 17:41:48.207: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+[5 zypak-helper] Wait found events, but sd-event found none
+steam.sh[2022]: Running Steam on linuxmint 21.2 64-bit
+steam.sh[2022]: STEAM_RUNTIME is enabled automatically
+setup.sh[2288]: Steam runtime environment up-to-date!
+steam.sh[2022]: Steam client's requirements are satisfied
+03/03 17:41:50 Init: Installing breakpad exception handler for appid(steam)/version(1709168962)/tid(2399)
+Gtk-Message: 17:41:50.104: Failed to load module "xapp-gtk3-module"
+[5:0303/174150.156736:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[5:0303/174150.156770:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[52:0303/174150.465211:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174150.465481:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174150.465522:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174150.465556:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174150.465590:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174150.478882:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174150.479967:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[5:0303/174150.617311:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[5:0303/174150.617382:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[5:0303/174150.617425:ERROR:bus.cc(399)] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+steamwebhelper.sh[2598]: === zo  3 mrt 2024 17:41:51 CET ===
+steamwebhelper.sh[2598]: Starting steamwebhelper under bootstrap sniper steam runtime at /home/berend/.steam/debian-installation/ubuntu12_64/steam-runtime-sniper
+CAppInfoCacheReadFromDiskThread took 34 milliseconds to initialize
+Steam Runtime Launch Service: starting steam-runtime-launcher-service
+Steam Runtime Launch Service: steam-runtime-launcher-service is running pid 2712
+[52:0303/174152.653080:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.856147:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.856253:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.856329:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.856418:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.856484:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.921022:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.921133:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+[52:0303/174152.921186:ERROR:shared_image_factory.cc(575)] Could not find SharedImageBackingFactory with params: usage: Gles2|Raster|DisplayRead|Scanout, format: BGRA_8888, share_between_threads: 0, gmb_type: shared_memory
+BRefreshApplicationsInLibrary 1: 0ms
+BuildCompleteAppOverviewChange: 276 apps
+RegisterForAppOverview 1: 16ms
+RegisterForAppOverview 2: 16ms
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+x86_64-linux-gnu-capsule-capture-libs: warning: Dependencies of libnvidia-pkcs11.so.535.161.07 not found, ignoring: Missing dependencies: Could not find "libcrypto.so.1.1" in LD_LIBRARY_PATH "/home/berend/.steam/debian-installation/ubuntu12_32:/home/berend/.steam/debian-installation/ubuntu12_32/panorama:/usr/lib/x86_64-linux-gnu/libfakeroot:/lib/i386-linux-gnu:/usr/local/lib:/usr/lib/x86_64-linux-gnu/pipewire-0.3/jack:/lib/x86_64-linux-gnu:/lib:/lib/i386-linux-gnu/sse2", ld.so.cache, DT_RUNPATH or fallback /lib:/usr/lib
+esync: up and running.
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+wine: configuration in L"/home/berend/.steam/debian-installation/steamapps/compatdata/548430/pfx" has been updated.
+Fossilize INFO: Setting autogroup scheduling.
+Fossilize INFO: Setting autogroup scheduling.
+/bin/sh\0-c\0/home/berend/.steam/debian-installation/ubuntu12_32/reaper SteamLaunch AppId=548430 -- /home/berend/.steam/debian-installation/ubuntu12_32/steam-launch-wrapper -- '/home/berend/.steam/debian-installation/steamapps/common/SteamLinuxRuntime_sniper'/_v2-entry-point --verb=waitforexitandrun -- '/home/berend/.steam/debian-installation/steamapps/common/Proton - Experimental'/proton waitforexitandrun  '/home/berend/.steam/debian-installation/steamapps/common/Deep Rock Galactic/FSD.exe' -nohmd\0
+ERROR: ld.so: object '/home/berend/.steam/debian-installation/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/berend/.steam/debian-installation/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.
+ERROR: ld.so: object '/home/berend/.steam/debian-installation/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/berend/.steam/debian-installation/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+ERROR: ld.so: object '/home/berend/.steam/debian-installation/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+WARNING: discarding _NET_WM_PID 5 as invalid for X11 window - use specialized XCB_X11_TO_PID function!
+x86_64-linux-gnu-capsule-capture-libs: warning: Dependencies of libnvidia-pkcs11.so.535.161.07 not found, ignoring: Missing dependencies: Could not find "libcrypto.so.1.1" in LD_LIBRARY_PATH "/usr/lib/x86_64-linux-gnu/libfakeroot:/lib/i386-linux-gnu:/usr/local/lib:/usr/lib/x86_64-linux-gnu/pipewire-0.3/jack:/lib/x86_64-linux-gnu:/lib:/lib/i386-linux-gnu/sse2:/home/berend/.steam/debian-installation/steamapps/common/Deep Rock Galactic", ld.so.cache, DT_RUNPATH or fallback /lib:/usr/lib
+esync: up and running.
+Setting breakpad minidump AppID = 548430
+Steam_SetMinidumpSteamID:  Caching Steam ID:  76561198131185961 [API loaded no]
+Fossilize INFO: Overriding serialization path: "/home/berend/.steam/debian-installation/steamapps/shadercache/548430/fozpipelinesv6/steamapprun_pipeline_cache".
+GameOverlay: started '/home/berend/.steam/debian-installation/ubuntu12_32/gameoverlayui' (pid 28141) for game process 28028
+03/03 18:54:31 Init: Installing breakpad exception handler for appid(gameoverlayui)/version(20240229003933)/tid(28141)
+03/03 18:54:31 Init: Installing breakpad exception handler for appid(gameoverlayui)/version(1.0)/tid(28141)
+
+(wine:28028): GStreamer-Video-CRITICAL **: 18:54:31.689: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+Fossilize INFO: Overriding serialization path: "/home/berend/.steam/debian-installation/steamapps/shadercache/548430/fozpipelinesv6/steamapprun_pipeline_cache".
+
+(wine:28028): GStreamer-Video-CRITICAL **: 18:54:49.381: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 18:54:49.398: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:00:09.018: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:00:09.041: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:00:56.783: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:00:56.791: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:01:09.255: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:01:09.276: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:01:09.304: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+
+(wine:28028): GStreamer-Video-CRITICAL **: 19:01:09.313: gst_video_info_from_caps: assertion 'gst_caps_is_fixed (caps)' failed
+pid 27948 != 27947, skipping destruction (fork without exec?)
+Game 548430 created interface STEAMAPPS_INTERFACE_VERSION008 / 
+Game 548430 created interface STEAMREMOTESTORAGE_INTERFACE_VERSION014 / 
+Game 548430 created interface STEAMUSERSTATS_INTERFACE_VERSION012 / 
+Game 548430 created interface SteamController008 / 
+Game 548430 created interface SteamFriends017 / 
+Game 548430 created interface SteamInput002 / 
+Game 548430 created interface SteamMatchMaking009 / 
+Game 548430 created interface SteamMatchMakingServers002 / 
+Game 548430 created interface SteamNetworking006 / 
+Game 548430 created interface SteamNetworkingSockets009 / 
+Game 548430 created interface SteamNetworkingUtils003 / 
+Game 548430 created interface SteamUser021 / 
+Game 548430 created interface SteamUser021 / User
+Game 548430 created interface SteamUtils010 / 
+Game 548430 method call count for IClientNetworkingUtilsSerialized::GotLocationString : 2
+Game 548430 method call count for IClientNetworkingUtilsSerialized::PostConnectionStateMsg : 5555
+Game 548430 method call count for IClientNetworkingSocketsSerialized::AllowDirectConnectToPeerString : 1
+Game 548430 method call count for IClientNetworkingSocketsSerialized::GetSTUNServer : 2
+Game 548430 method call count for IClientNetworkingSocketsSerialized::GetCachedRelayTicketCount : 1
+Game 548430 method call count for IClientNetworkingSocketsSerialized::GetCertAsync : 1
+Game 548430 method call count for IClientNetworkingSocketsSerialized::SendP2PRendezvous : 5
+Game 548430 method call count for IClientHTTP::ReleaseHTTPRequest : 2
+Game 548430 method call count for IClientHTTP::GetHTTPResponseBodyData : 2
+Game 548430 method call count for IClientHTTP::SendHTTPRequest : 2
+Game 548430 method call count for IClientHTTP::SetHTTPRequestHeaderValue : 1
+Game 548430 method call count for IClientHTTP::CreateHTTPRequest : 2
+Game 548430 method call count for IClientUserStats::UploadLeaderboardScore : 67
+Game 548430 method call count for IClientUserStats::GetDownloadedLeaderboardEntry : 89
+Game 548430 method call count for IClientUserStats::DownloadLeaderboardEntriesForUsers : 89
+Game 548430 method call count for IClientUserStats::GetLeaderboardDisplayType : 7
+Game 548430 method call count for IClientUserStats::GetLeaderboardSortMethod : 7
+Game 548430 method call count for IClientUserStats::GetLeaderboardEntryCount : 7
+Game 548430 method call count for IClientUserStats::FindLeaderboard : 7
+Game 548430 method call count for IClientUserStats::GetUserStat : 89
+Game 548430 method call count for IClientUserStats::RequestUserStats : 157
+Game 548430 method call count for IClientUserStats::GetAchievementDisplayAttribute : 207
+Game 548430 method call count for IClientUserStats::SetAchievement : 70
+Game 548430 method call count for IClientUserStats::GetAchievement : 69
+Game 548430 method call count for IClientUserStats::StoreStats : 139
+Game 548430 method call count for IClientUserStats::SetStat : 67
+Game 548430 method call count for IClientUserStats::GetStat : 67
+Game 548430 method call count for IClientUserStats::RequestCurrentStats : 1
+Game 548430 method call count for IClientAppManager::GetActiveBeta : 420
+Game 548430 method call count for IClientAppManager::IsAppDlcInstalled : 145
+Game 548430 method call count for IClientAppManager::GetAppContentInfo : 1
+Game 548430 method call count for IClientMatchmaking::GetLobbyOwner : 119
+Game 548430 method call count for IClientMatchmaking::SetLobbyJoinable : 13
+Game 548430 method call count for IClientMatchmaking::SetLobbyType : 13
+Game 548430 method call count for IClientMatchmaking::GetLobbyMemberLimit : 63
+Game 548430 method call count for IClientMatchmaking::SetLobbyMemberLimit : 13
+Game 548430 method call count for IClientMatchmaking::GetLobbyDataByIndex : 1470
+Game 548430 method call count for IClientMatchmaking::GetLobbyDataCount : 49
+Game 548430 method call count for IClientMatchmaking::SetLobbyData : 834
+Game 548430 method call count for IClientMatchmaking::GetNumLobbyMembers : 63
+Game 548430 method call count for IClientMatchmaking::LeaveLobby : 2
+Game 548430 method call count for IClientMatchmaking::JoinLobby : 1
+Game 548430 method call count for IClientMatchmaking::CreateLobby : 2
+Game 548430 method call count for IClientUtils::RecordSteamInterfaceCreation : 17
+Game 548430 method call count for IClientUtils::FilterText : 8
+Game 548430 method call count for IClientUtils::InitFilterText : 1
+Game 548430 method call count for IClientUtils::GetAPICallResult : 327
+Game 548430 method call count for IClientUtils::IsAPICallCompleted : 2218
+Game 548430 method call count for IClientUtils::GetAppID : 21
+Game 548430 method call count for IClientUtils::GetIPCountry : 25
+Game 548430 method call count for IClientFriends::GetFriendPersonaName_Public : 119
+Game 548430 method call count for IClientFriends::GetFriendRichPresenceKeyCount : 1
+Game 548430 method call count for IClientFriends::GetFriendRichPresence : 140
+Game 548430 method call count for IClientFriends::SetRichPresence : 1022
+Game 548430 method call count for IClientFriends::SetPlayedWith : 4
+Game 548430 method call count for IClientFriends::RequestUserInformation : 6
+Game 548430 method call count for IClientFriends::GetFriendGamePlayed : 29
+Game 548430 method call count for IClientFriends::GetFriendByIndex : 28
+Game 548430 method call count for IClientFriends::GetFriendCount : 11
+Game 548430 method call count for IClientFriends::GetFriendPersonaState : 57
+Game 548430 method call count for IClientFriends::GetFriendRelationship : 1
+Game 548430 method call count for IClientFriends::GetPersonaName : 10
+Game 548430 method call count for IClientUser::BIsSubscribedApp : 1
+Game 548430 method call count for IClientUser::GetEncryptedAppTicket : 2
+Game 548430 method call count for IClientUser::RequestEncryptedAppTicket : 1
+Game 548430 method call count for IClientUser::GetAuthSessionTicket : 2
+Game 548430 method call count for IClientUser::GetSteamID : 572
+Game 548430 method call count for IClientUser::BLoggedOn : 42
+Uploaded AppInterfaceStats to Steam
+
+(process:28141): GLib-GObject-CRITICAL **: 19:19:38.256: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+reaping pid: 28141 -- gameoverlayui
+
+(easyeffects:2): Gtk-WARNING **: 20:11:35.134: Failed to load icon /run/host/share/icons/hicolor/32x32/apps/firefox.png: Error opening file /run/host/share/icons/hicolor/32x32/apps/firefox.png: No such file or directory
