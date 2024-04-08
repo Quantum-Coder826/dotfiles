@@ -72,6 +72,9 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.spawn("pactl -- set-sink-volume 0 -5%"), desc="Lower Volume by 5%"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl -- set-sink-volume 0 +5%"), desc="Raise Volume by 5%"),
     Key([], "XF86AudioMute", lazy.spawn("pactl -- set-sink-mute 0 toggle"), desc="Toggle mute"),
+    Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight +5"), desc="Increase brightness with 5 percent"),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -5"), desc="Decrease brightness with 5 percent"),
+
 
     # util
     Key(["control", "shift"], "Escape", lazy.spawn(terminal + " -e 'btop -p 0'"), desc="open xfce terminal running btop as a task manager"),
