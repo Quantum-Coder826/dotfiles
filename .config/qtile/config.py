@@ -214,6 +214,21 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
+                widget.Battery(
+                    charge_char = "󰂄",
+                    discharge_char = "󰂀",
+                    empty_char = "󱉞",
+                    not_charging_char = "󰂃",
+                    unknown_char = "󰂑",
+                    format = "{char} {percent:2.0%} {hour:d}:{min:02d}",
+                    hide_threshold = 0.60,
+                    low_foreground = warning,
+                    low_percentage = 0.15,
+                    notify_below = 0.15,
+                    background=green,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
                 widget.CheckUpdates(
                     distro="Ubuntu",
                     display_format="󰚰 {updates}", #nf-md-update
