@@ -299,6 +299,12 @@ screens = [
                 widget.WindowName(
                     **deco_powerline,
                 ),
+                widget.Sep(
+                    linewidth = 0,
+                    background=blue,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
                 widget.GroupBox(
                     disable_drag=True,
                     active=active,
