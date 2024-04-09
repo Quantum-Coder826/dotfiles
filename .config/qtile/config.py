@@ -172,10 +172,12 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
+wallpaper = "~/Pictures/background/pacman-ghosts.jpg"
+
 screens = [
     #main monitor
     Screen(
-        wallpaper="~/Pictures/background/spaceman.jpg",
+        wallpaper=wallpaper,
         wallpaper_mode="fill",
         top=bar.Bar(
             [
@@ -251,7 +253,7 @@ screens = [
 
     #*secondary monitor
     Screen (
-        wallpaper="~/Pictures/background/spaceman.jpg",
+        wallpaper=wallpaper,
         wallpaper_mode="fill",
         top=bar.Bar(
             [
