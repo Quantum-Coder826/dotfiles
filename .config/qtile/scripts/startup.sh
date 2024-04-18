@@ -9,6 +9,7 @@ xset -dmps
 # system apps
 (/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &)
 (env GTK_THEME=Adwaita:dark /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=easyeffects com.github.wwmm.easyeffects &)
+(/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=qpwgraph --file-forwarding org.rncbc.qpwgraph @@ %f @@ &)
 (/home/berend/.local/bin/greenclip daemon &)
 
 # my startup apps

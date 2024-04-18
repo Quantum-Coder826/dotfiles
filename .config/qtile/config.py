@@ -282,7 +282,7 @@ screens = [
                 widget.Memory(
                     format="󰍛 {MemUsed:.0f}{mm}󰿟{MemTotal:.0f}{mm}",
                     measure_mem="G",
-                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'btop'")},
+                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'btop -p 2'")},
                     update_interval=1.0,
                     background=purple,
                     foreground=foreground,
