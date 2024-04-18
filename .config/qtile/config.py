@@ -69,9 +69,13 @@ keys = [
     Key([alt, "control"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the computer"),
     Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'")),
     # media keys
-    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl -- set-sink-volume 0 -5%"), desc="Lower Volume by 5%"),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl -- set-sink-volume 0 +5%"), desc="Raise Volume by 5%"),
-    Key([], "XF86AudioMute", lazy.spawn("pactl -- set-sink-mute 0 toggle"), desc="Toggle mute"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q -D pulse sset Master 5%-"), desc="Lower Volume by 5%"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q -D pulse sset Master 5%+"), desc="Raise Volume by 5%"),
+    Key([], "XF86AudioMute", lazy.spawn("amixer -q -D pulse sset Master toggle"), desc="Toggle mute"),
+    Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause"), desc="Play/Pause player"),
+    Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
+    Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
+
     Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight +5"), desc="Increase brightness with 5 percent"),
     Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -5"), desc="Decrease brightness with 5 percent"),
 
@@ -226,11 +230,12 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
-                widget.PulseVolume(
+                widget.Volume(
                     background=purple,
                     foreground=foreground,
                     fmt=" {}",
-                    update_interval=0.04,
+                    device = "pulse",
+                    check_mute_string = "[off]",
                     **deco_powerline,
                 ),
                 widget.Backlight(
