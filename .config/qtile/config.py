@@ -110,6 +110,7 @@ groups = [
             matches=[
                     Match(wm_class=["napster bigscreen electron"]),
                     Match(wm_class=["easyeffects"]),
+                    Match(wm_class=["qpwgraph", "qpwgraph"]),
                     Match(wm_class=["obs"])
             ]),
 ]
