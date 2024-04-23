@@ -12,6 +12,7 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export DOTS="$HOME/dotfiles"
 export DEV="$HOME/Documents/dev"
+export SHARE="/media/$USER/smb"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
