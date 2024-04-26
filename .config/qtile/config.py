@@ -174,7 +174,7 @@ extension_defaults = widget_defaults.copy()
 screens = [
     #main monitor
     Screen(
-        wallpaper="~/Pictures/background/DRG_Wallpaper_GlacialStrata.jpg",
+        wallpaper="~/Pictures/background/penguin.jpg",
         wallpaper_mode="fill",
         top=bar.Bar(
             [
