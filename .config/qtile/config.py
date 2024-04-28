@@ -70,8 +70,8 @@ keys = [
     Key([alt, "control"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the computer"),
     Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'")),
     # media keys
-    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl -- set-sink-volume 0 -5%"), desc="Lower Volume by 5%"),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl -- set-sink-volume 0 +5%"), desc="Raise Volume by 5%"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q -D pulse sset Master 5%-"), desc="Lower Volume by 5%"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q -D pulse sset Master 5%+"), desc="Raise Volume by 5%"),
     Key([], "XF86AudioMute", lazy.spawn("pactl -- set-sink-mute 0 toggle"), desc="Toggle mute"),
     Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause"), desc="Play/Pause player"),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
@@ -218,6 +218,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.WindowName(
+                    max_chars=160,
                     **deco_powerline,
                 ),
                 widget.Systray(
@@ -234,11 +235,12 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
-                widget.PulseVolume(
+                widget.Volume(
+                    device = "pulse",
+                    check_mute_string = "[off]",
+                    fmt=" {}",
                     background=purple,
                     foreground=foreground,
-                    fmt=" {}",
-                    update_interval=0.04,
                     **deco_powerline,
                 ),
                 widget.Clock(
@@ -297,6 +299,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.WindowName(
+                    max_chars=160,
                     **deco_powerline,
                 ),
                 widget.Sep(
