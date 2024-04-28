@@ -215,6 +215,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.WindowName(
+                    max_chars = 143,
                     **deco_powerline,
                 ),
                 widget.Systray(
