@@ -80,6 +80,7 @@ keys = [
     # util
     Key(["control", "shift"], "Escape", lazy.spawn(terminal + " -e 'btop -p 0'"), desc="open xfce terminal running btop as a task manager"),
     Key([alt], "Tab", lazy.next_screen(), desc="Switch focus between screens"),
+    Key([mod], "b", lazy.spawn("firefox"), desc="Open firefox"),
 ]
 
 # create all groups
