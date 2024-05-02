@@ -237,7 +237,9 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Volume(
-                    device = "pulse",
+                    device = "pipewire",
+                    cardid = "0",
+                    channel = "Capture",
                     check_mute_string = "[off]",
                     fmt=" {}",
                     background=purple,
