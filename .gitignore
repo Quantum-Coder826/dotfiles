@@ -1,2 +1,2 @@
 # for pycache qtile
-*.pyc
+.config/qtile/__pycache__
