@@ -251,8 +251,9 @@ screens = [
                 widget.Battery(
                     charge_char = "󰂄",
                     discharge_char = "󰂀",
-                    empty_char = "󱉞",
+                    empty_char = "󰂎",
                     not_charging_char = "󰂃",
+                    full_char="󰁹",
                     unknown_char = "󰂑",
                     format = "{char} {percent:2.0%} {hour:d}:{min:02d}",
                     low_foreground = warning,
