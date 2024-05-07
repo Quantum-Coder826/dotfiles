@@ -5,7 +5,7 @@ rule = {
     },
   },
   apply_properties = {
-    ["node.description"] = "Laptop speaker/3.5mm",
+    ["node.description"] = "Speaker/3.5mm",
   },
 }
 
