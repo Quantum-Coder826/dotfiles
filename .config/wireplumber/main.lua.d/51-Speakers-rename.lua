@@ -1,7 +1,7 @@
 rule = {
   matches = {
     {
-      { "node.name", "equals", "alsa_output.pci-0000_0c_00.4.analog-stereo"},
+      { "node.name", "equals",  "alsa_output.pci-0000_0c_00.4.iec958-stereo" },
     },
   },
   apply_properties = {
@@ -10,4 +10,3 @@ rule = {
 }
 
 table.insert(alsa_monitor.rules, rule)
-

@@ -98,7 +98,8 @@ groups = [
     Group(
             name="tray",
             label="󱊖", #nf-md-tray_full
-            layout="monadtall",
+            #layout="ScreenSplit",
+            #layouts=[layout.ScreenSplit],
             position=9,
             matches=[
                 Match(wm_class=["discord"]),
