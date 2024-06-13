@@ -112,6 +112,7 @@ groups = [
                     Match(wm_class=["napster bigscreen electron"]),
                     Match(wm_class=["easyeffects"]),
                     Match(wm_class=["qpwgraph", "qpwgraph"]),
+                    Match(wm_class=["GalaxyBudsClient", "GalaxyBudsClient"]),
                     Match(wm_class=["obs"])
             ]),
 ]
@@ -298,7 +299,6 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(wm_class="keepassxc"), # password manager
     Match(wm_class="file-roller"), # archive extractor
     Match(wm_class="xfce4-screenshooter"),
-    Match(wm_class="edmarketconnector"),
 ],  
 
 fullscreen_border_width = 0,
