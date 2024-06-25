@@ -13,6 +13,6 @@ xset -dmps
 (/home/berend/.local/bin/greenclip daemon &)
 
 # my startup apps
-(flatpak run com.valvesoftware.Steam &)
+(steam &)
 (/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord &) # add --start-minimized when need to start in tray
 
