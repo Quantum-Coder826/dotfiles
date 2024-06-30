@@ -92,9 +92,8 @@ groups = [
     Group("2", position=2),
     Group("3", position=3),
     Group("4", position=4),
-
-    #Group("7", position=7),
-    #Group("8", position=8),
+    Group("7", position=7),
+    Group("8", position=8),
 
     Group(
             name="tray",
@@ -256,7 +255,8 @@ screens = [
                     not_charging_char = "󰂃",
                     full_char="󰁹",
                     unknown_char = "󰂑",
-                    format = "{char} {percent:2.0%} {hour:d}:{min:02d}",
+                    show_short_text = False,
+                    format = "{char} {percent:2.0%}",
                     low_foreground = warning,
                     low_percentage = 0.15,
                     notify_below = 0.15,
@@ -265,7 +265,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Clock(
-                    format="%d-%m-%y %a %H:%M:%S",
+                    format="%d-%m-%y %a %H:%M",
                     background=blue,
                     foreground=foreground,
                 ),

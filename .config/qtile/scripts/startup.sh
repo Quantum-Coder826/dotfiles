@@ -5,6 +5,7 @@
 (/bin/indicator-cpufreq &) # systray to ajust cpu govoneur
 (/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &) # the polkit
 (/usr/bin/nm-applet &) # Wifi icon in systray
+(/usr/bin/xfce4-power-manager &) # Power managment
 
 # systray apps/utils
 (/bin/solaar -w hide &) # systray for logitech mouse
