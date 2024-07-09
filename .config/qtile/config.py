@@ -199,6 +199,11 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
+                #widget.CapsNumLockIndicator(
+                #    background=green,
+                #    foreground=foreground,
+                #    **deco_powerline,
+                #),
                 widget.Chord(
                     background=green,
                     foreground=foreground,
@@ -360,6 +365,7 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(wm_class="file-roller"), # archive extractor
     Match(wm_class="xfce4-screenshooter"),
     Match(wm_class="edmarketconnector"),
+    Match(wm_class="megasync"),
 ],  
 
 fullscreen_border_width = 0,
