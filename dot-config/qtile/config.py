@@ -13,12 +13,14 @@ from gruvbox.dark import *
 
 # import os to send commands to the system
 import os, subprocess
-from threading import Timer
+
+# import extra layouts
+from qtile_bonsai import Bonsai
 
 #* vars
 mod = "mod4"
 alt = "mod1"
-terminal = "xfce4-terminal"
+terminal = "konsole"
 
 # decorations
 deco_powerline = {
@@ -61,7 +63,7 @@ keys = [
     
     # control qtile/apps
     Key(["control", alt], "t", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], "e", lazy.spawn("nemo"), desc="Open file explorer"),
+    Key([mod], "e", lazy.spawn("dolphin"), desc="Open file explorer"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
@@ -131,21 +133,18 @@ layouts = [
         border_focus=focus_t,
         border_normal=normal_t,
     ),
-    layout.MonadThreeCol(
-        inactive_bg=focus_f,
-        margin=6,
-        border_width=2,
-        border_focus=focus_t,
-        border_normal=normal_t,
-    ),
-    layout.MonadWide(
-        align=1,
-        inactive_bg=focus_f,
-        margin=6,
-        border_width=2,
-        border_focus=focus_t,
-        border_normal=normal_t,
-    ),
+    #Bonsai(**{
+    #  # Specify your options here. These examples are defaults.
+    #  "window.border_size": 1,
+    #  "tab_bar.height": 20,
+    #  
+    #  # You can specify subtab level specific options if desired by prefixing
+    #  # the option key with the appropriate level, eg. L1, L2, L3 etc.
+    #  # For example, the following options affect only 2nd level subtabs and
+    #  # their windows:
+    #  # "L2.window.border_color": "#ff0000",
+    #  # "L2.window.margin": 5,
+    #}), 
     layout.TreeTab(
         sections=[""],
         active_bg=focus_t,
@@ -292,7 +291,7 @@ screens = [
                 widget.Memory(
                     format="󰍛 {MemUsed:.0f}{mm}󰿟{MemTotal:.0f}{mm}",
                     measure_mem="G",
-                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'btop -p 2'")},
+                    mouse_callbacks={"Button1": lazy.spawn("plasma-systemmonitor")},
                     update_interval=1.0,
                     background=purple,
                     foreground=foreground,
@@ -300,7 +299,7 @@ screens = [
                 ),
                 widget.CPU(
                     format="󰻠 {load_percent}󰏰",
-                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'btop -p 1'")},
+                    mouse_callbacks={"Button1": lazy.spawn("plasma-systemmonitor")},
                     update_interval=1.0,
                     background=yellow,
                     foreground=foreground,
