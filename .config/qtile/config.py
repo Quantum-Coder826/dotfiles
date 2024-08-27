@@ -14,8 +14,8 @@ from gruvbox.dark import *
 # import os to send commands to the system
 import os, subprocess
 
-# import extra layouts
-from qtile_bonsai import Bonsai
+# utils
+from scripts.utils import *
 
 #* vars
 mod = "mod4"
@@ -35,20 +35,44 @@ def autostart(): # run my startup programs
     home = os.path.expanduser("~/.config/qtile/scripts/startup.sh")
     subprocess.call([home])
 
+@hook.subscribe.startup
+def run_every_startup():
+    utils.setTrayLayout()
+
 keys = [
     # manager binds
     KeyChord([mod], "z", [ # binds for moving windows around
-        Key([mod], "h", lazy.layout.swap_left()),
-        Key([mod], "l", lazy.layout.swap_right()),
-        Key([mod], "j", lazy.layout.shuffle_down()),
-        Key([mod], "k", lazy.layout.shuffle_up()),
+        Key([mod], "h",
+                lazy.layout.swap_left().when(layout="monadtall"),
+                lazy.layout.move_left().when(layout="plasma"),
+                lazy.layout.integrate_left().when(layout="plasma")),
+        Key([mod], "l",
+                lazy.layout.swap_right().when(layout="monadtall"),
+                lazy.layout.move_right().when(layout="plasma"),
+                lazy.layout.integrate_right().when(layout="plasma")),
+        Key([mod], "j",
+                lazy.layout.shuffle_down().when(layout="monadtall"),
+                lazy.layout.move_down().when(layout="plasma"),
+                lazy.layout.integrate_down().when(layout="plasma")),
+        Key([mod], "k",
+                lazy.layout.shuffle_up().when(layout="monadtall"),
+                lazy.layout.move_up().when(layout="plasma"),
+                lazy.layout.integrate_up().when(layout="plasma")),
     ], mode=True, name="󰆾 "),
 
     KeyChord([mod], "x", [# binds for resizing windows
-        Key([mod], "h", lazy.layout.grow()),
-        Key([mod], "l", lazy.layout.shrink()),
-        Key([mod], "j", lazy.layout.reset()),
-        Key([mod], "k", lazy.layout.maximize()),
+        Key([mod], "h",
+                lazy.layout.grow().when(layout="monadtall"),
+                lazy.layout.grow_width(30).when(layout="plasma")),
+        Key([mod], "l",
+                lazy.layout.shrink().when(layout="monadtall"),
+                lazy.layout.grow_width(-30).when(layout="plasma")),
+        Key([mod], "j",
+                lazy.layout.reset().when(layout="monadtall"),
+                lazy.layout.grow_height(30).when(layout="plasma")),
+        Key([mod], "k",
+                lazy.layout.maximize().when(layout="monadtall"),
+                lazy.layout.grow_height(-30).when(layout="plasma")),
     ], mode=True, name="󰩨 "),
     
     # binds for navigating between windows
@@ -58,8 +82,16 @@ keys = [
     Key([mod], "j", lazy.layout.down()),
     Key([mod], "k", lazy.layout.up()),
 
+    # binds spesific to layout.plasma
+    Key([mod], "d", lazy.layout.mode_horizontal().when(layout="plasma")),
+    Key([mod], "v", lazy.layout.mode_vertical().when(layout="plasma")),
+    Key([mod, "shift"], "d", lazy.layout.mode_horizontal_split().when(layout="plasma")),
+    Key([mod, "shift"], "v", lazy.layout.mode_vertical_split().when(layout="plasma")),
+
     # bind to reset windows size needs to be active at all times
-    Key([mod, "shift"], "j", lazy.layout.reset()),
+    Key([mod, "shift"], "j", 
+            lazy.layout.reset().when(layout="monadtall"),
+            lazy.layout.reset_size().when(layout="plasma")),
     
     # control qtile/apps
     Key(["control", alt], "t", lazy.spawn(terminal), desc="Launch terminal"),
@@ -133,18 +165,15 @@ layouts = [
         border_focus=focus_t,
         border_normal=normal_t,
     ),
-    #Bonsai(**{
-    #  # Specify your options here. These examples are defaults.
-    #  "window.border_size": 1,
-    #  "tab_bar.height": 20,
-    #  
-    #  # You can specify subtab level specific options if desired by prefixing
-    #  # the option key with the appropriate level, eg. L1, L2, L3 etc.
-    #  # For example, the following options affect only 2nd level subtabs and
-    #  # their windows:
-    #  # "L2.window.border_color": "#ff0000",
-    #  # "L2.window.margin": 5,
-    #}), 
+    layout.Plasma(
+        border_focus=focus_t,
+        border_focus_fixed=focus_t,
+        border_normal=normal_t,
+        border_normal_fixed=normal_t,
+        border_width=2,
+        border_width_single=0,
+        margin=6,
+    ),
     layout.TreeTab(
         sections=[""],
         active_bg=focus_t,
@@ -208,6 +237,15 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
+                widget.Plasma(
+                    horizontal=" ",
+                    vertical=" ",
+                    split="󰃻",
+                    format="{mode}",
+                    background=purple,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
                 widget.GroupBox(
                     disable_drag=True,
                     active=active,
@@ -234,10 +272,9 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.CheckUpdates(
-                    distro="Ubuntu",
+                    distro="Debian",
                     display_format="󰚰 {updates}", #nf-md-update
                     restart_indicator="󱄌", #nf-md-restart_alert
-                    execute="mintupdate", # open update manager
                     background=red,
                     foreground=foreground,
                     **deco_powerline,
@@ -321,6 +358,15 @@ screens = [
                     inactive=background,
                     urgent_border=warning,
                     highlight_method="block",
+                    **deco_powerline,
+                ),
+                widget.Plasma(
+                    horizontal=" ",
+                    vertical=" ",
+                    split="󰃻",
+                    format="{mode}",
+                    background=purple,
+                    foreground=foreground,
                     **deco_powerline,
                 ),
                 widget.Chord(
