@@ -1,2 +1,9 @@
-dot-config/qtile/__pycache__
-dot-config/qtile/*.swp
+#* python stuff
+__pycache__/
+
+# venv
+/.config/qtile/scripts/bin
+/.config/qtile/scripts/include
+/.config/qtile/scripts/lib
+/.config/qtile/scripts/lib64
+/.config/qtile/scripts/pyvenv.cfg
