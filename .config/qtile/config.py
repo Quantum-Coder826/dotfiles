@@ -35,17 +35,37 @@ def autostart(): # run my startup programs
 keys = [
     # manager binds
     KeyChord([mod], "z", [ # binds for moving windows around
-        Key([mod], "h", lazy.layout.swap_left()),
-        Key([mod], "l", lazy.layout.swap_right()),
-        Key([mod], "j", lazy.layout.shuffle_down()),
-        Key([mod], "k", lazy.layout.shuffle_up()),
+        Key([mod], "h",
+                lazy.layout.swap_left().when(layout="monadtall"),
+                lazy.layout.move_left().when(layout="plasma"),
+                lazy.layout.integrate_left().when(layout="plasma")),
+        Key([mod], "l",
+                lazy.layout.swap_right().when(layout="monadtall"),
+                lazy.layout.move_right().when(layout="plasma"),
+                lazy.layout.integrate_right().when(layout="plasma")),
+        Key([mod], "j",
+                lazy.layout.shuffle_down().when(layout="monadtall"),
+                lazy.layout.move_down().when(layout="plasma"),
+                lazy.layout.integrate_down().when(layout="plasma")),
+        Key([mod], "k",
+                lazy.layout.shuffle_up().when(layout="monadtall"),
+                lazy.layout.move_up().when(layout="plasma"),
+                lazy.layout.integrate_up().when(layout="plasma")),
     ], mode=True, name="󰆾 "),
 
     KeyChord([mod], "x", [# binds for resizing windows
-        Key([mod], "h", lazy.layout.grow()),
-        Key([mod], "l", lazy.layout.shrink()),
-        Key([mod], "j", lazy.layout.reset()),
-        Key([mod], "k", lazy.layout.maximize()),
+        Key([mod], "h",
+                lazy.layout.grow().when(layout="monadtall"),
+                lazy.layout.grow_width(30).when(layout="plasma")),
+        Key([mod], "l",
+                lazy.layout.shrink().when(layout="monadtall"),
+                lazy.layout.grow_width(-30).when(layout="plasma")),
+        Key([mod], "j",
+                lazy.layout.reset().when(layout="monadtall"),
+                lazy.layout.grow_height(30).when(layout="plasma")),
+        Key([mod], "k",
+                lazy.layout.maximize().when(layout="monadtall"),
+                lazy.layout.grow_height(-30).when(layout="plasma")),
     ], mode=True, name="󰩨 "),
     
     # binds for navigating between windows
@@ -55,9 +75,17 @@ keys = [
     Key([mod], "j", lazy.layout.down()),
     Key([mod], "k", lazy.layout.up()),
 
+    # binds spesific to layout.plasma
+    Key([mod], "d", lazy.layout.mode_horizontal().when(layout="plasma")),
+    Key([mod], "v", lazy.layout.mode_vertical().when(layout="plasma")),
+    Key([mod, "shift"], "d", lazy.layout.mode_horizontal_split().when(layout="plasma")),
+    Key([mod, "shift"], "v", lazy.layout.mode_vertical_split().when(layout="plasma")),
+
     # bind to reset windows size needs to be active at all times
-    Key([mod, "shift"], "j", lazy.layout.reset()),
-    
+    Key([mod, "shift"], "j", 
+            lazy.layout.reset().when(layout="monadtall"),
+            lazy.layout.reset_size().when(layout="plasma")),
+
     # control qtile/apps
     Key(["control", alt], "t", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "e", lazy.spawn("nemo"), desc="Open file explorer"),
@@ -92,8 +120,8 @@ groups = [
     Group("2", position=2),
     Group("3", position=3),
     Group("4", position=4),
-    Group("7", position=7),
-    Group("8", position=8),
+    Group("5", position=5),
+    Group("6", position=6),
 
     Group(
             name="tray",
@@ -121,39 +149,22 @@ groups = [
 dgroups_key_binder = simple_key_binder(mod)
 
 layouts = [
+    layout.Plasma(
+        border_focus=focus_t,
+        border_focus_fixed=focus_t,
+        border_normal=normal_t,
+        border_normal_fixed=normal_t,
+        border_width=2,
+        fair=True,
+        border_width_single=0,
+        margin=4,
+    ),
     layout.MonadTall(
         inactive_bg=focus_f,
         margin=6,
         border_width=2,
         border_focus=focus_t,
         border_normal=normal_t,
-    ),
-    layout.MonadThreeCol(
-        inactive_bg=focus_f,
-        margin=6,
-        border_width=2,
-        border_focus=focus_t,
-        border_normal=normal_t,
-    ),
-    layout.MonadWide(
-        align=1,
-        inactive_bg=focus_f,
-        margin=6,
-        border_width=2,
-        border_focus=focus_t,
-        border_normal=normal_t,
-    ),
-    layout.TreeTab(
-        sections=[""],
-        active_bg=focus_t,
-        active_fg=foreground,
-        inactive_bg=normal_t,
-        inactive_fg=foreground,
-        bg_color=background,
-        section_fg=foreground,
-        border_focus=focus_t,
-        border_normal=normal_t,
-        previous_on_rm=True,
     ),
     layout.Max(
         margin=0,
@@ -199,6 +210,15 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
+                widget.Plasma(
+                    horizontal=" ",
+                    vertical=" ",
+                    split="󰃻",
+                    format="{mode}",
+                    background=purple,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
                 widget.GroupBox(
                     disable_drag=True,
                     active=active,
@@ -216,7 +236,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.WindowName(
-                    max_chars = 143,
+                    max_chars = 132,
                     **deco_powerline,
                 ),
                 widget.Systray(
