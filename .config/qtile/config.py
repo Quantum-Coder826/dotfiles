@@ -14,9 +14,6 @@ from gruvbox.dark import *
 # import os to send commands to the system
 import os, subprocess
 
-# utils
-from scripts.utils import *
-
 #* vars
 mod = "mod4"
 alt = "mod1"
@@ -32,12 +29,11 @@ deco_powerline = {
 #* hooks & related functions
 @hook.subscribe.startup_once
 def autostart(): # run my startup programs
-    home = os.path.expanduser("~/.config/qtile/scripts/startup.sh")
-    subprocess.call([home])
+    subprocess.Popen([os.path.expanduser("~/.config/qtile/scripts/startup.sh")])
 
-@hook.subscribe.startup
-def run_every_startup():
-    utils.setTrayLayout()
+@hook.subscribe.startup_complete
+def startup_init():
+    subprocess.Popen([os.path.expanduser("~/.config/qtile/scripts/bin/python3"), os.path.expanduser("~/.config/qtile/scripts/utils.py")])
 
 keys = [
     # manager binds
@@ -112,7 +108,7 @@ keys = [
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
 
     # util
-    Key(["control", "shift"], "Escape", lazy.spawn(terminal + " -e 'btop -p 0'"), desc="open xfce terminal running btop as a task manager"),
+    Key(["control", "shift"], "Escape", lazy.spawn("plasma-systemmonitor"), desc="open xfce terminal running btop as a task manager"),
     Key([alt], "Tab", lazy.next_screen(), desc="Switch focus between screens"),
     Key([mod], "b", lazy.spawn("firefox"), desc="Open firefox"),
     Key([], "Print", lazy.spawn("xfce4-screenshooter"), desc="Open screenshotter"),
@@ -133,8 +129,6 @@ groups = [
     Group(
             name="tray",
             label="󱊖", #nf-md-tray_full
-            #layout="ScreenSplit",
-            #layouts=[layout.ScreenSplit],
             position=9,
             matches=[
                 Match(wm_class=["discord"]),
@@ -158,33 +152,21 @@ groups = [
 dgroups_key_binder = simple_key_binder(mod)
 
 layouts = [
+    layout.Plasma(
+        border_focus=focus_t,
+        border_focus_fixed=focus_f,
+        border_normal=normal_t,
+        border_normal_fixed=normal_t,
+        border_width=2,
+        border_width_single=2,
+        margin=4,
+    ),
     layout.MonadTall(
         inactive_bg=focus_f,
         margin=6,
         border_width=2,
         border_focus=focus_t,
         border_normal=normal_t,
-    ),
-    layout.Plasma(
-        border_focus=focus_t,
-        border_focus_fixed=focus_t,
-        border_normal=normal_t,
-        border_normal_fixed=normal_t,
-        border_width=2,
-        border_width_single=0,
-        margin=6,
-    ),
-    layout.TreeTab(
-        sections=[""],
-        active_bg=focus_t,
-        active_fg=foreground,
-        inactive_bg=normal_t,
-        inactive_fg=foreground,
-        bg_color=background,
-        section_fg=foreground,
-        border_focus=focus_t,
-        border_normal=normal_t,
-        previous_on_rm=True,
     ),
     layout.Max(
         margin=0,
@@ -227,11 +209,6 @@ screens = [
                     foreground=foreground,
                     **deco_powerline,
                 ),
-                #widget.CapsNumLockIndicator(
-                #    background=green,
-                #    foreground=foreground,
-                #    **deco_powerline,
-                #),
                 widget.Chord(
                     background=green,
                     foreground=foreground,
@@ -273,6 +250,7 @@ screens = [
                 ),
                 widget.CheckUpdates(
                     distro="Debian",
+                    execute="plasma-discover --mode Update",
                     display_format="󰚰 {updates}", #nf-md-update
                     restart_indicator="󱄌", #nf-md-restart_alert
                     background=red,
