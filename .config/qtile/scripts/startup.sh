@@ -18,3 +18,4 @@
 
 # cloudflared service to acess my local cloud
 (/bin/cloudflared access tcp --hostname smb.broodjehamworst.net --url localhost:8445 &)
+(mount /media/berend/smb &)
