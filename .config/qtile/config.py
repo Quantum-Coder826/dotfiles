@@ -263,6 +263,7 @@ screens = [
                 ),
                 widget.Backlight(
                     backlight_name = "intel_backlight",
+                    step=5,
                     fmt = "󰳲 {}",
                     background=green,
                     foreground=foreground,
@@ -285,7 +286,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Clock(
-                    format="%d-%m-%y %a %H:%M",
+                    format="%d-%m-%y %a %H:%M:%S",
                     background=blue,
                     foreground=foreground,
                 ),
