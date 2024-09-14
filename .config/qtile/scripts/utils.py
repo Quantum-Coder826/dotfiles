@@ -10,3 +10,6 @@ sleep(10)
 c.group["tray"].setlayout("monadtall")
 c.group["tray"].layout.reset()
 c.group["tray"].layout.maximize()
+
+# setup autio group
+c.group["a/v"].setlayout("monadtall")
