@@ -12,7 +12,8 @@ from gruvbox.gruvbox import *
 from gruvbox.dark import *
 
 # import os to send commands to the system
-import os, subprocess
+from os.path import expanduser
+from subprocess import Popen
 
 #* vars
 mod = "mod4"
@@ -29,8 +30,8 @@ deco_powerline = {
 #* hooks & related functions
 @hook.subscribe.startup_once
 def autostart(): # run my startup programs
-    home = os.path.expanduser("~/.config/qtile/scripts/startup.sh")
-    subprocess.call([home])
+    Popen([expanduser("~/.config/qtile/scripts/startup.sh")])
+    Popen([expanduser("~/.config/qtile/scripts/smb_mount.sh")])
 
 keys = [
     # manager binds
