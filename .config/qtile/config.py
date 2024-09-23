@@ -267,7 +267,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Clock(
-                    format="%Y-%m-%m %H:%M:%S", #ISO 8601
+                    format="%Y-%m-%d %H:%M:%S", #ISO 8601
                     background=blue,
                     foreground=foreground,
                 ),
