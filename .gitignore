@@ -2,8 +2,8 @@
 __pycache__/
 
 # venv
-/.config/qtile/scripts/bin
-/.config/qtile/scripts/include
-/.config/qtile/scripts/lib
-/.config/qtile/scripts/lib64
-/.config/qtile/scripts/pyvenv.cfg
+/.config/qtile/bin
+/.config/qtile/include
+/.config/qtile/lib
+/.config/qtile/lib64
+/.config/qtile/pyvenv.cfg
