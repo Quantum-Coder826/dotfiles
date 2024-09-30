@@ -133,7 +133,7 @@ groups = [
             position=9,
             matches=[
                 Match(wm_class=["discord"]),
-                Match(title=["Steam Games List", "Friends List"]), #Matches for steam
+                Match(title=["Steam Games List", "Friends List", "Sign in to Steam"]), #Matches for steam
                 Match(wm_class=["helvum", "helvum"]),
             ]),
     Group(
