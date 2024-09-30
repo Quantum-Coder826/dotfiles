@@ -133,7 +133,7 @@ groups = [
             position=9,
             matches=[
                 Match(wm_class=["discord"]),
-                Match(wm_class=["steamwebhelper", "steam"]),
+                Match(title=["Steam Games List", "Friends List"]), #Matches for steam
                 Match(wm_class=["helvum", "helvum"]),
             ]),
     Group(
@@ -387,9 +387,9 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(title="pinentry"),  # GPG key password entry
     Match(wm_class="keepassxc"), # password manager
     Match(wm_class="file-roller"), # archive extractor
-    Match(wm_class="xfce4-screenshooter"),
     Match(wm_class="edmarketconnector"),
     Match(wm_class="megasync"),
+    Match(title="Steam Settings"),
 ],  
 
 fullscreen_border_width = 0,
