@@ -35,7 +35,7 @@ def autostart(): # run my startup programs
 @hook.subscribe.startup
 def startup():
     # setup layouts
-    Popen([expanduser("~/.config/qtile/scripts/bin/python3"), expanduser("~/.config/qtile/scripts/utils.py")])
+    Popen([expanduser("~/.config/qtile/bin/python3"), expanduser("~/.config/qtile/scripts/utils.py")])
 
 keys = [
     # manager binds
