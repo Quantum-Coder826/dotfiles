@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "~/dotfiles/.config/qtile/bin/activate"
+	}
+}
