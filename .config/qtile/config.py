@@ -32,8 +32,9 @@ deco_powerline = {
 def autostart(): # run my startup programs
     Popen([expanduser("~/.config/qtile/scripts/startup.sh")])
 
-@hook.subscribe.startup_complete
-def startup_init():
+@hook.subscribe.startup
+def startup():
+    # setup layouts
     Popen([expanduser("~/.config/qtile/scripts/bin/python3"), expanduser("~/.config/qtile/scripts/utils.py")])
 
 keys = [
