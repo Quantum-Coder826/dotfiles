@@ -32,7 +32,7 @@ deco_powerline = {
 def autostart(): # run my startup programs
     Popen([expanduser("~/.config/qtile/scripts/startup.sh")])
 
-@hook.subscribe.startup
+@hook.subscribe.startup_complete
 def startup():
     # setup layouts
     Popen([expanduser("~/.config/qtile/bin/python3"), expanduser("~/.config/qtile/scripts/utils.py")])

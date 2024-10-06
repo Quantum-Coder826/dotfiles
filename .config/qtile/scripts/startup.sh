@@ -1,9 +1,5 @@
 #!/bin/bash
 
-## Screen setup for xorg
-xrandr --output HDMI-0 --mode 1920x1080 --rate 75 --primary
-xrandr --output DVI-D-0 --mode 1920x1080 --left-of HDMI-0
-
 # system services
 (/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil &) # power daemon
 (/usr/bin/lxqt-policykit-agent &) # polkit daemon
