@@ -3,7 +3,7 @@
 # system services
 (/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil &) # power daemon
 (/usr/bin/lxqt-policykit-agent &) # polkit daemon
-(qpwgraph &)
+(/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=qpwgraph --file-forwarding org.rncbc.qpwgraph &)
 (easyeffects &)
 (greenclip daemon &)
 #(/home/qbyte/.config/qtile/scripts/bin/python3 /home/qbyte/.config/qtile/scripts/utils.py &)
