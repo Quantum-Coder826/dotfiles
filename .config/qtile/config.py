@@ -321,6 +321,7 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(wm_class="keepassxc"), # password manager
     Match(wm_class="file-roller"), # archive extractor
     Match(wm_class="xfce4-screenshooter"),
+    Match(title="Preferences"),
 ],  
 
 fullscreen_border_width = 0,
