@@ -100,7 +100,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show combi"), desc="Spawn a command using a prompt widget"),
     Key([alt, "control"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the computer"),
-    Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'")),
+    Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:/home/qbyte/.local/bin/greenclip print' -show clipboard -run-command '{cmd}'")),
     # media keys
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q -D pulse sset Master 5%-"), desc="Lower Volume by 5%"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q -D pulse sset Master 5%+"), desc="Raise Volume by 5%"),
@@ -260,8 +260,6 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Volume(
-                    device = "pulse",
-                    check_mute_string = "[off]",
                     fmt=" {}",
                     background=purple,
                     foreground=foreground,
@@ -376,7 +374,7 @@ floating_types = ["notification", "toolbar", "splash", "dialog"]
 
 follow_mouse_focus = True
 bring_front_click = False
-cursor_warp = False
+cursor_warp = True 
 floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     # Run the utility of `xprop` to see the wm class and name of an X client.
     *layout.Floating.default_float_rules,
