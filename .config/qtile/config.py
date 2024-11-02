@@ -97,6 +97,7 @@ keys = [
     Key([mod], "r", lazy.spawn("rofi -show combi"), desc="Spawn a command using a prompt widget"),
     Key([alt, "control"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the computer"),
     Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:greenclip print' -show clipboard -run-command '{cmd}'")),
+
     # media keys
     Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q -D pulse sset Master 5%-"), desc="Lower Volume by 5%"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q -D pulse sset Master 5%+"), desc="Raise Volume by 5%"),
@@ -287,7 +288,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Clock(
-                    format="%Y-%d-%m %H:%M:%S", #ISO 8601
+                    format="%Y-%m-%d %H:%M:%S", #ISO 8601
                     background=blue,
                     foreground=foreground,
                 ),
