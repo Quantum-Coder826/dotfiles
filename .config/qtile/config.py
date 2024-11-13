@@ -389,6 +389,7 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(wm_class="edmarketconnector"),
     Match(wm_class="megasync"),
     Match(title="Steam Settings"),
+    Match(wm_class="spectacle"),
 ],  
 
 fullscreen_border_width = 0,
