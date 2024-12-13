@@ -11,30 +11,58 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/widget.WindowName
+~MSle0~/warp
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1725710674,,"wq"
+|2,0,1731573219,,"wq"
 :w
-|2,0,1725710663,,"w"
+|2,0,1731503004,,"w"
+:q
+|2,0,1731502636,,"q"
 :q!
-|2,0,1725702485,,"q!"
+|2,0,1731493299,,"q!"
+:Wq
+|2,0,1731492880,,"Wq"
+:W
+|2,0,1731144738,,"W"
+:10
+|2,0,1726922606,,"10"
+:wa
+|2,0,1726921849,,"wa"
+:waq
+|2,0,1726921846,,"waq"
+:qa!
+|2,0,1726921765,,"qa!"
+:ls
+|2,0,1726921748,,"ls"
+:edit!
+|2,0,1726921711,,"edit!"
+:edit
+|2,0,1726921697,,"edit"
+:vsplit
+|2,0,1726921691,,"vsplit"
+:o startup.sh
+|2,0,1726921664,,"o startup.sh"
+:vsp
+|2,0,1726921654,,"vsp"
+:+16
+|2,0,1725973066,,"+16"
+:qa
+|2,0,1725972933,,"qa"
+:o ./.config/qtile
+|2,0,1725782139,,"o ./.config/qtile"
 :vsp /home/berend/Documents/dev/Rmarkdown/Kinetiek_template
 |2,0,1725702396,,"vsp /home/berend/Documents/dev/Rmarkdown/Kinetiek_template"
-:q
-|2,0,1725702387,,"q"
 :e Games
 |2,0,1725702334,,"e Games"
 :e ~
 |2,0,1725702282,,"e ~"
 :e
 |2,0,1725702254,,"e"
-:vsp
-|2,0,1725702249,,"vsp"
 :vsp e
 |2,0,1725702231,,"vsp e"
 :vspe
@@ -137,12 +165,28 @@ $
 |2,0,1719675573,,"hs terminal"
 
 # Search String History (newest to oldest):
+?/warp
+|2,1,1731487850,47,"warp"
+?/alias
+|2,1,1731157549,47,"alias"
+?/Clock
+|2,1,1729939361,47,"Clock"
+?/floating
+|2,1,1728750584,47,"floating"
+?/Battery
+|2,1,1728297225,47,"Battery"
+?/wallpaper
+|2,1,1727351690,47,"wallpaper"
+?/widget.Clock
+|2,1,1726988773,47,"widget.Clock"
+? @$
+|2,1,1726921643,,"@$"
+?/widget.Back
+|2,1,1726053234,47,"widget.Back"
 ?/widget.WindowName
 |2,1,1725710617,47,"widget.WindowName"
 ?/widget.Volume
 |2,1,1725709684,47,"widget.Volume"
-? @$
-|2,1,1725702400,,"@$"
 ?/widget.Plas
 |2,1,1725634112,47,"widget.Plas"
 ?/bar
@@ -165,8 +209,6 @@ $
 |2,1,1719745032,47,"f"
 ?/float
 |2,1,1719745026,47,"float"
-?/Battery
-|2,1,1719735408,47,"Battery"
 ?/## 3.3
 |2,1,1719688520,47,"## 3.3"
 ?/# 3.3
@@ -196,377 +238,605 @@ $
 
 # Registers:
 "0	LINE	0
-	
-|3,0,0,1,1,0,1725702446,""
-""1	LINE	0
-	                    step="2",
-|3,1,1,1,1,0,1725709778,"                    step=\"2\","
+	dump = json.loads(check_output(["pw-dump"]))
+|3,0,0,1,1,0,1731145901,"dump = json.loads(check_output([\"pw-dump\"]))"
+"1	LINE	0
+	if result == 0:
+	    exit()
+|3,0,1,1,2,0,1731503170,"if result == 0:","    exit()"
 "2	LINE	0
+	#!/bin/bash
 	
-|3,0,2,1,1,0,1725702010,""
-"3	LINE	0
+	ans=$(echo -e "0) ToDo:make it work\n1) Cancel" | rofi -dmenu -format i:s -p 'mediaMan')
 	
-|3,0,3,1,1,0,1725701977,""
-"4	LINE	0
-	   
-	    # manager binds
-|3,0,4,1,2,0,1725701866,"   ","    # manager binds"
-"5	LINE	0
-	    eyChord([mod], "z", [ # binds for moving windows around
-	       Key([mod], "h", lazy.layout.swap_left()),
-	       Key([mod], "l", lazy.layout.swap_right()),
-	       Key([mod], "j", lazy.layout.shuffle_down()),
-	       Key([mod], "k", lazy.layout.shuffle_up()),
-	    , mode=True, name="󰆾 "),
+	case "${ans:0:1}" in
+	    0) exit;;
+	    1) exit;;
+	esac
 	
-	    eyChord([mod], "x", [# binds for resizing windows
-	       Key([mod], "h", lazy.layout.grow()),
-	       Key([mod], "l", lazy.layout.shrink()),
-	       Key([mod], "j", lazy.layout.reset()),
-	       Key([mod], "k", lazy.layout.maximize()),
-	    , mode=True, name="󰩨 "),
-	    
-	     binds for navigating between windows
-	     nav mode is enabled default
-	    ey([mod], "h", lazy.layout.left()),
-	    ey([mod], "l", lazy.layout.right()),
-	    ey([mod], "j", lazy.layout.down()),
-	    ey([mod], "k", lazy.layout.up()),
-	
-	    # bind to reset windows size needs to be active at all times
-	    Key([mod, "shift"], "j", lazy.layout.reset()),
-|3,0,5,1,23,0,1725701864,"    eyChord([mod], \"z\", [ # binds for moving windows around","       Key([mod], \"h\", lazy.layout.swap_left()),","       Key([mod], \"l\", lazy.layout.swap_right()),","       Key([mod], \"j\", lazy.layout.shuffle_down()),","       Key([mod], \"k\", lazy.layout.shuffle_up()),","    , mode=True, name=\"󰆾 \"),","","    eyChord([mod], \"x\", [# binds for resizing windows","       Key([mod], \"h\", lazy.layout.grow()),",>49
-|<"       Key([mod], \"l\", lazy.layout.shrink()),","       Key([mod], \"j\", lazy.layout.reset()),","       Key([mod], \"k\", lazy.layout.maximize()),","    , mode=True, name=\"󰩨 \"),","    ","     binds for navigating between windows","     nav mode is enabled default","    ey([mod], \"h\", lazy.layout.left()),","    ey([mod], \"l\", lazy.layout.right()),","    ey([mod], \"j\", lazy.layout.down()),","    ey([mod], \"k\", lazy.layout.up()),","",>66
-|<"    # bind to reset windows size needs to be active at all times","    Key([mod, \"shift\"], \"j\", lazy.layout.reset()),"
+|3,0,2,1,9,0,1731502576,"#!/bin/bash","","ans=$(echo -e \"0) ToDo:make it work\\n1) Cancel\" | rofi -dmenu -format i:s -p 'mediaMan')","","case \"${ans:0:1}\" in","    0) exit;;","    1) exit;;","esac",""
+"3	BLOCK	0
+	e
+	e
+|3,0,3,2,2,0,1731492978,"e","e"
+"4	BLOCK	0
+	t
+	t
+|3,0,4,2,2,0,1731492976,"t","t"
+"5	BLOCK	0
+	y
+	y
+|3,0,5,2,2,0,1731492974,"y","y"
 "6	BLOCK	0
-	K
-	 
-	 
-	 
-	 
-	]
-	 
-	K
-	 
-	 
-	 
-	 
-	]
-	
-	#
-	#
-	K
-	K
-	K
-	K
-|3,0,6,2,20,0,1725701855,"K"," "," "," "," ","]"," ","K"," "," "," "," ","]","","#","#","K","K","K","K"
+	b
+	b
+|3,0,6,2,2,0,1731492970,"b","b"
 "7	BLOCK	0
-	#
-	#
-	#
-	#
-	#
-	#
-	 
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	#
-	 
-	#
-	#
-|3,0,7,2,23,0,1725701843,"#","#","#","#","#","#"," ","#","#","#","#","#","#","#","#","#","#","#","#","#"," ","#","#"
+	q
+	q
+|3,0,7,2,2,0,1731492966,"q","q"
 "8	LINE	0
-	    layout.Plasma(
-	        border_focus=focus_t,
-	        border_focus_fixed=focus_t,
-	        border_normal=normal_t,
-	        border_normal_fixed=normal_t,
-	        border_width=2,
-	        border_width_single=0,
-	        margin=6,
-	    ),
-|3,0,8,1,9,0,1725634171,"    layout.Plasma(","        border_focus=focus_t,","        border_focus_fixed=focus_t,","        border_normal=normal_t,","        border_normal_fixed=normal_t,","        border_width=2,","        border_width_single=0,","        margin=6,","    ),"
+	
+|3,0,8,1,1,0,1731492879,""
 "9	LINE	0
-	                widget.Plasma(
-	                    background=purple,
-	                    foreground=foreground,
-	                    **deco_powerline,
-	                ),
-|3,0,9,1,5,0,1725634117,"                widget.Plasma(","                    background=purple,","                    foreground=foreground,","                    **deco_powerline,","                ),"
-"-	CHAR	0
-	"
-|3,0,36,0,1,0,1725709767,"\""
+	#!/bin/env python3.10
+|3,0,9,1,1,0,1731492872,"#!/bin/env python3.10"
+""-	CHAR	0
+	m
+|3,1,36,0,1,0,1731573203,"m"
 
 # global variables:
 
 # File marks:
-'0  239  34  ~/dotfiles/.config/qtile/config.py
-|4,48,239,34,1725710674,"~/dotfiles/.config/qtile/config.py"
-'1  262  20  ~/dotfiles/.config/qtile/config.py
-|4,49,262,20,1725709780,"~/dotfiles/.config/qtile/config.py"
-'2  262  20  ~/dotfiles/.config/qtile/config.py
-|4,50,262,20,1725709780,"~/dotfiles/.config/qtile/config.py"
-'3  3  0  ~/.vimrc
-|4,51,3,0,1725702485,"~/.vimrc"
-'4  14  0  ~/.vimrc
-|4,52,14,0,1725702169,"~/.vimrc"
-'5  14  0  ~/.vimrc
-|4,53,14,0,1725702169,"~/.vimrc"
-'6  106  0  ~/dotfiles/.config/qtile/config.py
-|4,54,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
-'7  106  0  ~/dotfiles/.config/qtile/config.py
-|4,55,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
-'8  106  0  ~/dotfiles/.config/qtile/config.py
-|4,56,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
-'9  106  0  ~/dotfiles/.config/qtile/config.py
-|4,57,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
+'0  4  75  ~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua
+|4,48,4,75,1731573219,"~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua"
+'1  19  23  ~/.local/share/applications/mediaMan.desktop
+|4,49,19,23,1731503359,"~/.local/share/applications/mediaMan.desktop"
+'2  43  13  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,50,43,13,1731503188,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'3  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,51,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'4  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,52,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'5  34  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,53,34,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'6  34  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,54,34,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'7  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,55,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'8  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,56,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+'9  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,57,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
 
 # Jumplist (newest first):
--'  239  34  ~/dotfiles/.config/qtile/config.py
-|4,39,239,34,1725710674,"~/dotfiles/.config/qtile/config.py"
--'  1  0  ~/dotfiles/.config/qtile/config.py
-|4,39,1,0,1725710617,"~/dotfiles/.config/qtile/config.py"
--'  262  20  ~/dotfiles/.config/qtile/config.py
-|4,39,262,20,1725709780,"~/dotfiles/.config/qtile/config.py"
--'  262  20  ~/dotfiles/.config/qtile/config.py
-|4,39,262,20,1725709780,"~/dotfiles/.config/qtile/config.py"
--'  5  0  ~/dotfiles/.config/qtile/config.py
-|4,39,5,0,1725709684,"~/dotfiles/.config/qtile/config.py"
--'  5  0  ~/dotfiles/.config/qtile/config.py
-|4,39,5,0,1725709684,"~/dotfiles/.config/qtile/config.py"
--'  1  0  ~/dotfiles/.config/qtile/config.py
-|4,39,1,0,1725709671,"~/dotfiles/.config/qtile/config.py"
--'  3  0  ~/.vimrc
-|4,39,3,0,1725702485,"~/.vimrc"
--'  3  0  ~/.vimrc
-|4,39,3,0,1725702485,"~/.vimrc"
--'  3  0  ~/.vimrc
-|4,39,3,0,1725702485,"~/.vimrc"
--'  3  0  ~/.vimrc
-|4,39,3,0,1725702485,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702183,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702183,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702183,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702183,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  14  0  ~/.vimrc
-|4,39,14,0,1725702169,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702135,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702135,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702135,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725702135,"~/.vimrc"
--'  106  0  ~/dotfiles/.config/qtile/config.py
-|4,39,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
--'  106  0  ~/dotfiles/.config/qtile/config.py
-|4,39,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
--'  106  0  ~/dotfiles/.config/qtile/config.py
-|4,39,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
--'  106  0  ~/dotfiles/.config/qtile/config.py
-|4,39,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
--'  106  0  ~/dotfiles/.config/qtile/config.py
-|4,39,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
--'  106  0  ~/dotfiles/.config/qtile/config.py
-|4,39,106,0,1725702115,"~/dotfiles/.config/qtile/config.py"
--'  1  0  ~/dotfiles/.config/qtile/config.py
-|4,39,1,0,1725702022,"~/dotfiles/.config/qtile/config.py"
--'  1  0  ~/dotfiles/.config/qtile/config.py
-|4,39,1,0,1725702022,"~/dotfiles/.config/qtile/config.py"
--'  1  0  ~/dotfiles/.config/qtile/config.py
-|4,39,1,0,1725702022,"~/dotfiles/.config/qtile/config.py"
--'  1  0  ~/dotfiles/.config/qtile/config.py
-|4,39,1,0,1725702022,"~/dotfiles/.config/qtile/config.py"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  2  0  ~/.vimrc
-|4,39,2,0,1725702013,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  1  0  ~/.vimrc
-|4,39,1,0,1725701962,"~/.vimrc"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
--'  105  4  ~/dotfiles/.config/qtile/config.py
-|4,39,105,4,1725701942,"~/dotfiles/.config/qtile/config.py"
+-'  4  75  ~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua
+|4,39,4,75,1731573219,"~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua"
+-'  1  0  ~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua
+|4,39,1,0,1731573154,"~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua"
+-'  19  23  ~/.local/share/applications/mediaMan.desktop
+|4,39,19,23,1731503359,"~/.local/share/applications/mediaMan.desktop"
+-'  19  23  ~/.local/share/applications/mediaMan.desktop
+|4,39,19,23,1731503359,"~/.local/share/applications/mediaMan.desktop"
+-'  1  0  ~/.local/share/applications/mediaMan.desktop
+|4,39,1,0,1731503230,"~/.local/share/applications/mediaMan.desktop"
+-'  1  0  ~/.local/share/applications/mediaMan.desktop
+|4,39,1,0,1731503230,"~/.local/share/applications/mediaMan.desktop"
+-'  43  13  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,43,13,1731503188,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  43  13  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,43,13,1731503188,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  43  13  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,43,13,1731503188,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  43  13  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,43,13,1731503188,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731503144,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731503144,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731503144,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731503144,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  20  56  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,20,56,1731503007,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502951,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502951,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502951,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502951,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  34  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,34,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  34  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,34,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  34  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,34,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  34  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,34,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  37  44  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,37,44,1731502847,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502757,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502757,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502757,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502757,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  23  67  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,23,67,1731502707,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502694,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502694,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502694,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,0,1731502694,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  24  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,24,1731502636,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  24  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,24,1731502636,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  24  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,24,1731502636,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  24  ~/dotfiles/.config/qtile/scripts/mediaMan.py
+|4,39,1,24,1731502636,"~/dotfiles/.config/qtile/scripts/mediaMan.py"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
+-'  1  0  ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+|4,39,1,0,1731502598,"~/dotfiles/.config/qtile/scripts/mediaMan.sh"
 
 # History of marks within files (newest to oldest):
 
+> ~/dotfiles/.config/wireplumber/main.lua.d/51-alsa-rename-HDMI.lua
+	*	1731573217	0
+	"	4	75
+	^	8	32
+	.	8	31
+	+	12	37
+	+	4	117
+	+	8	31
+
+> ~/.local/share/applications/mediaMan.desktop
+	*	1731503357	0
+	"	19	23
+	^	19	24
+	.	19	23
+	+	16	16
+	+	19	34
+	+	16	38
+	+	19	59
+	+	19	71
+	+	16	47
+	+	19	23
+
+> ~/dotfiles/.config/qtile/scripts/mediaMan.py
+	*	1731503186	0
+	"	43	13
+	^	23	32
+	.	43	13
+	+	1	24
+	+	23	67
+	+	32	67
+	+	38	48
+	+	34	44
+	+	32	61
+	+	20	56
+	+	23	32
+	+	25	13
+	+	27	13
+	+	29	13
+	+	31	13
+	+	43	13
+
+> ~/dotfiles/.config/qtile/scripts/mediaMan.sh
+	*	1731502578	0
+	"	1	0
+	.	1	0
+	+	1	4
+	+	1	10
+	+	1	86
+	+	1	0
+
+> ~/dotfiles/.config/qtile/scripts/shutdown.sh
+	*	1731494403	0
+	"	4	78
+	^	4	79
+	.	4	78
+	+	5	0
+	+	4	78
+
+> ~/dotfiles/.config/qtile/scripts/reboot.sh
+	*	1731494372	0
+	"	4	84
+	^	4	85
+	.	4	84
+	+	4	84
+
+> ~/Documents/dev/mediaMan/mediaMan.py
+	*	1731492984	0
+	"	31	102
+	^	31	108
+	.	32	0
+	+	10	21
+	+	13	0
+	+	8	0
+	+	11	13
+	+	12	33
+	+	7	22
+	+	2	0
+	+	1	0
+	+	2	0
+	+	32	0
+	+	31	57
+	+	32	57
+	+	31	107
+	+	32	0
+
+> ~/Documents/dev/mediaMan/start.sh
+	*	1731492889	0
+	"	3	22
+	^	3	30
+	.	3	29
+	+	3	29
+
+> ~/Documents/dev/mediaMan/setDefaultAudioOutput.py
+	*	1731492862	0
+	"	1	24
+	.	1	24
+	+	1	24
+
+> ~/yasara/jpg/myphoto.jpg
+	*	1731490158	0
+	"	1	0
+
+> ~/yasara/pdb/1crn.pdb
+	*	1731490140	0
+	"	426	0
+
+> ~/yasara/pym/yasara.py
+	*	1731490101	0
+	"	25	0
+
+> ~/yasara/pym/yasara
+	*	1731490085	0
+	"	1	0
+
 > ~/dotfiles/.config/qtile/config.py
-	*	1725710672	0
-	"	239	34
-	.	239	34
-	+	272	43
-	+	273	51
-	+	282	45
-	+	122	27
-	+	123	4
-	+	124	4
-	+	123	11
-	+	124	11
-	+	123	24
-	+	124	24
-	+	169	0
-	+	169	30
-	+	169	5
-	+	37	0
-	+	169	8
-	+	88	0
-	+	87	59
-	+	222	38
-	+	222	0
-	+	221	17
-	+	169	0
-	+	152	0
-	+	160	15
-	+	158	13
-	+	36	4
-	+	37	0
-	+	262	0
-	+	239	34
+	*	1731487856	0
+	"	312	17
+	^	312	18
+	.	312	17
+	+	275	43
+	+	276	51
+	+	285	45
+	+	124	27
+	+	125	4
+	+	126	4
+	+	125	11
+	+	126	11
+	+	125	24
+	+	126	24
+	+	171	0
+	+	171	30
+	+	171	5
+	+	38	0
+	+	171	8
+	+	89	0
+	+	88	59
+	+	224	38
+	+	224	0
+	+	223	17
+	+	171	0
+	+	154	0
+	+	162	15
+	+	160	13
+	+	37	4
+	+	38	0
+	+	264	0
+	+	241	34
+	+	268	25
+	+	291	20
+	+	33	76
+	+	35	0
+	+	34	75
+	+	15	9
+	+	16	27
+	+	33	8
+	+	34	0
+	+	33	68
+	+	34	69
+	+	15	11
+	+	33	20
+	+	34	11
+	+	291	45
+	+	191	47
+	+	282	56
+	+	325	30
+	+	291	35
+	+	100	0
+	+	312	17
+
+> ~/.zshrc
+	*	1731157571	0
+	"	113	21
+	^	113	22
+	.	113	21
+	+	112	0
+	+	111	0
+	+	119	0
+	+	113	21
+
+> ~/Documents/dev/wpTest/pyTest.py
+	*	1731148218	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	6	11
+	+	11	0
+	+	13	21
+	+	13	8
+	+	13	15
+	+	11	7
+	+	13	10
+	+	13	14
+	+	13	0
+	+	13	21
+	+	13	65
+	+	8	29
+	+	13	64
+	+	13	28
+	+	11	20
+	+	13	0
+	+	11	8
+	+	13	56
+	+	13	25
+	+	13	24
+	+	13	16
+	+	11	6
+	+	13	51
+	+	14	17
+	+	13	11
+	+	14	25
+	+	13	74
+	+	14	66
+	+	15	22
+	+	14	64
+	+	12	7
+	+	13	0
+	+	14	11
+	+	15	15
+	+	18	15
+	+	14	70
+	+	13	56
+	+	15	65
+	+	8	16
+	+	15	84
+	+	16	29
+	+	15	0
+	+	6	29
+	+	16	20
+	+	18	0
+	+	8	37
+	+	12	0
+	+	8	0
+	+	9	4
+	+	12	0
+	+	10	0
+	+	16	29
+	+	15	70
+	+	8	0
+	+	21	14
+	+	8	14
+	+	21	0
+	+	20	51
+	+	19	0
+	+	4	36
+	+	20	10
+	+	21	54
+	+	20	34
+	+	6	0
+	+	5	19
+	+	21	0
+	+	22	0
+	+	20	0
+	+	21	0
+	+	20	45
+	+	15	80
+	+	2	0
+	+	1	24
+
+> ~/Documents/dev/mediaMan/example.py
+	*	1731147566	0
+	"	1	1
+	^	1	2
+	.	1	1
+	+	2	0
+	+	1	1
+
+> ~/Documents/dev/wpTest/dump.txt
+	*	1731143317	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/dotfiles/.config/qtile/scripts/smb_mount.sh
+	*	1727782210	0
+	"	1	0
+	^	4	7
+	.	4	6
+	+	3	0
+	+	5	23
+	+	4	6
+
+> ~/.profile
+	*	1727770259	0
+	"	27	0
+	.	28	0
+	+	28	0
+
+> ~/dotfiles/.config/qtile/scripts/startup.sh
+	*	1726922056	0
+	"	17	0
+	.	18	0
+	+	9	0
+	+	8	49
+	+	17	111
+	+	18	0
+
+> ~/startup.sh
+	*	1726921664	0
+	"	1	0
+
+> ~/.local/share/nemo/scripts/convert to .png
+	*	1726556833	0
+	"	8	3
+	^	8	4
+	.	8	3
+	+	8	3
+
+> ~/dotfiles/.config/systemd/user/cloudflared.service
+	*	1725972303	0
+	"	5	26
+	^	5	27
+	.	5	26
+	+	1	41
+	+	16	25
+	+	10	0
+	+	9	5
+	+	10	102
+	+	3	58
+	+	6	0
+	+	5	26
+
+> ~/dotfiles/.zshrc
+	*	1725782147	0
+	"	1	0
 
 > ~/.vimrc
 	*	1725702482	0
@@ -677,15 +947,6 @@ $
 > ~/Documents/dev/microDice/exp
 	*	1720278364	0
 	"	1	0
-
-> ~/dotfiles/.config/qtile/scripts/startup.sh
-	*	1719745657	0
-	"	1	0
-	^	8	50
-	.	17	111
-	+	9	0
-	+	8	49
-	+	17	111
 
 > ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_BerendVeldthuis_LBT1A.Rmd
 	*	1719688603	0

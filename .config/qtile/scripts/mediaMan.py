@@ -29,16 +29,20 @@ if result == 1:
 if result == 2:
     Popen(split("playerctl previous"))
 if result == 3:
-    result = rofiDemenuChoicePrompt("󰓃 Speaker/3.5mm\n󱡏 Galaxy Buds\n󰅖 Close")
+    result = rofiDemenuChoicePrompt("󰓃 Speaker/3.5mm\n󰡁 HDMI\n󱡏 Galaxy Buds\n󰅖 Close")
     if result == 0:
         node = findNodeByDescription("Speaker")
         Popen(split("wpctl set-default " + str(node[1]['id'])))
         exit()
     if result == 1:
-        node = findNodeByDescription("Galaxy Buds")
+        node = findNodeByDescription("laptop_HDMI")
         Popen(split("wpctl set-default " + str(node[1]['id'])))
         exit()
     if result == 2:
+        node = findNodeByDescription("Galaxy Buds")
+        Popen(split("wpctl set-default " + str(node[1]['id'])))
+        exit()
+    if result == 3:
         exit()
 if result == 4:
     exit()
