@@ -110,7 +110,7 @@ keys = [
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
 
     # util
-    Key(["control", "shift"], "Escape", lazy.spawn("plasma-systemmonitor"), desc="open xfce terminal running btop as a task manager"),
+    Key(["control", "shift"], "Escape", lazy.spawn("konsole -e /usr/local/bin/btop"), desc="open xfce terminal running btop as a task manager"),
     Key([alt], "Tab", lazy.next_screen(), desc="Switch focus between screens"),
     Key([mod], "b", lazy.spawn("firefox"), desc="Open firefox"),
     Key([], "Print", lazy.spawn("xfce4-screenshooter"), desc="Open screenshotter"),
@@ -145,7 +145,8 @@ groups = [
                     Match(wm_class=["napster bigscreen electron"]),
                     Match(wm_class=["easyeffects"]),
                     Match(wm_class=["obs"]),
-                    Match(wm_class=["qpwgraph", "qpwgraph"])
+                    Match(wm_class=["qpwgraph", "qpwgraph"]),
+                    Match(wm_class=["spotify"])
             ]),
 ]
 
@@ -306,7 +307,7 @@ screens = [
                 widget.Memory(
                     format="󰍛 {MemUsed:.0f}{mm}󰿟{MemTotal:.0f}{mm}",
                     measure_mem="G",
-                    mouse_callbacks={"Button1": lazy.spawn("plasma-systemmonitor")},
+                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/local/bin/btop")},
                     update_interval=1.0,
                     background=purple,
                     foreground=foreground,
@@ -314,7 +315,7 @@ screens = [
                 ),
                 widget.CPU(
                     format="󰻠 {load_percent}󰏰",
-                    mouse_callbacks={"Button1": lazy.spawn("plasma-systemmonitor")},
+                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/local/bin/btop")},
                     update_interval=1.0,
                     background=yellow,
                     foreground=foreground,
@@ -390,6 +391,7 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(wm_class="megasync"),
     Match(title="Steam Settings"),
     Match(wm_class="spectacle"),
+    Match(wm_class="ij-ImageJ"),
 ],  
 
 fullscreen_border_width = 0,
