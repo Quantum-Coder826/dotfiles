@@ -39,7 +39,7 @@ if result == 3:
         Popen(split("wpctl set-default " + str(node[1]['id'])))
         exit()
     if result == 2:
-        node = findNodeByDescription("Galaxy Buds")
+        node = findNodeByDescription("Buds")
         Popen(split("wpctl set-default " + str(node[1]['id'])))
         exit()
     if result == 3:
