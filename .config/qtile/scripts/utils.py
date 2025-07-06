@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.13
 from libqtile.command.client import InteractiveCommandClient
 from time import sleep
 

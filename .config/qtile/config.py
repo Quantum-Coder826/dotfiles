@@ -18,7 +18,7 @@ from subprocess import Popen
 #* vars
 mod = "mod4"
 alt = "mod1"
-terminal = "konsole"
+terminal = "alacritty"
 
 # decorations
 deco_powerline = {
@@ -35,7 +35,7 @@ def autostart(): # run my startup programs
 @hook.subscribe.startup_complete
 def startup():
     # setup layouts
-    Popen([expanduser("~/.config/qtile/bin/python3"), expanduser("~/.config/qtile/scripts/utils.py")])
+    Popen([expanduser("~/.config/qtile/scripts/utils.py")])
 
 keys = [
     # manager binds
@@ -102,15 +102,15 @@ keys = [
     Key([alt, "control"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the computer"),
     Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:/home/qbyte/.local/bin/greenclip print' -show clipboard -run-command '{cmd}'")),
     # media keys
-    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer -q -D pulse sset Master 5%-"), desc="Lower Volume by 5%"),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer -q -D pulse sset Master 5%+"), desc="Raise Volume by 5%"),
-    Key([], "XF86AudioMute", lazy.spawn("pactl -- set-sink-mute 0 toggle"), desc="Toggle mute"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer -d 5"), desc="Lower Volume by 5%"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer -i 5"), desc="Raise Volume by 5%"),
+    Key([], "XF86AudioMute", lazy.spawn("pamixer -t"), desc="Toggle mute"),
     Key([], "XF86AudioPlay", lazy.spawn("playerctl play-pause"), desc="Play/Pause player"),
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc="Skip to next"),
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
 
     # util
-    Key(["control", "shift"], "Escape", lazy.spawn("konsole -e /usr/local/bin/btop"), desc="open xfce terminal running btop as a task manager"),
+    Key(["control", "shift"], "Escape", lazy.spawn("konsole -e /usr/bin/btop"), desc="open xfce terminal running btop as a task manager"),
     Key([alt], "Tab", lazy.next_screen(), desc="Switch focus between screens"),
     Key([mod], "b", lazy.spawn("firefox"), desc="Open firefox"),
     Key([], "Print", lazy.spawn("xfce4-screenshooter"), desc="Open screenshotter"),
@@ -135,7 +135,6 @@ groups = [
             matches=[
                 Match(wm_class=["discord"]),
                 Match(title=["Steam Games List", "Friends List", "Sign in to Steam"]), #Matches for steam
-                Match(wm_class=["helvum", "helvum"]),
             ]),
     Group(
             name="a/v",
@@ -145,6 +144,7 @@ groups = [
                     Match(wm_class=["napster bigscreen electron"]),
                     Match(wm_class=["easyeffects"]),
                     Match(wm_class=["obs"]),
+                    Match(wm_class=["helvum", "helvum"]),
                     Match(wm_class=["qpwgraph", "qpwgraph"]),
                     Match(wm_class=["spotify"])
             ]),
@@ -191,6 +191,93 @@ extension_defaults = widget_defaults.copy()
 wallpaper = "~/Pictures/background/pacman-ghosts.jpg"
 
 screens = [
+    #*secondary monitor
+    Screen (
+        wallpaper=wallpaper,
+        wallpaper_mode="fill",
+        top=bar.Bar(
+            [
+                #*bar contents
+                widget.TextBox(
+                    text="",
+                    background=background,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.Clock(
+                    format="%H:%M",
+                    background=blue,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.NvidiaSensors(
+                    format="󰾲  {temp}󰔄",
+                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'nvtop'")},
+                    update_interval=1.0,
+                    background=aqua,
+                    foreground=foreground,
+                    foreground_alert=warning,
+                    **deco_powerline,
+                ),
+                widget.Memory(
+                    format="󰍛 {MemUsed:.0f}{mm}󰿟{MemTotal:.0f}{mm}",
+                    measure_mem="G",
+                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/bin/btop")},
+                    update_interval=1.0,
+                    background=purple,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.CPU(
+                    format="󰻠 {load_percent}󰏰",
+                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/bin/btop")},
+                    update_interval=1.0,
+                    background=yellow,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.WindowName(
+                    max_chars=160,
+                    **deco_powerline,
+                ),
+                widget.Sep(
+                    linewidth = 0,
+                    background=blue,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.GroupBox(
+                    disable_drag=True,
+                    active=active,
+                    inactive=background,
+                    urgent_border=warning,
+                    highlight_method="block",
+                    **deco_powerline,
+                ),
+                widget.Plasma(
+                    horizontal=" ",
+                    vertical=" ",
+                    split="󰃻",
+                    format="{mode}",
+                    background=purple,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.Chord(
+                    background=green,
+                    foreground=foreground,
+                    **deco_powerline,
+                ),
+                widget.CurrentLayoutIcon(
+                    custom_icon_paths = ["~/.config/qtile/gruvbox/gruvbox-dark0-icons"],
+                    background=blue,
+                    foreground=foreground,
+                ),
+            ],
+            24,
+        ),
+    ),
+
     #main monitor
     Screen(
         wallpaper=wallpaper,
@@ -261,7 +348,11 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Volume(
-                    fmt=" {}",
+                    get_volume_command = "pamixer --get-volume-human",
+                    mute_command = "pamixer -t",
+                    volume_up_command = "pamixer -i 5",
+                    volume_down_command = "pamixer -d 5",
+                    fmt="  {}",
                     background=purple,
                     foreground=foreground,
                     **deco_powerline,
@@ -276,92 +367,6 @@ screens = [
         ),
     ),
 
-    #*secondary monitor
-    Screen (
-        wallpaper=wallpaper,
-        wallpaper_mode="fill",
-        top=bar.Bar(
-            [
-                #*bar contents
-                widget.TextBox(
-                    text="",
-                    background=background,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.Clock(
-                    format="%H:%M",
-                    background=blue,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.NvidiaSensors(
-                    format="󰾲  {temp}󰔄",
-                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'nvtop'")},
-                    update_interval=1.0,
-                    background=aqua,
-                    foreground=foreground,
-                    foreground_alert=warning,
-                    **deco_powerline,
-                ),
-                widget.Memory(
-                    format="󰍛 {MemUsed:.0f}{mm}󰿟{MemTotal:.0f}{mm}",
-                    measure_mem="G",
-                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/local/bin/btop")},
-                    update_interval=1.0,
-                    background=purple,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.CPU(
-                    format="󰻠 {load_percent}󰏰",
-                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/local/bin/btop")},
-                    update_interval=1.0,
-                    background=yellow,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.WindowName(
-                    max_chars=160,
-                    **deco_powerline,
-                ),
-                widget.Sep(
-                    linewidth = 0,
-                    background=blue,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.GroupBox(
-                    disable_drag=True,
-                    active=active,
-                    inactive=background,
-                    urgent_border=warning,
-                    highlight_method="block",
-                    **deco_powerline,
-                ),
-                widget.Plasma(
-                    horizontal=" ",
-                    vertical=" ",
-                    split="󰃻",
-                    format="{mode}",
-                    background=purple,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.Chord(
-                    background=green,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
-                widget.CurrentLayoutIcon(
-                    custom_icon_paths = ["~/.config/qtile/gruvbox/gruvbox-dark0-icons"],
-                    background=blue,
-                    foreground=foreground,
-                ),
-            ],
-            24,
-        ),
-    ),
 ]
 
 # Drag floating layouts.

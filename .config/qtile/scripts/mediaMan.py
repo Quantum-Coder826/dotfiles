@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.11
+#!/usr/bin/env python3.13
 from subprocess import Popen, check_output, PIPE
 from shlex import split
 import json
