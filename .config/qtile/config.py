@@ -180,7 +180,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="DroidSansM Nerd Font",
+    font="Hack Nerd Font",
     fontsize=14,
     padding=4,
     foreground=foreground,
@@ -211,7 +211,7 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.NvidiaSensors(
-                    format="󰾲  {temp}󰔄",
+                    format="󰾲 {temp}󰔄",
                     mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'nvtop'")},
                     update_interval=1.0,
                     background=aqua,
@@ -352,7 +352,7 @@ screens = [
                     mute_command = "pamixer -t",
                     volume_up_command = "pamixer -i 5",
                     volume_down_command = "pamixer -d 5",
-                    fmt="  {}",
+                    fmt=" {}",
                     background=purple,
                     foreground=foreground,
                     **deco_powerline,
