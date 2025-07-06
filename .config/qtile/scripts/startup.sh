@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 1
 
 # xrander
 xrandr --output HDMI-0 --primary --auto

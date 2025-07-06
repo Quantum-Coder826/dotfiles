@@ -142,10 +142,9 @@ groups = [
             position=10, 
             matches=[
                     Match(wm_class=["napster bigscreen electron"]),
-                    Match(wm_class=["easyeffects"]),
+                    Match(wm_class=['com.github.wwmm.easyeffects']),
                     Match(wm_class=["obs"]),
-                    Match(wm_class=["helvum", "helvum"]),
-                    Match(wm_class=["qpwgraph", "qpwgraph"]),
+                    Match(wm_class=['org.pipewire.Helvum']),
                     Match(wm_class=["spotify"])
             ]),
 ]
@@ -333,11 +332,6 @@ screens = [
                     max_chars=160,
                     **deco_powerline,
                 ),
-                widget.Systray(
-                    background=black0,
-                    foreground=foreground,
-                    **deco_powerline,
-                ),
                 widget.CheckUpdates(
                     distro="Debian",
                     execute="plasma-discover --mode Update",
@@ -395,8 +389,7 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(wm_class="edmarketconnector"),
     Match(wm_class="megasync"),
     Match(title="Steam Settings"),
-    Match(wm_class="spectacle"),
-    Match(wm_class="ij-ImageJ"),
+    Match(wm_class="spectacle")
 ],  
 
 fullscreen_border_width = 0,
