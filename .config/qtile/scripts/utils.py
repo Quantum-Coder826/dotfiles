@@ -7,9 +7,6 @@ c = InteractiveCommandClient()
 sleep(10)
 
 # reset the layout and make discord as big as possible
-c.group["tray"].setlayout("monadtall")
 c.group["tray"].layout.reset()
 c.group["tray"].layout.maximize()
 
-# setup autio group
-c.group["a/v"].setlayout("monadtall")

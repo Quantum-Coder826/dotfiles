@@ -1,9 +1,9 @@
 #!/bin/bash
 sleep 1
 
-# xrander
-xrandr --output HDMI-0 --primary --auto
-xrandr --output DVI-D-0 --left-of HDMI-0
+# wlr-randr
+wlr-randr --output DP-2 --mode 1920x1080@74.973000
+wlr-randr --output HDMI-A-1 --mode 1920x1080@60.000000 --left-of HDMI-A-1
 
 # system services
 (/usr/lib/polkit-kde-authentication-agent-1 &)
@@ -11,9 +11,10 @@ xrandr --output DVI-D-0 --left-of HDMI-0
 
 (/usr/bin/helvum &)
 (com.github.wwmm.easyeffects &)
-(/home/qbyte/.local/bin/greenclip daemon &)
+(wl-paste --watch cliphist store &)
 (/bin/bash /home/qbyte/.config/qtile/scripts/net_up.sh &)
+(../bin/python3.11 ./utils.py)
 
 # my startup apps
-(/usr/bin/discord &) # add --start-minimized when need to start in tray
+(com.discordapp.Discord &) # add --start-minimized when need to start in tray
 (steam &)

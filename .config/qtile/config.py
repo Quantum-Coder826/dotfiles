@@ -2,6 +2,7 @@ from libqtile import bar, layout
 from libqtile.config import Click, Drag, Group, Key, KeyChord, Match, Screen, hook
 from libqtile.lazy import lazy
 from libqtile.dgroups import simple_key_binder
+from libqtile.backend.wayland import InputConfig
 
 # qtile_extras needed for powerline styling
 from qtile_extras.widget.decorations import PowerLineDecoration
@@ -13,7 +14,7 @@ from gruvbox.dark import *
 
 # import os to send commands to the system
 from os.path import expanduser
-from subprocess import Popen
+from subprocess import Popen, run # Popen for non-blocking, run for blocking launch of apps
 
 #* vars
 mod = "mod4"
@@ -100,7 +101,7 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawn("rofi -show combi"), desc="Spawn a command using a prompt widget"),
     Key([alt, "control"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the computer"),
-    Key([mod], "c", lazy.spawn("rofi -modi 'clipboard:/home/qbyte/.local/bin/greenclip print' -show clipboard -run-command '{cmd}'")),
+    Key([mod], "c", lazy.spawn("rofi -modi clipboard:/home/qbyte/scripts/cliphist-rofi-img -show clipboard -show-icons")),
     # media keys
     Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer -d 5"), desc="Lower Volume by 5%"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer -i 5"), desc="Raise Volume by 5%"),
@@ -110,7 +111,7 @@ keys = [
     Key([], "XF86AudioPrev", lazy.spawn("playerctl previous"), desc="Skip to previous"),
 
     # util
-    Key(["control", "shift"], "Escape", lazy.spawn("konsole -e /usr/bin/btop"), desc="open xfce terminal running btop as a task manager"),
+    Key(["control", "shift"], "Escape", lazy.spawn(terminal + " -e /usr/bin/btop"), desc="open xfce terminal running btop as a task manager"),
     Key([alt], "Tab", lazy.next_screen(), desc="Switch focus between screens"),
     Key([mod], "b", lazy.spawn("firefox"), desc="Open firefox"),
     Key([], "Print", lazy.spawn("xfce4-screenshooter"), desc="Open screenshotter"),
@@ -118,8 +119,8 @@ keys = [
 
 # create all groups
 groups = [
-    Group("1", position=1),
-    Group("2", position=2),
+    Group("1", position=1, screen_affinity=1),  # Put this group on primary screen
+    Group("2", position=2, screen_affinity=0),  # This one secondary
     Group("3", position=3),
     Group("4", position=4),
     Group("5", position=5),
@@ -132,6 +133,15 @@ groups = [
             name="tray",
             label="󱊖", #nf-md-tray_full
             position=9,
+            layout="monadtall",
+            layouts=[
+                layout.MonadTall(
+                    inactive_bg=focus_f,
+                    margin=4,
+                    border_width=2,
+                    border_focus=focus_t,
+                    border_normal=normal_t,
+                )],
             matches=[
                 Match(wm_class=["discord"]),
                 Match(title=["Steam Games List", "Friends List", "Sign in to Steam"]), #Matches for steam
@@ -163,13 +173,13 @@ layouts = [
         border_width_single=2,
         margin=4,
     ),
-    layout.MonadTall(
-        inactive_bg=focus_f,
-        margin=6,
-        border_width=2,
-        border_focus=focus_t,
-        border_normal=normal_t,
-    ),
+    #layout.MonadTall(
+    #    inactive_bg=focus_f,
+    #    margin=6,
+    #    border_width=2,
+    #    border_focus=focus_t,
+    #    border_normal=normal_t,
+    #),
     layout.Max(
         margin=0,
         border_width=0,
@@ -211,7 +221,7 @@ screens = [
                 ),
                 widget.NvidiaSensors(
                     format="󰾲 {temp}󰔄",
-                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e 'nvtop'")},
+                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e nvtop")},
                     update_interval=1.0,
                     background=aqua,
                     foreground=foreground,
@@ -219,9 +229,9 @@ screens = [
                     **deco_powerline,
                 ),
                 widget.Memory(
-                    format="󰍛 {MemUsed:.0f}{mm}󰿟{MemTotal:.0f}{mm}",
+                    format=" {MemPercent}",
                     measure_mem="G",
-                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/bin/btop")},
+                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e btop -p 1")},
                     update_interval=1.0,
                     background=purple,
                     foreground=foreground,
@@ -229,7 +239,7 @@ screens = [
                 ),
                 widget.CPU(
                     format="󰻠 {load_percent}󰏰",
-                    mouse_callbacks={"Button1": lazy.spawn("konsole -e /usr/bin/btop")},
+                    mouse_callbacks={"Button1": lazy.spawn(terminal + " -e btop -p 0")},
                     update_interval=1.0,
                     background=yellow,
                     foreground=foreground,
@@ -384,12 +394,12 @@ floating_layout = layout.Floating(float_rules=[ # Match chases to make window
     Match(title="branchdialog"),  # gitk
     Match(wm_class="ssh-askpass"),  # ssh-askpass
     Match(title="pinentry"),  # GPG key password entry
-    Match(wm_class="keepassxc"), # password manager
+    Match(wm_class='org.keepassxc.KeePassXC'), # password manager
     Match(wm_class="file-roller"), # archive extractor
     Match(wm_class="edmarketconnector"),
     Match(wm_class="megasync"),
     Match(title="Steam Settings"),
-    Match(wm_class="spectacle")
+    Match(wm_class="spectacle"),
 ],  
 
 fullscreen_border_width = 0,
@@ -409,6 +419,13 @@ auto_minimize = False
 floats_kept_above=True
 
 # When using the Wayland backend, this can be used to configure input devices.
-wl_input_rules = None
+wl_input_rules=None
+#wl_input_rules = {
+#    "1149:32983:Kensington SlimBlade Pro Trackball(Wired) Kensington SlimBlade Pro Trackball(Wired)": InputConfig(
+#        accel_profile = "flat",
+#        pointer_accel = 1.0,
+#        scroll_method = "edge",
+#    )
+#}
 
 wmname = "LG3D"
