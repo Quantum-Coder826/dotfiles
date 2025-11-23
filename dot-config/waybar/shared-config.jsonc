@@ -1,0 +1,24 @@
+//////////////////////////////
+//// Shared module config ////
+//////////////////////////////
+{
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+2",
+    "format": "{icon}",
+    "format-icons": {
+      "7": "󱊖",
+      "8": "󰤽"
+    }
+  },
+  "hyprland/window": {
+    "max-length": 128,
+    "setarate-outputs": true,
+    "icon": true,
+    "icon-size": 18
+  },
+  "hyprland/submap": {}
+}
+
