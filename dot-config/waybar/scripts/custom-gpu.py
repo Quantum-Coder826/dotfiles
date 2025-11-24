@@ -1,7 +1,7 @@
 #!/usr/bin/env python3.13
 from subprocess import Popen, check_output, PIPE
 from shlex import split
-from json import loads, dumps
+from json import loads
 
 output = {"text": "", "tooltip": ""}
 
@@ -33,5 +33,3 @@ output["tooltip"] += "\n󰈐 " + str(metrics[0]['fan']['usage']['value']) + "�
 
 # power
 output["tooltip"] += "\n󱩗 " + str(metrics[0]['power']['socket_power']['value']) + "W"
-
-print(dumps(output))
