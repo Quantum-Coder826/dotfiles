@@ -17,6 +17,8 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1763971606,,"wq"
 :quitall
 |2,0,1763970874,,"quitall"
 :w
@@ -29,8 +31,6 @@ $
 |2,0,1763889669,,"-- Source - https://stackoverflow.com/a\n-- Posted by Jose B\n-- Retrieved 2025-11-23, License - CC BY-SA 3.0\n\nexecute '%!python -m json.tool' | w  \n"
 :e
 |2,0,1763807910,,"e"
-:wq
-|2,0,1763807640,,"wq"
 :q!
 |2,0,1763386132,,"q!"
 :qall
@@ -250,40 +250,54 @@ $
 	
 |3,0,9,1,14,0,1763283126,"########################","### DYNAMIC CURSTORS ###","########################","plugin:dynamic-cursors {","    enable = true","    mode = stretch","","    stretch {","        limit = 3000 ","        function = linear","        window = 100","    }","}",""
 ""-	CHAR	0
-	color-purple
-|3,1,36,0,1,0,1763807931,"color-purple"
+	git
+|3,1,36,0,1,0,1763971590,"git"
 
 # global variables:
 
 # File marks:
-'0  54  0  ~/foo.json
-|4,48,54,0,1763970874,"~/foo.json"
-'1  1  0  ~/foo.json
-|4,49,1,0,1763970675,"~/foo.json"
+'0  6  30  ~/.ssh/config
+|4,48,6,30,1763971606,"~/.ssh/config"
+'1  54  0  ~/foo.json
+|4,49,54,0,1763970874,"~/foo.json"
 '2  1  0  ~/foo.json
 |4,50,1,0,1763970675,"~/foo.json"
-'3  566  21  ~/foo.json
-|4,51,566,21,1763889996,"~/foo.json"
-'4  193  21  ~/foo.json
-|4,52,193,21,1763889996,"~/foo.json"
-'5  143  32  ~/.config/waybar/style.css
-|4,53,143,32,1763807997,"~/.config/waybar/style.css"
-'6  144  0  ~/.config/waybar/style.css
-|4,54,144,0,1763807770,"~/.config/waybar/style.css"
+'3  1  0  ~/foo.json
+|4,51,1,0,1763970675,"~/foo.json"
+'4  566  21  ~/foo.json
+|4,52,566,21,1763889996,"~/foo.json"
+'5  193  21  ~/foo.json
+|4,53,193,21,1763889996,"~/foo.json"
+'6  143  32  ~/.config/waybar/style.css
+|4,54,143,32,1763807997,"~/.config/waybar/style.css"
 '7  144  0  ~/.config/waybar/style.css
 |4,55,144,0,1763807770,"~/.config/waybar/style.css"
-'8  148  24  ~/.config/waybar/config.jsonc
-|4,56,148,24,1763649936,"~/.config/waybar/config.jsonc"
+'8  144  0  ~/.config/waybar/style.css
+|4,56,144,0,1763807770,"~/.config/waybar/style.css"
 '9  148  24  ~/.config/waybar/config.jsonc
 |4,57,148,24,1763649936,"~/.config/waybar/config.jsonc"
 
 # Jumplist (newest first):
+-'  6  30  ~/.ssh/config
+|4,39,6,30,1763971606,"~/.ssh/config"
+-'  1  0  ~/.ssh/config
+|4,39,1,0,1763971584,"~/.ssh/config"
+-'  54  0  ~/foo.json
+|4,39,54,0,1763970874,"~/foo.json"
 -'  54  0  ~/foo.json
 |4,39,54,0,1763970874,"~/foo.json"
 -'  1  0  ~/foo.json
 |4,39,1,0,1763970687,"~/foo.json"
 -'  1  0  ~/foo.json
+|4,39,1,0,1763970687,"~/foo.json"
+-'  1  0  ~/foo.json
 |4,39,1,0,1763970675,"~/foo.json"
+-'  1  0  ~/foo.json
+|4,39,1,0,1763970675,"~/foo.json"
+-'  566  21  ~/foo.json
+|4,39,566,21,1763889996,"~/foo.json"
+-'  193  21  ~/foo.json
+|4,39,193,21,1763889996,"~/foo.json"
 -'  566  21  ~/foo.json
 |4,39,566,21,1763889996,"~/foo.json"
 -'  193  21  ~/foo.json
@@ -292,6 +306,12 @@ $
 |4,39,873,0,1763889727,"~/foo.json"
 -'  500  0  ~/foo.json
 |4,39,500,0,1763889727,"~/foo.json"
+-'  873  0  ~/foo.json
+|4,39,873,0,1763889727,"~/foo.json"
+-'  500  0  ~/foo.json
+|4,39,500,0,1763889727,"~/foo.json"
+-'  1  0  ~/foo.json
+|4,39,1,0,1763889637,"~/foo.json"
 -'  1  0  ~/foo.json
 |4,39,1,0,1763889637,"~/foo.json"
 -'  143  32  ~/.config/waybar/style.css
@@ -310,6 +330,38 @@ $
 |4,39,143,32,1763807997,"~/.config/waybar/style.css"
 -'  143  32  ~/.config/waybar/style.css
 |4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  143  32  ~/.config/waybar/style.css
+|4,39,143,32,1763807997,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
+-'  1  0  ~/.config/waybar/style.css
+|4,39,1,0,1763807871,"~/.config/waybar/style.css"
 -'  1  0  ~/.config/waybar/style.css
 |4,39,1,0,1763807871,"~/.config/waybar/style.css"
 -'  1  0  ~/.config/waybar/style.css
@@ -342,6 +394,38 @@ $
 |4,39,7,0,1763807864,"~/NERD_tree_win_1"
 -'  7  0  ~/NERD_tree_win_1
 |4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  7  0  ~/NERD_tree_win_1
+|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+-'  1  0  ~/NERD_tree_win_1
+|4,39,1,0,1763807862,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
 |4,39,1,0,1763807862,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
@@ -390,96 +474,19 @@ $
 |4,39,144,0,1763807770,"~/.config/waybar/style.css"
 -'  144  0  ~/.config/waybar/style.css
 |4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807691,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807676,"~/.config/waybar/style.css"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  7  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,7,0,1763807642,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
--'  1  0  ~/.config/waybar/NERD_tree_win_1
-|4,39,1,0,1763807498,"~/.config/waybar/NERD_tree_win_1"
+-'  144  0  ~/.config/waybar/style.css
+|4,39,144,0,1763807770,"~/.config/waybar/style.css"
+-'  144  0  ~/.config/waybar/style.css
+|4,39,144,0,1763807770,"~/.config/waybar/style.css"
 
 # History of marks within files (newest to oldest):
+
+> ~/.ssh/config
+	*	1763971604	0
+	"	6	30
+	^	6	31
+	.	6	30
+	+	6	30
 
 > ~/foo.json
 	*	1763970705	0
