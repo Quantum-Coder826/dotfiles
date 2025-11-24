@@ -1,29 +1,27 @@
-set relativenumber 
-set nowrap
-
-syntax enable
-filetype plugin indent on
-
-autocmd BufNewFile,BufRead *.rs set filetype=rust
-
 call plug#begin()
+
 Plug 'tpope/vim-sensible'
 Plug 'morhetz/gruvbox'
-Plug 'jalvesaq/nvim-r'
-Plug 'rust-lang/rust.vim'
-Plug 'dense-analysis/ale'
+
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
-let g:LanguageClient_serverCommands = {
-\ 'rust': ['rust-analyzer'],
-\ }
+autocmd vimenter * ++nested colorscheme gruvbox
+set bg=dark
 
-let g:ale_linters = {'rust': ['analyzer']}
+set mouse=a
+set relativenumber
+set nowrap
 
-let g:ale_fixers = { 'rust': ['rustfmt', 'trim_whitespace', 'remove_trailing_lines'] }
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
-" Optional, configure as-you-type completions
-set completeopt=menu,menuone,preview,noselect,noinsert
-let g:ale_completion_enabled = 1
+let g:NERDTreeWinSize=10
 
-nnoremap <C-LeftMouse> :ALEGoToDefinition<CR>
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
