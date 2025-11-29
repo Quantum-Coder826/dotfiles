@@ -111,7 +111,7 @@
     "on-click": "alacritty -e btop -p 1"
   },
   "custom/gpu": {
-    "exec": "/home/qbyte/.config/waybar/scripts/custom-gpu.py",
+    "exec": "/home/qbyte/.config/waybar/scripts/custom-gpu.sh",
     "return-type": "json",
     "format": "{}",
     "interval": 5,
