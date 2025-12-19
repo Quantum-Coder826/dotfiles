@@ -7,3 +7,4 @@ __pycache__/
 /.config/qtile/lib
 /.config/qtile/lib64
 /.config/qtile/pyvenv.cfg
+.Rproj.user
