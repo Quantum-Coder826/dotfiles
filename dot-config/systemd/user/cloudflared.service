@@ -1,13 +1,12 @@
 # /lib/systemd/system/cloudflared.service
 [Unit]
 Description=Cloudflared access tunnel for remote file share
-Requires=graphical.target
 After=network-online.target
 
 [Service]
 Type=simple
 User=qbyte
-ExecStart=/usr/local/bin/cloudflared access tcp --hostname smb.qbyteapp.net --url localhost:8445
+ExecStart=/usr/bin/cloudflared access tcp --hostname smb.qbyteapp.com --url localhost:8445
 Restart=on-failure
 RestartSec=10
 
