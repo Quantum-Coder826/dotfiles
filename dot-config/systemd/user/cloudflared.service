@@ -1,16 +1,15 @@
 # /lib/systemd/system/cloudflared.service
 [Unit]
-Description=cloudflared access tunnel for remote file share
-Wants=network-online.target
+Description=Cloudflared access tunnel for remote file share
+Requires=graphical.target
 After=network-online.target
 
 [Service]
 Type=simple
-User=berend
-ExecStart=/usr/local/bin/cloudflared access tcp --hostname smb.broodjehamworst.net --url localhost:8445
+User=qbyte
+ExecStart=/usr/local/bin/cloudflared access tcp --hostname smb.qbyteapp.net --url localhost:8445
 Restart=on-failure
 RestartSec=10
-KillMode=process
 
 [Install]
 WantedBy=multi-user.target
