@@ -11,28 +11,34 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/XM4
+~MSle0~/pseudo
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:qui
+|2,0,1765008867,,"qui"
+:q
+|2,0,1765008865,,"q"
+:w
+|2,0,1764847522,,"w"
+:execute '%!python -m json.tool' | w  
+|2,0,1763976662,,"execute '%!python -m json.tool' | w  "
 :wq
-|2,0,1763971606,,"wq"
+|2,0,1763983623,,"wq"
+:5
+|2,0,1763979010,,"5"
+:terminal
+|2,0,1763976463,,"terminal"
+:q!
+|2,0,1763972072,,"q!"
 :quitall
 |2,0,1763970874,,"quitall"
-:w
-|2,0,1763970692,,"w"
-:execute '%!python -m json.tool' | w  
-|2,0,1763970691,,"execute '%!python -m json.tool' | w  "
-:q
-|2,0,1763970675,,"q"
 :-- Source - https://stackoverflow.com/an-- Posted by Jose Bn-- Retrieved 2025-11-23, License - CC BY-SA 3.0nnexecute '%!python -m json.tool' | w  n
 |2,0,1763889669,,"-- Source - https://stackoverflow.com/a\n-- Posted by Jose B\n-- Retrieved 2025-11-23, License - CC BY-SA 3.0\n\nexecute '%!python -m json.tool' | w  \n"
 :e
 |2,0,1763807910,,"e"
-:q!
-|2,0,1763386132,,"q!"
 :qall
 |2,0,1763234050,,"qall"
 :NERDTree
@@ -77,6 +83,14 @@ $
 |2,0,1756557289,,"qw"
 
 # Search String History (newest to oldest):
+?/pseudo
+|2,1,1764956966,47,"pseudo"
+?/pseu
+|2,1,1764956960,47,"pseu"
+?/monitor
+|2,1,1764847238,47,"monitor"
+?/sep1
+|2,1,1763978213,47,"sep1"
 ?/XM4
 |2,1,1763889727,47,"XM4"
 ?/plug
@@ -121,8 +135,6 @@ $
 |2,1,1761414077,47,"startup"
 ?/waybar
 |2,1,1761406934,47,"waybar"
-?/pseudo
-|2,1,1761381890,47,"pseudo"
 ?/stuff
 |2,1,1761126887,47,"stuff"
 ?/border
@@ -204,282 +216,506 @@ $
 
 # Registers:
 "0	LINE	0
-	##################
-|3,0,0,1,1,0,1763289049,"##################"
+	    run("bluetoothctl disconnect " + dev_info[choice]["address"], shell=True)
+|3,0,0,1,1,0,1763982929,"    run(\"bluetoothctl disconnect \" + dev_info[choice][\"address\"], shell=True)"
 "1	LINE	0
-	      "format": "{icon}"
-|3,0,1,1,1,0,1763649733,"      \"format\": \"{icon}\""
+	
+|3,0,1,1,1,0,1763983620,""
 "2	LINE	0
-	    scroll_button = 3
-|3,0,2,1,1,0,1763284762,"    scroll_button = 3"
+	print(choice)
+|3,0,2,1,1,0,1763983402,"print(choice)"
 "3	LINE	0
-	    device {
-	        name = logitech-ergo-m575
-	    }
-|3,0,3,1,3,0,1763284565,"    device {","        name = logitech-ergo-m575","    }"
+	from shlex import split
+|3,0,3,1,1,0,1763982983,"from shlex import split"
 "4	LINE	0
-	
-	# Set programs that you use
-|3,0,4,1,2,0,1763283159,"","# Set programs that you use"
+	    
+|3,0,4,1,1,0,1763982817,"    "
 "5	LINE	0
-	
-|3,0,5,1,1,0,1763283144,""
+	print(choice)
+|3,0,5,1,1,0,1763982649,"print(choice)"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1763283138,""
+	print(str(choice)[2])
+|3,0,6,1,1,0,1763982620,"print(str(choice)[2])"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1763283129,""
+	print(str(choice))
+|3,0,7,1,1,0,1763982619,"print(str(choice))"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1763283127,""
+	print(e))
+|3,0,8,1,1,0,1763982557,"print(e))"
 "9	LINE	0
-	########################
-	### DYNAMIC CURSTORS ###
-	########################
-	plugin:dynamic-cursors {
-	    enable = true
-	    mode = stretch
-	
-	    stretch {
-	        limit = 3000 
-	        function = linear
-	        window = 100
-	    }
-	}
-	
-|3,0,9,1,14,0,1763283126,"########################","### DYNAMIC CURSTORS ###","########################","plugin:dynamic-cursors {","    enable = true","    mode = stretch","","    stretch {","        limit = 3000 ","        function = linear","        window = 100","    }","}",""
+	print(chr(choice[1]))
+|3,0,9,1,1,0,1763982501,"print(chr(choice[1]))"
 ""-	CHAR	0
-	git
-|3,1,36,0,1,0,1763971590,"git"
+	 
+|3,1,36,0,1,0,1764847369," "
 
 # global variables:
 
 # File marks:
-'0  6  30  ~/.ssh/config
-|4,48,6,30,1763971606,"~/.ssh/config"
-'1  54  0  ~/foo.json
-|4,49,54,0,1763970874,"~/foo.json"
-'2  1  0  ~/foo.json
-|4,50,1,0,1763970675,"~/foo.json"
-'3  1  0  ~/foo.json
-|4,51,1,0,1763970675,"~/foo.json"
-'4  566  21  ~/foo.json
-|4,52,566,21,1763889996,"~/foo.json"
-'5  193  21  ~/foo.json
-|4,53,193,21,1763889996,"~/foo.json"
-'6  143  32  ~/.config/waybar/style.css
-|4,54,143,32,1763807997,"~/.config/waybar/style.css"
-'7  144  0  ~/.config/waybar/style.css
-|4,55,144,0,1763807770,"~/.config/waybar/style.css"
-'8  144  0  ~/.config/waybar/style.css
-|4,56,144,0,1763807770,"~/.config/waybar/style.css"
-'9  148  24  ~/.config/waybar/config.jsonc
-|4,57,148,24,1763649936,"~/.config/waybar/config.jsonc"
+'0  1  0  ~/.config/hypr/hyprpaper.conf
+|4,48,1,0,1764967371,"~/.config/hypr/hyprpaper.conf"
+'1  255  16  ~/.config/hypr/hyprland.conf
+|4,49,255,16,1764957050,"~/.config/hypr/hyprland.conf"
+'2  25  34  ~/.config/hypr/hyprland.conf
+|4,50,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+'3  25  34  ~/.config/hypr/hyprland.conf
+|4,51,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+'4  7  0  /etc/pam.d/login
+|4,52,7,0,1764365240,"/etc/pam.d/login"
+'5  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,53,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+'6  1  0  ~/foo.json
+|4,54,1,0,1763983642,"~/foo.json"
+'7  34  0  ~/scripts/rofiBlueZ.py
+|4,55,34,0,1763983623,"~/scripts/rofiBlueZ.py"
+'8  6  30  ~/.ssh/config
+|4,56,6,30,1763971606,"~/.ssh/config"
+'9  427  0  ~/foo.json
+|4,57,427,0,1763970874,"~/foo.json"
 
 # Jumplist (newest first):
--'  6  30  ~/.ssh/config
-|4,39,6,30,1763971606,"~/.ssh/config"
--'  1  0  ~/.ssh/config
-|4,39,1,0,1763971584,"~/.ssh/config"
--'  54  0  ~/foo.json
-|4,39,54,0,1763970874,"~/foo.json"
--'  54  0  ~/foo.json
-|4,39,54,0,1763970874,"~/foo.json"
--'  1  0  ~/foo.json
-|4,39,1,0,1763970687,"~/foo.json"
--'  1  0  ~/foo.json
-|4,39,1,0,1763970687,"~/foo.json"
--'  1  0  ~/foo.json
-|4,39,1,0,1763970675,"~/foo.json"
--'  1  0  ~/foo.json
-|4,39,1,0,1763970675,"~/foo.json"
--'  566  21  ~/foo.json
-|4,39,566,21,1763889996,"~/foo.json"
--'  193  21  ~/foo.json
-|4,39,193,21,1763889996,"~/foo.json"
--'  566  21  ~/foo.json
-|4,39,566,21,1763889996,"~/foo.json"
--'  193  21  ~/foo.json
-|4,39,193,21,1763889996,"~/foo.json"
--'  873  0  ~/foo.json
-|4,39,873,0,1763889727,"~/foo.json"
--'  500  0  ~/foo.json
-|4,39,500,0,1763889727,"~/foo.json"
--'  873  0  ~/foo.json
-|4,39,873,0,1763889727,"~/foo.json"
--'  500  0  ~/foo.json
-|4,39,500,0,1763889727,"~/foo.json"
--'  1  0  ~/foo.json
-|4,39,1,0,1763889637,"~/foo.json"
--'  1  0  ~/foo.json
-|4,39,1,0,1763889637,"~/foo.json"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  143  32  ~/.config/waybar/style.css
-|4,39,143,32,1763807997,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  1  0  ~/.config/waybar/style.css
-|4,39,1,0,1763807871,"~/.config/waybar/style.css"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
--'  7  0  ~/NERD_tree_win_1
-|4,39,7,0,1763807864,"~/NERD_tree_win_1"
+-'  1  0  ~/.config/hypr/hyprpaper.conf
+|4,39,1,0,1764967371,"~/.config/hypr/hyprpaper.conf"
+-'  1  0  ~/.config/hypr/hyprpaper.conf
+|4,39,1,0,1764967371,"~/.config/hypr/hyprpaper.conf"
+-'  8  0  ~/NERD_tree_win_1
+|4,39,8,0,1764967293,"~/NERD_tree_win_1"
+-'  8  0  ~/NERD_tree_win_1
+|4,39,8,0,1764967293,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+|4,39,1,0,1764967290,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+|4,39,1,0,1764967290,"~/NERD_tree_win_1"
+-'  255  16  ~/.config/hypr/hyprland.conf
+|4,39,255,16,1764957050,"~/.config/hypr/hyprland.conf"
+-'  255  16  ~/.config/hypr/hyprland.conf
+|4,39,255,16,1764957050,"~/.config/hypr/hyprland.conf"
+-'  255  16  ~/.config/hypr/hyprland.conf
+|4,39,255,16,1764957050,"~/.config/hypr/hyprland.conf"
+-'  255  16  ~/.config/hypr/hyprland.conf
+|4,39,255,16,1764957050,"~/.config/hypr/hyprland.conf"
+-'  158  42  ~/.config/hypr/hyprland.conf
+|4,39,158,42,1764956966,"~/.config/hypr/hyprland.conf"
+-'  158  42  ~/.config/hypr/hyprland.conf
+|4,39,158,42,1764956966,"~/.config/hypr/hyprland.conf"
+-'  158  42  ~/.config/hypr/hyprland.conf
+|4,39,158,42,1764956966,"~/.config/hypr/hyprland.conf"
+-'  158  42  ~/.config/hypr/hyprland.conf
+|4,39,158,42,1764956966,"~/.config/hypr/hyprland.conf"
+-'  1  0  ~/.config/hypr/hyprland.conf
+|4,39,1,0,1764956960,"~/.config/hypr/hyprland.conf"
+-'  1  0  ~/.config/hypr/hyprland.conf
+|4,39,1,0,1764956960,"~/.config/hypr/hyprland.conf"
+-'  1  0  ~/.config/hypr/hyprland.conf
+|4,39,1,0,1764956960,"~/.config/hypr/hyprland.conf"
+-'  1  0  ~/.config/hypr/hyprland.conf
+|4,39,1,0,1764956960,"~/.config/hypr/hyprland.conf"
+-'  13  0  ~/NERD_tree_win_1
+|4,39,13,0,1764956952,"~/NERD_tree_win_1"
+-'  6  0  ~/NERD_tree_win_1
+|4,39,6,0,1764956952,"~/NERD_tree_win_1"
+-'  13  0  ~/NERD_tree_win_1
+|4,39,13,0,1764956952,"~/NERD_tree_win_1"
+-'  6  0  ~/NERD_tree_win_1
+|4,39,6,0,1764956952,"~/NERD_tree_win_1"
+-'  15  2  ~/NERD_tree_win_1
+|4,39,15,2,1764956950,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+|4,39,1,0,1764956950,"~/NERD_tree_win_1"
+-'  8  2  ~/NERD_tree_win_1
+|4,39,8,2,1764956950,"~/NERD_tree_win_1"
+-'  15  2  ~/NERD_tree_win_1
+|4,39,15,2,1764956950,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+|4,39,1,0,1764956950,"~/NERD_tree_win_1"
+-'  8  2  ~/NERD_tree_win_1
+|4,39,8,2,1764956950,"~/NERD_tree_win_1"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  25  34  ~/.config/hypr/hyprland.conf
+|4,39,25,34,1764847545,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  81  0  ~/.config/hypr/hyprland.conf
+|4,39,81,0,1764847238,"~/.config/hypr/hyprland.conf"
+-'  20  0  ~/NERD_tree_win_1
+|4,39,20,0,1764847225,"~/NERD_tree_win_1"
+-'  13  0  ~/NERD_tree_win_1
+|4,39,13,0,1764847225,"~/NERD_tree_win_1"
+-'  6  0  ~/NERD_tree_win_1
+|4,39,6,0,1764847225,"~/NERD_tree_win_1"
+-'  20  0  ~/NERD_tree_win_1
+|4,39,20,0,1764847225,"~/NERD_tree_win_1"
+-'  13  0  ~/NERD_tree_win_1
+|4,39,13,0,1764847225,"~/NERD_tree_win_1"
+-'  6  0  ~/NERD_tree_win_1
+|4,39,6,0,1764847225,"~/NERD_tree_win_1"
+-'  22  2  ~/NERD_tree_win_1
+|4,39,22,2,1764847223,"~/NERD_tree_win_1"
+-'  15  2  ~/NERD_tree_win_1
+|4,39,15,2,1764847223,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
+|4,39,1,0,1764847223,"~/NERD_tree_win_1"
+-'  8  2  ~/NERD_tree_win_1
+|4,39,8,2,1764847223,"~/NERD_tree_win_1"
+-'  22  2  ~/NERD_tree_win_1
+|4,39,22,2,1764847223,"~/NERD_tree_win_1"
+-'  15  2  ~/NERD_tree_win_1
+|4,39,15,2,1764847223,"~/NERD_tree_win_1"
 -'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  1  0  ~/NERD_tree_win_1
-|4,39,1,0,1763807862,"~/NERD_tree_win_1"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
--'  144  0  ~/.config/waybar/style.css
-|4,39,144,0,1763807770,"~/.config/waybar/style.css"
+|4,39,1,0,1764847223,"~/NERD_tree_win_1"
+-'  8  2  ~/NERD_tree_win_1
+|4,39,8,2,1764847223,"~/NERD_tree_win_1"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  7  0  /etc/pam.d/login
+|4,39,7,0,1764365240,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  /etc/pam.d/login
+|4,39,1,0,1764365230,"/etc/pam.d/login"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
+-'  1  0  ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+|4,39,1,0,1764068821,"~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj"
 
 # History of marks within files (newest to oldest):
+
+> ~/NERD_tree_tab_1
+	*	1765008863	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/.config/hypr/hyprpaper.conf
+	*	1764967297	0
+	"	1	0
+	.	4	0
+	+	4	9
+	+	4	13
+	+	2	52
+	+	4	63
+	+	4	0
+
+> ~/NERD_tree_win_1
+	*	1764967292	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/.config/hypr/hyprland.conf
+	*	1764956970	0
+	"	255	16
+	^	25	35
+	.	25	34
+	+	92	0
+	+	118	0
+	+	91	14
+	+	60	4
+	+	323	17
+	+	60	8
+	+	323	23
+	+	50	27
+	+	117	19
+	+	67	5
+	+	46	25
+	+	49	19
+	+	213	0
+	+	212	33
+	+	164	27
+	+	165	15
+	+	89	18
+	+	83	17
+	+	89	17
+	+	160	27
+	+	160	0
+	+	160	32
+	+	158	24
+	+	159	24
+	+	160	32
+	+	160	0
+	+	297	43
+	+	299	17
+	+	298	36
+	+	336	0
+	+	354	0
+	+	332	25
+	+	336	0
+	+	335	30
+	+	336	0
+	+	335	0
+	+	325	15
+	+	332	25
+	+	107	22
+	+	334	25
+	+	335	0
+	+	84	0
+	+	333	36
+	+	335	0
+	+	331	38
+	+	330	7
+	+	323	0
+	+	322	18
+	+	324	18
+	+	329	18
+	+	334	25
+	+	118	18
+	+	54	0
+	+	52	27
+	+	67	23
+	+	67	26
+	+	66	21
+	+	67	0
+	+	40	15
+	+	66	21
+	+	39	17
+	+	186	22
+	+	188	7
+	+	189	0
+	+	218	0
+	+	221	0
+	+	320	0
+	+	179	0
+	+	31	0
+	+	4	7
+	+	192	12
+	+	192	3
+	+	192	0
+	+	197	0
+	+	198	0
+	+	203	0
+	+	199	23
+	+	200	20
+	+	203	0
+	+	191	0
+	+	201	34
+	+	202	24
+	+	195	17
+	+	194	17
+	+	196	0
+	+	206	41
+	+	209	0
+	+	208	20
+	+	26	34
+	+	26	48
+	+	25	34
+
+> /etc/pam.d/login
+	*	1764365239	0
+	"	7	0
+
+> ~/Documents/opleiding/J1/P4/verslag_celbio_berend/verslag_celbio_berend.Rproj
+	*	1764068819	0
+	"	1	0
+
+> ~/scripts/rofiBlueZ.py
+	*	1763983620	0
+	"	34	0
+	^	25	0
+	.	35	0
+	+	35	18
+	+	1	41
+	+	35	0
+	+	24	0
+	+	1	35
+	+	24	8
+	+	35	12
+	+	24	69
+	+	5	0
+	+	3	0
+	+	5	3
+	+	7	19
+	+	7	23
+	+	6	16
+	+	7	33
+	+	20	18
+	+	9	0
+	+	20	24
+	+	5	9
+	+	20	0
+	+	20	3
+	+	20	21
+	+	20	34
+	+	20	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	7	16
+	+	8	0
+	+	20	0
+	+	4	38
+	+	20	0
+	+	10	16
+	+	12	20
+	+	19	17
+	+	14	30
+	+	19	54
+	+	20	0
+	+	14	6
+	+	35	13
+	+	14	33
+	+	17	21
+	+	18	15
+	+	3	0
+	+	19	22
+	+	24	86
+	+	23	57
+	+	24	84
+	+	35	14
+	+	35	12
+	+	35	0
+	+	35	9
+	+	35	16
+	+	35	0
+	+	35	19
+	+	35	17
+	+	35	18
+	+	24	91
+	+	23	33
+	+	35	0
+	+	35	6
+	+	24	12
+	+	24	96
+	+	35	0
+	+	28	0
+	+	24	0
+	+	29	43
+	+	30	42
+	+	35	0
+	+	1	40
+	+	35	4
+	+	2	23
+	+	1	35
+	+	35	0
+	+	30	42
+	+	1	39
+	+	31	76
+	+	34	0
+	+	33	22
+	+	24	91
+	+	5	64
+	+	2	0
+	+	8	86
+	+	5	58
+	+	8	0
+	+	8	81
+	+	8	0
+	+	8	91
+	+	22	0
+	+	21	15
+	+	26	31
+	+	21	6
+	+	26	12
+	+	26	28
+	+	27	0
+	+	26	0
+	+	35	0
+
+> ~/foo.json
+	*	1763978222	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/dotfiles/NERD_tree_tab_1
+	*	1763972068	0
+	"	4	0
+	.	1	0
+	+	1	0
 
 > ~/.ssh/config
 	*	1763971604	0
@@ -487,12 +723,6 @@ $
 	^	6	31
 	.	6	30
 	+	6	30
-
-> ~/foo.json
-	*	1763970705	0
-	"	54	0
-	.	1	0
-	+	1	0
 
 > ~/.config/waybar/style.css
 	*	1763807993	0
@@ -548,12 +778,6 @@ $
 	+	143	37
 	+	143	33
 
-> ~/NERD_tree_win_1
-	*	1763807864	0
-	"	7	0
-	.	1	0
-	+	1	0
-
 > ~/.config/waybar/NERD_tree_win_1
 	*	1763807640	0
 	"	7	0
@@ -598,100 +822,6 @@ $
 	+	9	40
 	+	8	29
 	+	11	0
-
-> ~/.config/hypr/hyprland.conf
-	*	1763370022	0
-	"	1	0
-	^	208	0
-	.	207	20
-	+	91	0
-	+	117	0
-	+	90	14
-	+	59	4
-	+	322	17
-	+	59	8
-	+	322	23
-	+	49	27
-	+	116	19
-	+	66	5
-	+	45	25
-	+	48	19
-	+	212	0
-	+	211	33
-	+	163	27
-	+	164	15
-	+	88	18
-	+	82	17
-	+	88	17
-	+	159	27
-	+	159	0
-	+	159	32
-	+	157	24
-	+	158	24
-	+	159	32
-	+	159	0
-	+	296	43
-	+	298	17
-	+	297	36
-	+	335	0
-	+	353	0
-	+	331	25
-	+	335	0
-	+	334	30
-	+	335	0
-	+	334	0
-	+	324	15
-	+	331	25
-	+	106	22
-	+	333	25
-	+	334	0
-	+	83	0
-	+	332	36
-	+	334	0
-	+	330	38
-	+	329	7
-	+	322	0
-	+	321	18
-	+	323	18
-	+	328	18
-	+	333	25
-	+	117	18
-	+	53	0
-	+	51	27
-	+	66	23
-	+	66	26
-	+	65	21
-	+	66	0
-	+	39	15
-	+	65	21
-	+	38	17
-	+	185	22
-	+	187	7
-	+	188	0
-	+	217	0
-	+	220	0
-	+	319	0
-	+	178	0
-	+	30	0
-	+	4	7
-	+	191	12
-	+	191	3
-	+	191	0
-	+	196	0
-	+	197	0
-	+	202	0
-	+	198	23
-	+	199	20
-	+	202	0
-	+	190	0
-	+	200	34
-	+	201	24
-	+	194	17
-	+	193	17
-	+	195	0
-	+	205	41
-	+	208	0
-	+	207	20
 
 > ~/.config/hypr/NERD_tree_win_1
 	*	1763283112	0
@@ -888,12 +1018,6 @@ $
 	+	26	68
 	+	27	153
 	+	21	22
-
-> ~/NERD_tree_tab_1
-	*	1761411111	0
-	"	3	9
-	.	1	0
-	+	1	0
 
 > /etc/pacman.d/hooks/50-xdgMenuPrefix.hook
 	*	1761389682	0
@@ -1135,16 +1259,6 @@ $
 	+	10	0
 	+	11	0
 	+	12	49
-
-> ~/.config/hypr/hyprpaper.conf
-	*	1755774953	0
-	"	4	0
-	.	4	0
-	+	4	9
-	+	4	13
-	+	2	52
-	+	4	63
-	+	4	0
 
 > ~/.local/share/applications/mediaman.desktop
 	*	1755773746	0
