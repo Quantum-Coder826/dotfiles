@@ -18,6 +18,7 @@
   ],
   "modules-right": [
       "tray",
+      "custom/smb_mount",
       "group/rf",
       "pulseaudio", // volume
       "group/power_stuff",
@@ -154,5 +155,10 @@
     "tooltip-format": "{:%Y-%m-%d %H:%M:%S}",
     "on-click": "date +'%Y-%m-%d %H:%M:%S' | wl-copy",
     "interval": 1
+  },
+  "custom/smb_mount": {
+      "exec": "mountpoint -q /media/qbyte/smb || print 'nope'",
+      "hide-empty-text": true,
+      "interval": 30
   }
 }
