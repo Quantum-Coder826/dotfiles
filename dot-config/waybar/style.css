@@ -141,3 +141,7 @@ tooltip {
   background-color: @color-aqua;
 }
 
+#custom-caps {
+  background-color: @color-purple;
+}
+
