@@ -93,7 +93,8 @@
   ],
   "modules-right": [
     "hyprland/workspaces",
-    "hyprland/submap"
+    "hyprland/submap",
+    "custom/caps"
   ],
 
   ///////////////////////
