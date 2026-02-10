@@ -2,11 +2,18 @@
 // start command: rofi -show combi
 
 configuration {
-    modi: "window,drun,combi";
-    combi-modi: "window,drun,combi";
-    icon-theme: "Gruvbox_dark";
-    show-icons: true;
-    no-history: true;
-    }
+modi: "combi,file-browser-extended";
+      combi-modi: "window,drun";
+      icon-theme: "Gruvbox_dark";
+      show-icons: true;
+      no-history: true;
+      filebrowser {
+        directory: "~";
+        directorys-first: true;
+        cancel-returns-1: true;
+        show-hidden: false;
+        command: "xdg-open";
+      }
+}
 
 @theme "gruvbox-dark-hard.rasi"
