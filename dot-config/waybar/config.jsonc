@@ -10,6 +10,7 @@
   // Module layout //
   ///////////////////
   "modules-left": [
+      "custom/caps",
       "hyprland/submap",
       "hyprland/workspaces"
   ],
@@ -167,5 +168,10 @@
       "exec": "mountpoint -q /media/qbyte/smb || print 'nope'",
       "hide-empty-text": true,
       "interval": 30
+  },
+ "custom/caps": {
+    "exec": "/home/qbyte/.config/waybar/scripts/capslock.sh",
+    "tooltip": false,
+    "interval": 1
   }
 }
