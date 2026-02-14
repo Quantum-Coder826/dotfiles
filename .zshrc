@@ -121,3 +121,4 @@ export QT_QPA_PLATFOMR=wayland
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
