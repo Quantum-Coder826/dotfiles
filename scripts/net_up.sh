@@ -7,5 +7,3 @@ while ip link show | grep -q "state DOWN"; do
 done
 
 mount /media/qbyte/smb
-
-(nohup firefox >/dev/null &)
