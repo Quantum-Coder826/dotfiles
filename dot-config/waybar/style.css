@@ -35,7 +35,7 @@
 }
 
 window#waybar {
-  background: alpha(@color-bg, 0.0);
+  background: none;
   margin:0.5em;
 }
 
@@ -68,7 +68,7 @@ button:hover {
 }
 
 tooltip {
-  background-color: alpha(@color-bg, 0.8);
+  background: alpha(@color-bg, 1.0);
   border-radius: 24px 10px 24px 10px;
 }
 
@@ -81,7 +81,7 @@ tooltip {
 
 /*--- Hyprland workspace ---*/
 #workspaces {
-  background: alpha(@color-bg, 0.7);
+  background-color: alpha(@color-bg, 0.5);
 }
 
 #workspaces button {
@@ -105,7 +105,7 @@ tooltip {
 }
 
 #window{
-  background: @color-bg;
+  background-color: alpha(@color-bg, 0.5);
   min-width: 100px;
   transition: 1s;
 }
