@@ -122,3 +122,6 @@ export QT_QPA_PLATFOMR=wayland
 
 eval "$(atuin init zsh)"
 
+
+# Created by `pipx` on 2026-02-16 10:42:42
+export PATH="$PATH:/home/qbyte/.local/bin"
