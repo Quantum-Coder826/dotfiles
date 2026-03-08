@@ -96,11 +96,11 @@ button:hover {
 
 #battery{
     background-color: @color-aqua;
-    border-right: 2px solid @color-aqua1;
+    border-right: 2px solid @color-aqua;
 }
 #battery.warning{
     background-color: @color-red;
-    border-right: 2px solid @color-aqua1;
+    border-right: 2px solid @color-aqua;
 }
 #backlight {
     background-color: @color-yellow;
