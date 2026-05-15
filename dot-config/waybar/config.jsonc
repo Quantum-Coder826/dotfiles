@@ -29,7 +29,7 @@
   "group/rf": {
 	  "orientation": "inherit",
 	  "modules": [
-          "network",
+          //"network",
           "bluetooth"
 	  ]
   },
