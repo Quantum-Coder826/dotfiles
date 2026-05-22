@@ -49,7 +49,7 @@ hl.bind(Mod .. " + R", hl.dsp.exec_cmd("rofi -show combi"))
 hl.bind(Mod .. " + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(Mod .. " + F", hl.dsp.window.float())
 hl.bind("CONTROL + SHIFT + escape", hl.dsp.exec_cmd("alacritty -e btop -p 0"))
-hl.bind("CONTROL + ALT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind("CONTROL + ALT + L", hl.dsp.exec_cmd("hyprlock -c $XDG_CONFIG_HOME/hypr/lock/normal.conf"))
 hl.bind("ALT + TAB", hl.dsp.focus({ monitor = "+1" }))
 
 hl.bind(Mod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))

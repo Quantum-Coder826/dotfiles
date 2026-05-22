@@ -42,7 +42,7 @@ local menu        = "rofi"
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function ()
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
-  hl.exec_cmd("hyprlock -q")
+  hl.exec_cmd("hyprlock -q -g 0 -c $XDG_CONFIG_HOME/hypr/lock/startup.conf")
   hl.exec_cmd("waybar & hyprpaper & hypridle & mako & nm-applet & blueman-applet")
   hl.exec_cmd("solaar -w hide")
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
@@ -68,8 +68,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.config({
   general = {
     gaps_in  = 2,
-    gaps_out = 2,
-    gaps_workspaces = 6,
+    gaps_out = {2, 12, 12, 2},
 
     border_size = 2,
     col = {
