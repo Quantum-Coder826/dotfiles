@@ -28,30 +28,21 @@ hl.monitor({
   scale    = "1",
 })
 
----------------------
----- MY PROGRAMS ----
----------------------
-local terminal    = "alacritty"
-local fileManager = "dolphin"
-local menu        = "rofi"
-
-
 -------------------
 ---- AUTOSTART ----
 -------------------
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function ()
-  hl.exec_cmd("systemctl --user start hyprpolkitagent")
-  hl.exec_cmd("hyprlock -q")
-  hl.exec_cmd("waybar & hyprpaper & mako")
-  hl.exec_cmd("wl-paste --type text --watch cliphist store")
-  hl.exec_cmd("wl-paste --type image --watch cliphist store")
-  hl.exec_cmd("XDG_MENU_PREFIX=arch- kbuildsycoca6")
-  hl.exec_cmd("mount /media/qbyte/smb")
-  hl.exec_cmd("com.github.wwmm.easyeffects", { workspace = 8})
-  hl.exec_cmd("com.discordapp.Discord", { workspace = 7})
-  hl.exec_cmd("bash ~/scripts/steam_startup.sh")
-  hl.exec_cmd("firefox", { workspace = "1" })
+    hl.exec_cmd("hyprlock -q --grace 0 -c $XDG_CONFIG_HOME/hypr/lock/lockstartup.conf")
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
+    hl.exec_cmd("waybar & hyprpaper & mako")
+    hl.exec_cmd("wl-paste --type text --watch cliphist store")
+    hl.exec_cmd("wl-paste --type image --watch cliphist store")
+    hl.exec_cmd("XDG_MENU_PREFIX=arch- kbuildsycoca6")
+    hl.exec_cmd("bash ~/scripts/steam_startup.sh")
+    hl.exec_cmd("com.github.wwmm.easyeffects")
+    hl.exec_cmd("com.discordapp.Discord")
+    hl.exec_cmd("firefox")
 end)
 
 -------------------------------
@@ -60,6 +51,7 @@ end)
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
 -----------------------
 ---- LOOK AND FEEL ----
@@ -69,20 +61,14 @@ hl.config({
   general = {
     gaps_in  = 2,
     gaps_out = 2,
-    gaps_workspaces = 6,
-
     border_size = 2,
     col = {
       active_border = "rgb(98971a)",
       inactive_border = "rgb(458588)",
     },
 
-    -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
-    resize_on_border = false,
-
-    -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
+    resize_on_border = true,
     allow_tearing = false,
-
     layout = "scrolling",
   },
 
@@ -90,7 +76,6 @@ hl.config({
     rounding       = 0,
     rounding_power = 0,
 
-    -- Change transparency of focused and unfocused windows
     active_opacity   = 1.0,
     inactive_opacity = 1.0,
 
@@ -233,7 +218,7 @@ local suppressMaximizeRule = hl.window_rule({
 
   suppress_event = "maximize",
 })
--- suppressMaximizeRule:set_enabled(false)
+suppressMaximizeRule:set_enabled(true)
 
 hl.window_rule({
   -- Fix some dragging issues with XWayland
@@ -258,6 +243,13 @@ hl.window_rule({
   float = true,
   center = true,
 })
+hl.window_rule({
+  name = "keepass",
+  match = {class = "org.keepassxc.KeePassXC"},
+  float = true,
+  center = true,
+  size = {600, 600},
+})
 
 --- System tray ---
 hl.workspace_rule({
@@ -278,6 +270,13 @@ hl.window_rule({
   },
   workspace = "7 silent",
 })
+hl.window_rule({
+  name = "sound",
+  match = {
+    class = "com.github.wwmm.easyeffects",
+  },
+  workspace = "8 silent",
+})
 
 --- Special workspace ---
 hl.workspace_rule({
@@ -293,3 +292,18 @@ hl.window_rule({
   border_size = 5,
 })
 
+------------------
+--- Layer Rule ---
+------------------
+hl.layer_rule({
+  name = "waybar",
+  match = { namespace = "waybar" },
+  blur = false,
+})
+hl.layer_rule({
+  name = "vicinae",
+  match = {namespace = "vicinae"},
+  blur = true,
+  ignore_alpha = 0,
+  no_anim = true,
+})
