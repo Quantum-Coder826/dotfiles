@@ -247,7 +247,6 @@ hl.window_rule({
   name = "keepass",
   match = {class = "org.keepassxc.KeePassXC"},
   float = true,
-  center = true,
   size = {600, 600},
 })
 
@@ -273,7 +272,7 @@ hl.window_rule({
 hl.window_rule({
   name = "sound",
   match = {
-    class = "com.github.wwmm.easyeffects",
+    class = "org.kde.easyeffects",
   },
   workspace = "8 silent",
 })
