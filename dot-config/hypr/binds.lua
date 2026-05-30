@@ -6,7 +6,7 @@ local ctrl = "CONTROL"
 local shift = "SHIFT"
 local alt = "ALT"
 
---- Navigation and Windowmanagment ---
+--- Navigation and Window management ---
 hl.bind(mod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mod .. " + J", hl.dsp.focus({ direction = "down" }))
 hl.bind(mod .. " + K", hl.dsp.focus({ direction = "up" }))
@@ -58,7 +58,10 @@ hl.bind("ALT + TAB", hl.dsp.focus({ monitor = "+1" }))
 hl.bind(mod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))
 hl.bind(mod .. " + B", hl.dsp.exec_cmd("firefox"))
 
---- Workspace Managment ---
+hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
+--- Workspace management---
 for i = 1, 10 do
   local key = i % 10
   hl.bind(mod .. " + " .. key, hl.dsp.focus({ workspace = i , on_current_monitor = true}))
