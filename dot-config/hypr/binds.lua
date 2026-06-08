@@ -31,10 +31,10 @@ hl.define_submap("resize", function()
   hl.bind(Mod .. " + L", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
 
   -- layout.scrolling specific
-  hl.bind(Mod .. " + SHIFT + H", hl.dsp.layout("colresize -0.02"), { repeating = true })
-  hl.bind(Mod .. " + SHIFT + L", hl.dsp.layout("colresize +0.02"), { repeating = true })
-  hl.bind(Mod .. " + Q", hl.dsp.layout("colresize +conf"), { repeating = true })
-  hl.bind(Mod .. " + SHIFT + Q", hl.dsp.layout("colresize -conf"), { repeating = true })
+  hl.bind(Mod .. " + SHIFT + H", hl.dsp.layout("colresize -0.02"),  { repeating = true })
+  hl.bind(Mod .. " + SHIFT + L", hl.dsp.layout("colresize +0.02"),  { repeating = true })
+  hl.bind(Mod .. " + Q", hl.dsp.layout("colresize +conf"),          { repeating = true })
+  hl.bind(Mod .. " + SHIFT + Q", hl.dsp.layout("colresize -conf"),  { repeating = true })
   hl.bind(Mod .. " + 0", hl.dsp.layout("fit all"))
   hl.bind(Mod .. " + 2", hl.dsp.layout("colresize all 0.5"))
   hl.bind(Mod .. " + 3", hl.dsp.layout("colresize all 0.333"))
@@ -83,3 +83,5 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+
+hl.bind("switch:Lid Switch", hl.dsp.exec_cmd("hyprlock"),       { locked = true })
