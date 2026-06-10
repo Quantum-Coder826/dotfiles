@@ -42,7 +42,7 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("bash ~/scripts/steam_startup.sh")
     hl.exec_cmd("com.github.wwmm.easyeffects")
     hl.exec_cmd("com.discordapp.Discord")
-    hl.exec_cmd("firefox")
+    hl.exec_cmd("zen-browser")
 end)
 
 -------------------------------
