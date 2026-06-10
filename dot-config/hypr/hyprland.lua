@@ -50,7 +50,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("XDG_MENU_PREFIX=arch- kbuildsycoca6")
   hl.exec_cmd("~/scripts/smb_mount.sh")
   hl.exec_cmd("com.github.wwmm.easyeffects", { workspace = 8})
-  hl.exec_cmd("firefox", { workspace = "1" })
+  hl.exec_cmd("zen-browser", { workspace = "1" })
 end)
 
 -------------------------------

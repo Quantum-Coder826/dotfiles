@@ -53,7 +53,7 @@ hl.bind("CONTROL + ALT + L", hl.dsp.exec_cmd("hyprlock -c $XDG_CONFIG_HOME/hypr/
 hl.bind("ALT + TAB", hl.dsp.focus({ monitor = "+1" }))
 
 hl.bind(Mod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))
-hl.bind(Mod .. " + B", hl.dsp.exec_cmd("firefox"))
+hl.bind(Mod .. " + B", hl.dsp.exec_cmd("zen-browser"))
 
 --- Workspace Managment ---
 for i = 1, 10 do
