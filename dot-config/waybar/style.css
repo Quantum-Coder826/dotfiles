@@ -40,9 +40,12 @@ window#waybar {
 }
 
 .module {
-  padding: 0 0.5em;
-  border-radius: 24px 10px 24px 10px;
+  padding: 0 2px;
+  margin: 0 2px;
+  background: @color-bg;
   color: @color-fg;
+  border-style: solid;
+  border-width: 2px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -69,7 +72,6 @@ button:hover {
 
 tooltip {
   background: alpha(@color-bg, 1.0);
-  border-radius: 24px 10px 24px 10px;
   border: 2px solid @color-bg3;
 }
 
@@ -77,23 +79,25 @@ tooltip {
 /*--- Hyprland modules ---*/
 /*------------------------*/
 #submap {
+  padding: 0 0.5em;
   background-color: @color-yellow;
+  border-style: none
 } 
 
 /*--- Hyprland workspace ---*/
 #workspaces {
+  padding: 0 0.5em;
   background-color: alpha(@color-bg, 0.5);
+  border-style: none;
 }
 
 #workspaces button {
   font-weight: bold;
   padding: 0 0.5em;
-  border-radius: 24px 10px 24px 10px;
 }
 
 #workspaces button.active {
   color: @color-green;
-  border-radius: 24px 10px 24px 10px;
 }
 
 #workspaces button.empty {
@@ -106,7 +110,9 @@ tooltip {
 }
 
 #window{
+  padding: 0 0.5em;
   background-color: alpha(@color-bg, 0.5);
+  border-style: none;
   min-width: 100px;
   transition: 1s;
 }
@@ -115,34 +121,37 @@ tooltip {
 /*--- general Modules ---*/
 /*-----------------------*/
 #tray {
-  background-color: @color-gray;
+  border-color: @color-gray;
 }
 
 #pulseaudio{ 
-  background-color: @color-purple; 
+  border-color: @color-purple; 
 } 
 
 #clock {
-  background-color: @color-blue;
+  border-color: @color-blue;
 }
 
 #cpu {
-  background-color: @color-purple;
+  border-color: @color-purple;
 }
 
 #custom-gpu {
-  background-color: @color-yellow;
+  border-color: @color-yellow;
 }
 
 #memory {
-  background-color: @color-aqua;
+  border-color: @color-aqua;
 }
 
 #mpris {
-  background-color: @color-aqua;
+  padding: 0 0.5em;
+  border-color: @color-aqua;
 }
 
 #custom-caps {
+  padding: 0 0.5em;
   background-color: @color-purple;
+  border-style: none;
 }
 
