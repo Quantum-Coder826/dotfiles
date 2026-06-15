@@ -79,16 +79,15 @@ tooltip {
 /*--- Hyprland modules ---*/
 /*------------------------*/
 #submap {
-  padding: 0 0.5em;
   background-color: @color-yellow;
-  border-style: none
+  border-style: none;
 } 
 
 /*--- Hyprland workspace ---*/
 #workspaces {
   padding: 0 0.5em;
-  background-color: alpha(@color-bg, 0.5);
-  border-style: none;
+  background-color: alpha(@color-bg, 0);
+  border-color: @color-bg3;
 }
 
 #workspaces button {
@@ -111,9 +110,9 @@ tooltip {
 
 #window{
   padding: 0 0.5em;
-  background-color: alpha(@color-bg, 0.5);
-  border-style: none;
+  background-color: alpha(@color-bg, 0);
   min-width: 100px;
+  border-color: @color-bg3;
   transition: 1s;
 }
 
