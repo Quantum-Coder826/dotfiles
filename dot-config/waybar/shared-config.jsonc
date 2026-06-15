@@ -23,7 +23,10 @@
     "max-length": 128,
     "setarate-outputs": true,
     "icon": true,
-    "icon-size": 18
+    "icon-size": 18,
+    "rewrite": {
+      "(.*) — Zen Browser": "$1"
+    },
   },
   "hyprland/submap": {}
 }
