@@ -87,7 +87,7 @@ tooltip {
 #workspaces {
   padding: 0 0.5em;
   background-color: alpha(@color-bg, 0);
-  border-color: @color-bg3;
+  border-style: none;
 }
 
 #workspaces button {
@@ -112,7 +112,7 @@ tooltip {
   padding: 0 0.5em;
   background-color: alpha(@color-bg, 0);
   min-width: 100px;
-  border-color: @color-bg3;
+  border-style: none;
   transition: 1s;
 }
 
