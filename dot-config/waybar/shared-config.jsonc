@@ -14,8 +14,8 @@
     "on-scroll-down": "hyprctl dispatch workspace e+2",
     "format": "{icon}",
     "format-icons": {
-      "7": "󱊖",
-      "8": "󰤽"
+      "tray": "󱊖",
+      "audio": "󰤽"
     }
   },
   "hyprland/window": {
