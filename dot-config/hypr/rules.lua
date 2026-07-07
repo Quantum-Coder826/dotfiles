@@ -44,10 +44,6 @@ hl.window_rule({
 })
 
 --- System tray ---
-hl.workspace_rule({
-  workspace = "7",
-  layout = "dwindle",
-})
 hl.window_rule({
   name = "steam",
   match = {
@@ -86,6 +82,19 @@ hl.window_rule({
 --- WORKSPACE ---
 -----------------
 --- and https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
+local workspace_init = function(id, name, layout)
+  --- This func is used to set the name and layout of specifiyed workspace
+  name = name or ""
+  layout = layout or ""
+  hl.workspace_rule({
+    workspace = id,
+    default_name = name,
+    layout = layout,
+  })
+end
+
+workspace_init("7", "tray", "dwindle")
+workspace_init("8", "audio")
 
 --- Special workspace ---
 hl.workspace_rule({
