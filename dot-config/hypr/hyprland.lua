@@ -56,11 +56,16 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
+
+local css_gaps = function(top, left, right, bottom) -- Simple utility function
+    return {top = top, left = left, right = right, bottom = bottom} 
+end
+
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
   general = {
     gaps_in  = 2,
-    gaps_out = 2,
+    gaps_out = css_gaps(3, 7, 7, 3),
     border_size = 2,
     col = {
       active_border = "rgb(98971a)",
@@ -111,8 +116,8 @@ hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dam
 
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 5.39, bezier = "easeOutQuint" })
-hl.animation({ leaf = "windows",       enabled = true,  speed = 4.79, spring = "easy" })
-hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 4.1,  spring = "easy",         style = "popin 87%" })
+hl.animation({ leaf = "windows",       enabled = true,  speed = 2.79, bezier = "quick" })
+hl.animation({ leaf = "windowsIn",     enabled = true,  speed = 2.1,  bezier = "quick",         style = "popin 87%" })
 hl.animation({ leaf = "windowsOut",    enabled = true,  speed = 1.49, bezier = "linear",       style = "popin 87%" })
 hl.animation({ leaf = "fadeIn",        enabled = true,  speed = 1.73, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeOut",       enabled = true,  speed = 1.46, bezier = "almostLinear" })
