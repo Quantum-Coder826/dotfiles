@@ -65,11 +65,16 @@ hl.env("HYPRPAPER_WALL", "/home/qbyte/Pictures/background/blueNebula.png")
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
+
+local css_gaps = function(top, left, right, bottom) -- Simple utility function
+    return {top = top, left = left, right = right, bottom = bottom} 
+end
+
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
   general = {
     gaps_in  = 2,
-    gaps_out = {2, 12, 12, 2},
+    gaps_out = css_gaps(3, 7, 7, 3),
 
     border_size = 2,
     col = {
@@ -145,8 +150,8 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
 -- uncomment all if you wish to use that.
-hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0, gaps_in = 0 })
-hl.workspace_rule({ workspace = "f[1]",   gaps_out = 0, gaps_in = 0 })
+hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 5, gaps_in = 0 })
+hl.workspace_rule({ workspace = "f[1]",   gaps_out = 5, gaps_in = 0 })
 hl.window_rule({
     name  = "no-gaps-wtv1",
     match = { float = false, workspace = "w[tv1]" },

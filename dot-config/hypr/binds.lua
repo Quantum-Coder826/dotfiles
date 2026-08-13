@@ -85,3 +85,7 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 hl.bind("switch:Lid Switch", hl.dsp.exec_cmd("hyprlock"),       { locked = true })
+
+-- Guestures --
+hl.gesture({fingers = 3, direction = "horizontal", action = "workspace"})
+hl.gesture({fingers = 4, direction = "horizontal", action = "scroll_move"})
