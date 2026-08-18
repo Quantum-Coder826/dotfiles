@@ -53,7 +53,7 @@ hl.bind(mod .. " + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(mod .. " + F", hl.dsp.window.float())
 hl.bind(mod .. " + F11", hl.dsp.window.fullscreen())
 hl.bind("CONTROL + SHIFT + escape", hl.dsp.exec_cmd("alacritty -e btop -p 0"))
-hl.bind("CONTROL + ALT + L", hl.dsp.exec_cmd("hyprlock -c $XDG_CONFIG_HOME/hypr/lock/locknormal.conf"))
+hl.bind("CONTROL + ALT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("ALT + TAB", hl.dsp.focus({ monitor = "+1" }))
 
 hl.bind(mod .. " + C", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))

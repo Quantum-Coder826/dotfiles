@@ -33,7 +33,7 @@ hl.monitor({
 -------------------
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function ()
-    hl.exec_cmd("hyprlock -q --grace 0 -c $XDG_CONFIG_HOME/hypr/lock/lockstartup.conf")
+    hl.exec_cmd("hyprlock -q --grace 0")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("waybar & hyprpaper & mako")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
