@@ -287,6 +287,13 @@ hl.window_rule({
   workspace = "7 silent",
 })
 
+hl.window_rule({
+  name = "alacratty col size",
+  match = {
+    class = "Alacritty",
+  },
+  scrolling_width = 0.41,
+})
 --- Special workspace ---
 hl.workspace_rule({
   workspace = "s[true]",
