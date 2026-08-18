@@ -86,7 +86,7 @@ tooltip {
 /*--- Hyprland workspace ---*/
 #workspaces {
   padding: 0 0.5em;
-  background-color: alpha(@color-bg, 0);
+  background-color: alpha(@color-bg, 0.6);
   border-style: none;
 }
 
@@ -110,7 +110,7 @@ tooltip {
 
 #window{
   padding: 0 0.5em;
-  background-color: alpha(@color-bg, 0);
+  background-color: alpha(@color-bg, 0.6);
   min-width: 100px;
   border-style: none;
   transition: 1s;
