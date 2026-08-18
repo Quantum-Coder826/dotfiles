@@ -78,6 +78,14 @@ hl.window_rule({
   workspace = "1",
 })
 
+hl.window_rule({
+  name = "alacratty col size",
+  match = {
+    class = "Alacritty",
+  },
+  scrolling_width = 0.41,
+})
+
 -----------------
 --- WORKSPACE ---
 -----------------
