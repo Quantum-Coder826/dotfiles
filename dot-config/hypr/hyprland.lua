@@ -22,8 +22,7 @@ hl.monitor({
 })
 
 hl.monitor({
-  output = "desc:Dell Inc. DELL P2725HE",
-  mode = "highres",
+  output = "DP-1",
   position = "auto-up",
   scale = "1",
 })
@@ -149,9 +148,13 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
--- uncomment all if you wish to use that.
-hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 5, gaps_in = 0 })
-hl.workspace_rule({ workspace = "f[1]",   gaps_out = 5, gaps_in = 0 })
+hl.workspace_rule({ workspace = "w[tv1]s[false]", gaps_out = 0, gaps_in = 0 })
+hl.workspace_rule({ workspace = "f[1]s[false]", gaps_out = 0, gaps_in = 0 })
+hl.window_rule({ match = { float = false, workspace = "w[tv1]s[false]" }, border_size = 0 })
+hl.window_rule({ match = { float = false, workspace = "w[tv1]s[false]" }, rounding = 0 })
+hl.window_rule({ match = { float = false, workspace = "f[1]s[false]" }, border_size = 0 })
+hl.window_rule({ match = { float = false, workspace = "f[1]s[false]" }, rounding = 0 })
+
 hl.window_rule({
     name  = "no-gaps-wtv1",
     match = { float = false, workspace = "w[tv1]" },
@@ -175,14 +178,14 @@ hl.config({
 -- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
 hl.config({
   scrolling = {
-    fullscreen_on_one_column = true,
+    fullscreen_on_one_column = false,
+    focus_fit_method = 1,
   },
 })
 
 ----------------
 ----  MISC  ----
 ----------------
-
 hl.config({
   misc = {
     force_default_wallpaper = 0,   -- Set to 0 or 1 to disable the anime mascot wallpapers
@@ -293,6 +296,13 @@ hl.window_rule({
     class = "Alacritty",
   },
   scrolling_width = 0.41,
+})
+hl.window_rule({
+  name = "UMG anywhere col size",
+  match = {
+    class = "Wfica",
+  },
+  scrolling_width = 1.0,
 })
 --- Special workspace ---
 hl.workspace_rule({
