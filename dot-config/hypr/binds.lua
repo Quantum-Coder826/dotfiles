@@ -56,8 +56,8 @@ hl.define_submap("resize", function()
     dwindle = hl.dsp.window.resize({x = 20, y = 0, relative = true}),
     scrolling = hl.dsp.layout("colresize +0.02"),
   }), {repeating = true})
-  hl.bind("SUPER + J", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
-  hl.bind("SUPER + K", hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
+  hl.bind("SUPER + J", hl.dsp.window.resize({x=0, y=-20, relative=true}), {repeating=true})
+  hl.bind("SUPER + K", hl.dsp.window.resize({x=0, y=20, relative=true}), {repeating=true})
 
   -- layout.scrolling specific
   hl.bind("SUPER + Q", hl.dsp.layout("colresize +conf"), { repeating = true })

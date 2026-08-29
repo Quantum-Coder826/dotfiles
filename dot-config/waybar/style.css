@@ -91,6 +91,12 @@ tooltip {
   border-style: none;
 }
 
+#windowcount {
+    border-style: none;
+    padding: 0 2px;
+    margin: 0 2px;
+}
+
 #workspaces button {
   font-weight: bold;
   padding: 0 0.5em;
