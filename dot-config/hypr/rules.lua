@@ -85,6 +85,13 @@ hl.window_rule({
   },
   scrolling_width = 0.41,
 })
+hl.window_rule({
+  name = "Steam Games List colum width",
+  match = {
+    title = "Steam Games List",
+  },
+  scrolling_width = 0.3,
+})
 
 -----------------
 --- WORKSPACE ---
@@ -101,7 +108,7 @@ local workspace_init = function(id, name, layout)
   })
 end
 
-workspace_init("7", "tray", "dwindle")
+workspace_init("7", "tray")
 workspace_init("8", "audio")
 
 --- Special workspace ---
