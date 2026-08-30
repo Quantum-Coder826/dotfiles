@@ -212,6 +212,10 @@ hl.config({
     follow_mouse = 1,
 
     sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+    accel_profile = "flat",
+
+    scroll_method = "on_button_down",
+    scroll_button_lock = true,
 
     touchpad = {
       natural_scroll = false,
