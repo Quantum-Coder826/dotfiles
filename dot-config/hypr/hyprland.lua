@@ -12,7 +12,6 @@
 ------------------
 ---- MONITORS ----
 ------------------
-
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
   output   = "DP-2",
@@ -56,7 +55,6 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 -----------------------
 ---- LOOK AND FEEL ----
 -----------------------
-
 local css_gaps = function(top, left, right, bottom) -- Simple utility function
     return {top = top, left = left, right = right, bottom = bottom} 
 end
@@ -167,7 +165,6 @@ hl.config({
 ----------------
 ----  MISC  ----
 ----------------
-
 hl.config({
   misc = {
     force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
@@ -180,7 +177,6 @@ hl.config({
 ---------------
 ---- INPUT ----
 ---------------
-
 hl.config({
   input = {
     kb_layout  = "us",
@@ -192,6 +188,7 @@ hl.config({
     follow_mouse = 1,
 
     sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
+    accel_profile = "flat",
 
     touchpad = {
       natural_scroll = false,
