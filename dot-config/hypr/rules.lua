@@ -77,6 +77,14 @@ hl.window_rule({
   monitor = "DP-2",
   workspace = "1",
 })
+hl.window_rule({
+  name = "Float steam settings",
+  match = {
+    title = "Steam Settings",
+  },
+  float = true,
+  center = true,
+})
 
 hl.window_rule({
   name = "alacratty col size",
