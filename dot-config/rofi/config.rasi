@@ -2,7 +2,7 @@
 // start command: rofi -show combi
 
 configuration {
-modi: "combi,file-browser-extended";
+modi: "combi";
       combi-modi: "window,drun";
       icon-theme: "Gruvbox_dark";
       show-icons: true;
