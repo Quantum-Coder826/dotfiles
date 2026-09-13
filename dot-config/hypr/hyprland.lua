@@ -47,7 +47,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
   hl.exec_cmd("wl-paste --type image --watch cliphist store")
   hl.exec_cmd("XDG_MENU_PREFIX=arch- kbuildsycoca6")
-  hl.exec_cmd("~/scripts/smb_mount.sh")
+  hl.exec_cmd("mount /media/qbyte/smb/")
   hl.exec_cmd("com.github.wwmm.easyeffects", { workspace = 8})
   hl.exec_cmd("zen-browser", { workspace = "1" })
 end)
@@ -59,7 +59,6 @@ end)
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-hl.env("HYPRPAPER_WALL", "/home/qbyte/Pictures/background/blueNebula.png")
 
 -----------------------
 ---- LOOK AND FEEL ----

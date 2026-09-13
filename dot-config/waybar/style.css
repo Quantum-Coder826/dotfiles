@@ -143,6 +143,8 @@ tooltip {
 }
 #battery.warning{
     border-color: @color-red;
+    color: @color-red;
+    font-weight: bold;
 }
 #backlight {
     border-color: @color-yellow;
