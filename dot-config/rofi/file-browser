@@ -2,7 +2,9 @@ path    /home/qbyte
 path-sep "/"
 depth   5
 
-exclude "applications"
+exclude "Applications"
+exclude "dotfiles"
+exclude "Downloads"
 exclude "Calibre Library"
 exclude "R"
 exclude "yay"
